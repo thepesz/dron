@@ -1,13 +1,60 @@
+import dynamic from "next/dynamic";
 import { getTranslations } from "next-intl/server";
 import { Header } from "@/components/ui/Header";
 import { Footer } from "@/components/ui/Footer";
-import { FloatingPhoneButton } from "@/components/ui/FloatingPhoneButton";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { WhyChooseUsSection } from "@/components/sections/WhyChooseUsSection";
-import { AboutSection } from "@/components/sections/AboutSection";
-import { ProcessSection } from "@/components/sections/ProcessSection";
-import { ContactSection } from "@/components/sections/ContactSection";
+
+/**
+ * Below-the-fold sections are dynamically imported to defer their JS.
+ * This reduces the initial JS bundle and speeds up First Input Delay (FID)
+ * and Interaction to Next Paint (INP).
+ *
+ * - WhyChooseUsSection: uses useInView + setInterval for background photos
+ * - AboutSection: uses useInView + next/image
+ * - ProcessSection: uses useInView
+ * - ContactSection: heaviest — pulls in React Hook Form + Zod via ContactForm
+ * - FloatingPhoneButton: small but not needed at page load
+ */
+const WhyChooseUsSection = dynamic(
+  () =>
+    import("@/components/sections/WhyChooseUsSection").then(
+      (mod) => mod.WhyChooseUsSection
+    ),
+  { ssr: true }
+);
+
+const AboutSection = dynamic(
+  () =>
+    import("@/components/sections/AboutSection").then(
+      (mod) => mod.AboutSection
+    ),
+  { ssr: true }
+);
+
+const ProcessSection = dynamic(
+  () =>
+    import("@/components/sections/ProcessSection").then(
+      (mod) => mod.ProcessSection
+    ),
+  { ssr: true }
+);
+
+const ContactSection = dynamic(
+  () =>
+    import("@/components/sections/ContactSection").then(
+      (mod) => mod.ContactSection
+    ),
+  { ssr: false }
+);
+
+const FloatingPhoneButton = dynamic(
+  () =>
+    import("@/components/ui/FloatingPhoneButton").then(
+      (mod) => mod.FloatingPhoneButton
+    ),
+  { ssr: false }
+);
 
 /**
  * Main landing page. Assembles all section components in order.
@@ -18,17 +65,17 @@ import { ContactSection } from "@/components/sections/ContactSection";
  * Section order:
  *  1. Header (sticky)
  *  2. HeroSection
- *  3. ClientLogosSection (trust strip)
- *  4. ServicesSection
- *  5. StatsSection (experience numbers)
- *  6. PhotoStrip (infinite scrolling marquee)
- *  7. WhyChooseUsSection
- *  8. PortfolioSection
- *  9. TestimonialsSection
- * 10. AboutSection
- * 11. ProcessSection
- * 12. ContactSection
- * 13. Footer
+ *  3. ServicesSection
+ *  4. WhyChooseUsSection
+ *  5. AboutSection
+ *  6. ProcessSection
+ *  7. ContactSection
+ *  8. Footer
+ *
+ * Heavy below-fold sections use next/dynamic for code splitting:
+ * - ContactSection (ssr: false) — includes React Hook Form + Zod
+ * - FloatingPhoneButton (ssr: false) — mobile-only, not needed at page load
+ * - WhyChooseUsSection, AboutSection, ProcessSection (ssr: true) — deferred JS
  */
 export default async function HomePage() {
   const t = await getTranslations();

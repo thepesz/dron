@@ -63,7 +63,7 @@ export function ContactForm() {
         <p className="text-lg font-medium text-green-300">{t("success")}</p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-6 rounded-lg border border-slate-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-slate-800 hover:text-white"
+          className="mt-6 min-h-[44px] rounded-lg border border-slate-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-slate-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-500"
         >
           &larr;
         </button>

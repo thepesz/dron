@@ -62,7 +62,7 @@ export function MobileMenu() {
         onClick={() => setIsOpen(true)}
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
-        className="rounded-lg p-2 text-slate-600 transition-colors hover:bg-gray-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500"
+        className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-slate-600 transition-colors hover:bg-gray-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500"
         aria-label="Open menu"
       >
         <Menu className="h-6 w-6" />
@@ -92,7 +92,7 @@ export function MobileMenu() {
           <LanguageSwitcher />
           <button
             onClick={close}
-            className="rounded-lg p-2 text-slate-600 transition-colors hover:bg-gray-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500"
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-slate-600 transition-colors hover:bg-gray-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500"
             aria-label="Close menu"
           >
             <X className="h-6 w-6" />

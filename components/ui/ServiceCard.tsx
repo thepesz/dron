@@ -3,8 +3,8 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useInView } from "@/lib/hooks/useInView";
 
 interface ServiceCardProps {
   icon: ReactNode;
@@ -23,7 +23,8 @@ interface ServiceCardProps {
 
 /**
  * Industrial-style service card with left accent border, icon, title,
- * and description. Uses Framer Motion for staggered entrance animation.
+ * and description. Uses CSS-based entrance animations via useInView
+ * instead of Framer Motion to reduce DOM node count.
  *
  * When a `photo` prop is provided, the card displays the image as a
  * background with a dark gradient overlay. Icon, title, and description
@@ -44,15 +45,15 @@ export function ServiceCard({
   href,
   learnMoreLabel,
 }: ServiceCardProps) {
+  const { ref, isInView } = useInView();
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className={`group relative border border-slate-700/60 border-l-4 border-l-brand-500 bg-slate-900 transition-all duration-300 hover:border-slate-600 hover:shadow-lg hover:shadow-brand-500/10 ${
+    <div
+      ref={ref}
+      className={`animate-on-scroll group relative border border-slate-700/60 border-l-4 border-l-brand-500 bg-slate-900 transition-all duration-300 hover:border-slate-600 hover:shadow-lg hover:shadow-brand-500/10 ${
         photo ? "min-h-[260px] overflow-hidden" : "p-6 sm:p-8"
-      }`}
+      } ${isInView ? "in-view" : ""}`}
+      style={{ transitionDelay: `${index * 100}ms` }}
     >
       {/* Background photo (when provided) */}
       {photo && (
@@ -63,6 +64,7 @@ export function ServiceCard({
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
         </>
@@ -80,13 +82,13 @@ export function ServiceCard({
         {href && learnMoreLabel && (
           <Link
             href={href}
-            className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-brand-400 transition-colors hover:text-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500 rounded"
+            className="mt-2 inline-flex min-h-[44px] items-center gap-1.5 rounded py-2 text-sm font-medium text-brand-400 transition-colors hover:text-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
           >
             {learnMoreLabel}
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }

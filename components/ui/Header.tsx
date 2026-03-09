@@ -47,7 +47,7 @@ export function Header() {
             <a
               key={key}
               href={`/${locale}#${section}`}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-gray-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="inline-flex min-h-[44px] items-center rounded-lg px-3 text-sm font-medium text-slate-600 transition-colors hover:bg-gray-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500"
             >
               {t(key)}
             </a>
@@ -58,7 +58,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <a
             href="tel:+48123456789"
-            className="hidden items-center gap-1.5 text-sm text-slate-600 transition-colors hover:text-slate-900 lg:flex"
+            className="hidden min-h-[44px] items-center gap-1.5 rounded-lg px-2 text-sm text-slate-600 transition-colors hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 lg:flex"
           >
             <Phone className="h-4 w-4" />
             {t("phone")}
@@ -70,7 +70,7 @@ export function Header() {
 
           <a
             href={`/${locale}#contact`}
-            className="hidden rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400 lg:inline-block"
+            className="hidden min-h-[44px] items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400 lg:inline-flex"
           >
             {t("cta")}
           </a>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import {
@@ -13,6 +12,7 @@ import {
   MapPin,
   Award,
 } from "lucide-react";
+import { useInView } from "@/lib/hooks/useInView";
 import type { ReactNode } from "react";
 
 interface Advantage {
@@ -44,9 +44,21 @@ const bgPhotos = [
   "/images/agro3.jpg",
 ];
 
+/**
+ * "Why Choose Us" section with crossfading photo background and advantage cards.
+ *
+ * Background: CSS crossfade between two <Image> elements (current + next),
+ * using opacity transitions instead of Framer Motion AnimatePresence.
+ * This keeps the DOM at exactly 2 image nodes regardless of cycle count.
+ *
+ * Advantages grid: CSS entrance animations via useInView hook instead
+ * of individual motion.div wrappers, reducing DOM nodes by 7.
+ */
 export function WhyChooseUsSection() {
   const t = useTranslations("whyUs");
   const [current, setCurrent] = useState(0);
+  const { ref: headerRef, isInView: headerInView } = useInView();
+  const { ref: gridRef, isInView: gridInView } = useInView();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -61,54 +73,42 @@ export function WhyChooseUsSection() {
       className="relative overflow-hidden"
       aria-labelledby="why-us-heading"
     >
-      {/* Crossfade photo background */}
-      <AnimatePresence>
-        <motion.div
-          key={current}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="absolute inset-0"
-        >
-          <Image
-            src={bgPhotos[current]}
-            alt=""
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority={current === 0}
-          />
-        </motion.div>
-      </AnimatePresence>
+      {/* Two-slot crossfade background (only 2 DOM nodes, not N) */}
+      <div className="absolute inset-0">
+        <Image
+          src={bgPhotos[current]}
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover transition-opacity duration-1000"
+          priority={current === 0}
+        />
+      </div>
 
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-slate-950/75" />
 
       {/* Content */}
       <div className="section-padding container-wide relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-14 text-center"
+        <div
+          ref={headerRef}
+          className={`animate-on-scroll mb-14 text-center ${headerInView ? "in-view" : ""}`}
         >
           <h2 id="why-us-heading" className="heading-section">
             {t("heading")}
           </h2>
           <p className="text-body mx-auto mt-4 max-w-2xl">{t("subtitle")}</p>
-        </motion.div>
+        </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div
+          ref={gridRef}
+          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
           {advantages.map((item, index) => (
-            <motion.div
+            <div
               key={item.key}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="flex gap-4"
+              className={`animate-on-scroll flex gap-4 ${gridInView ? "in-view" : ""}`}
+              style={{ transitionDelay: `${index * 80}ms` }}
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-600/20 text-brand-400">
                 {item.icon}
@@ -121,7 +121,7 @@ export function WhyChooseUsSection() {
                   {t(`items.${item.key}.description`)}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

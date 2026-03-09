@@ -1,7 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+/**
+ * Resend client is lazily initialised inside the handler to avoid
+ * crashing the build when RESEND_API_KEY is not yet set (e.g. during
+ * `next build` in CI). The key is only required at runtime.
+ */
+function getResend() {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) throw new Error("RESEND_API_KEY is not configured");
+  return new Resend(key);
+}
+
+export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   try {
@@ -10,6 +21,8 @@ export async function POST(request: NextRequest) {
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
+
+    const resend = getResend();
 
     await resend.emails.send({
       from: "Formularz kontaktowy <kontakt@loty-dronem.pl>",

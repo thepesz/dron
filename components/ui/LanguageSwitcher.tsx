@@ -32,7 +32,7 @@ export function LanguageSwitcher() {
           key={loc}
           onClick={() => handleSwitch(loc)}
           aria-current={loc === locale ? "true" : undefined}
-          className={`rounded px-2 py-1 text-xs font-medium uppercase tracking-wider transition-colors ${
+          className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded px-2 text-xs font-medium uppercase tracking-wider transition-colors ${
             loc === locale
               ? "bg-brand-600 text-white"
               : "text-zinc-400 hover:bg-slate-800 hover:text-white"

@@ -2,8 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Building2, Sprout, Zap, HardHat } from "lucide-react";
+import { useInView } from "@/lib/hooks/useInView";
 import type { ReactNode } from "react";
 
 interface IndustryBadge {
@@ -24,10 +24,13 @@ const industries: IndustryBadge[] = [
  * - Right: tall drone photo with orange accent border
  *
  * On mobile the columns stack vertically (text first, image below).
- * All visible text including industry badge labels comes from translations.
+ * Uses CSS-based entrance animations via useInView instead of Framer Motion
+ * to reduce DOM node count and JS bundle.
  */
 export function AboutSection() {
   const t = useTranslations("about");
+  const { ref: textRef, isInView: textInView } = useInView();
+  const { ref: photoRef, isInView: photoInView } = useInView();
 
   return (
     <section
@@ -38,12 +41,9 @@ export function AboutSection() {
       <div className="container-wide">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
           {/* Left column — text content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5 }}
-            className="lg:w-1/2"
+          <div
+            ref={textRef}
+            className={`animate-on-scroll lg:w-1/2 ${textInView ? "in-view" : ""}`}
           >
             <h2
               id="about-heading"
@@ -70,15 +70,13 @@ export function AboutSection() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Right column — drone photo */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="lg:w-1/2"
+          <div
+            ref={photoRef}
+            className={`animate-on-scroll-right lg:w-1/2 ${photoInView ? "in-view" : ""}`}
+            style={{ transitionDelay: "150ms" }}
           >
             <div className="relative min-h-[400px] overflow-hidden rounded-xl border-l-4 border-l-brand-500 lg:min-h-[500px]">
               <Image
@@ -87,11 +85,12 @@ export function AboutSection() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
+                loading="lazy"
               />
               {/* Subtle bottom gradient for depth */}
               <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-slate-950/40 to-transparent" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

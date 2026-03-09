@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import {
   MessageSquare,
   Search,
@@ -11,6 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { ProcessStep } from "@/components/ui/ProcessStep";
+import { useInView } from "@/lib/hooks/useInView";
 import type { ReactNode } from "react";
 
 interface StepItem {
@@ -26,8 +26,15 @@ const steps: StepItem[] = [
   { key: "delivery", icon: <FileCheck className="h-5 w-5" /> },
 ];
 
+/**
+ * Process section showing five numbered workflow steps.
+ * Uses CSS-based entrance animations via useInView instead of Framer Motion
+ * to reduce DOM node count and JS bundle.
+ */
 export function ProcessSection() {
   const t = useTranslations("process");
+  const { ref: headerRef, isInView: headerInView } = useInView();
+  const { ref: noteRef, isInView: noteInView } = useInView();
 
   return (
     <section
@@ -36,18 +43,15 @@ export function ProcessSection() {
       aria-labelledby="process-heading"
     >
       <div className="container-wide">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-14 text-center"
+        <div
+          ref={headerRef}
+          className={`animate-on-scroll mb-14 text-center ${headerInView ? "in-view" : ""}`}
         >
           <h2 id="process-heading" className="heading-section">
             {t("heading")}
           </h2>
           <p className="text-body mx-auto mt-4 max-w-2xl">{t("subtitle")}</p>
-        </motion.div>
+        </div>
 
         <div className="mx-auto max-w-2xl">
           {steps.map((step, index) => (
@@ -63,25 +67,23 @@ export function ProcessSection() {
         </div>
 
         {/* Regulatory compliance note with external link */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-30px" }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="mx-auto mt-12 max-w-2xl text-center text-sm text-zinc-500"
+        <p
+          ref={noteRef}
+          className={`animate-on-scroll-fade mx-auto mt-12 max-w-2xl text-center text-sm text-zinc-500 ${noteInView ? "in-view" : ""}`}
+          style={{ transitionDelay: "300ms" }}
         >
           {t("regulations.text")}{" "}
           <a
             href={t("regulations.url")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-brand-400 underline underline-offset-2 transition-colors hover:text-brand-300"
+            className="inline-flex min-h-[44px] items-center gap-1 rounded py-2 text-brand-400 underline underline-offset-2 transition-colors hover:text-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
           >
             {t("regulations.linkText")}
             <ExternalLink className="h-3 w-3" />
           </a>
           .
-        </motion.p>
+        </p>
       </div>
     </section>
   );

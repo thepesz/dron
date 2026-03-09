@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { useInView } from "@/lib/hooks/useInView";
 
 interface ProcessStepProps {
   stepNumber: number;
@@ -11,6 +11,11 @@ interface ProcessStepProps {
   isLast: boolean;
 }
 
+/**
+ * Single process step with numbered indicator, icon, and description.
+ * Uses CSS-based entrance animation via useInView instead of Framer Motion
+ * to reduce DOM node count and JS bundle.
+ */
 export function ProcessStep({
   stepNumber,
   icon,
@@ -18,13 +23,13 @@ export function ProcessStep({
   description,
   isLast,
 }: ProcessStepProps) {
+  const { ref, isInView } = useInView();
+
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: stepNumber * 0.1 }}
-      className="relative flex gap-6"
+    <div
+      ref={ref}
+      className={`animate-on-scroll-left relative flex gap-6 ${isInView ? "in-view" : ""}`}
+      style={{ transitionDelay: `${stepNumber * 100}ms` }}
     >
       <div className="flex flex-col items-center">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-brand-500 bg-brand-600/10 text-brand-400">
@@ -42,6 +47,6 @@ export function ProcessStep({
         <h3 className="mb-2 text-lg font-semibold text-white">{title}</h3>
         <p className="text-sm leading-relaxed text-zinc-400">{description}</p>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { motion } from "framer-motion";
 import {
   ScanSearch,
   Box,
@@ -11,12 +10,16 @@ import {
   Camera,
 } from "lucide-react";
 import { ServiceCard } from "@/components/ui/ServiceCard";
+import { useInView } from "@/lib/hooks/useInView";
 
 /**
  * Services grid showing six drone service offerings.
  * Each card has a photo background, icon, title, and description
  * sourced from translations. Cards with a dedicated service page
  * include a "Learn more" link via the `slug` prop.
+ *
+ * Uses CSS-based entrance animations via useInView hook
+ * instead of Framer Motion to reduce DOM node count and JS bundle.
  */
 
 interface ServiceItem {
@@ -39,6 +42,7 @@ const serviceItems: ServiceItem[] = [
 export function ServicesSection() {
   const t = useTranslations("services");
   const locale = useLocale();
+  const { ref: headerRef, isInView: headerInView } = useInView();
 
   return (
     <section
@@ -48,18 +52,15 @@ export function ServicesSection() {
     >
       <div className="container-wide">
         {/* Section header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-14 text-center"
+        <div
+          ref={headerRef}
+          className={`animate-on-scroll mb-14 text-center ${headerInView ? "in-view" : ""}`}
         >
           <h2 id="services-heading" className="heading-section">
             {t("heading")}
           </h2>
           <p className="text-body mx-auto mt-4 max-w-2xl">{t("subtitle")}</p>
-        </motion.div>
+        </div>
 
         {/* Service cards grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

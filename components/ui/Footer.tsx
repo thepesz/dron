@@ -58,12 +58,12 @@ export function Footer() {
               {t("navHeading")}
             </h3>
             <nav aria-label="Footer navigation">
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 {footerNavLinks.map(({ key, section }) => (
                   <li key={key}>
                     <a
                       href={`/${locale}#${section}`}
-                      className="text-sm text-zinc-400 transition-colors hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                      className="inline-block py-1.5 text-sm text-zinc-400 transition-colors hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
                     >
                       {tNav(key)}
                     </a>
@@ -79,12 +79,12 @@ export function Footer() {
               {t("servicesHeading")}
             </h3>
             <nav aria-label="Service pages">
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 {serviceSlugs.map((slug) => (
                   <li key={slug}>
                     <Link
                       href={`/${locale}/services/${slug}`}
-                      className="text-sm text-zinc-400 transition-colors hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                      className="inline-block py-1.5 text-sm text-zinc-400 transition-colors hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
                     >
                       {t(`serviceLinks.${slug}`)}
                     </Link>
@@ -133,7 +133,7 @@ export function Footer() {
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 text-zinc-400 transition-colors hover:border-brand-500 hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="flex h-11 w-11 items-center justify-center rounded-lg border border-slate-700 text-zinc-400 transition-colors hover:border-brand-500 hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -144,7 +144,7 @@ export function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 text-zinc-400 transition-colors hover:border-brand-500 hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="flex h-11 w-11 items-center justify-center rounded-lg border border-slate-700 text-zinc-400 transition-colors hover:border-brand-500 hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
