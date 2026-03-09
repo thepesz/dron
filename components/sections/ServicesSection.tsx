@@ -73,7 +73,7 @@ export function ServicesSection() {
               photo={item.photo}
               photoAlt={t(`items.${item.key}.photoAlt`)}
               href={item.slug ? `/${locale}/services/${item.slug}` : undefined}
-              learnMoreLabel={item.slug ? t("learnMore") : undefined}
+              learnMoreLabel={item.slug ? t(`items.${item.key}.linkLabel`) : undefined}
             />
           ))}
         </div>

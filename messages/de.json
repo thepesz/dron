@@ -34,22 +34,26 @@
       "photogrammetry": {
         "title": "Fotogrammetrie und 3D-Modelle",
         "description": "Erstellung präziser 3D-Modelle, Orthofotokarten und Punktwolken aus Drohnendaten. Ideal für Vermessungen und Dokumentation.",
-        "photoAlt": "Drohnen-Fotogrammetrie — Orthofotokarte in der Region Stettin"
+        "photoAlt": "Drohnen-Fotogrammetrie — Orthofotokarte in der Region Stettin",
+        "linkLabel": "Fotogrammetrie — Details"
       },
       "thermal": {
         "title": "Thermografie mit Drohne",
         "description": "Erkennung von Wärmeverlusten, Photovoltaik-Fehlern und Dämmproblemen mit einer auf der Drohne montierten Wärmebildkamera.",
-        "photoAlt": "Thermografische Inspektion von Photovoltaikanlage per Drohne"
+        "photoAlt": "Thermografische Inspektion von Photovoltaikanlage per Drohne",
+        "linkLabel": "Thermografie — Details"
       },
       "windTurbines": {
         "title": "Inspektion von Windkraftanlagen",
         "description": "Visuelle Inspektionen von Rotorblättern und Gondeln mit Drohnen. Schnelle Schadenserkennung ohne Stillstand der Anlage.",
-        "photoAlt": "Visuelle Drohneninspektion von Windkraftanlage — Rotorblätter und Gondel"
+        "photoAlt": "Visuelle Drohneninspektion von Windkraftanlage — Rotorblätter und Gondel",
+        "linkLabel": "Windkraftanlagen — Details"
       },
       "wildlifeDamage": {
         "title": "Wildschadenbewertung",
         "description": "Wir führen Wildschadensbewertungen mit Drohnen in der gesamten Woiwodschaft Westpommern und nach vorheriger Absprache in ganz Polen und Deutschland durch. Wir unterstützen bei der Erstellung von Gutachten im PDF-Format sowie bei der Berechnung der Schadensfläche und des Schadensanteils gemäß den Ministeriumsverordnungen. Bei Ersatzforderungen spielt die Zeit eine entscheidende Rolle — wir können schnell reagieren.",
-        "photoAlt": "Wildschadensbewertung per Drohne — Vermessung beschädigter Anbaufläche"
+        "photoAlt": "Wildschadensbewertung per Drohne — Vermessung beschädigter Anbaufläche",
+        "linkLabel": "Wildschäden — Details"
       },
       "aerial": {
         "title": "Luftaufnahmen und Videos",
@@ -124,9 +128,14 @@
   "process": {
     "heading": "Unser Ablauf",
     "subtitle": "Jedes Projekt folgt einem bewährten Prozess, der höchste Qualität der Ergebnisse gewährleistet.",
+    "regulations": {
+      "text": "Alle Flüge werden in voller Übereinstimmung mit den",
+      "linkText": "EASA-Drohnenvorschriften",
+      "url": "https://www.easa.europa.eu/en/domains/civil-drones"
+    },
     "steps": {
       "contact": {
-        "title": "Kontaktaufnahme",
+        "title": "Erstanfrage",
         "description": "Kontaktieren Sie uns telefonisch, per E-Mail oder über das Kontaktformular. Wir besprechen Ihre Anforderungen."
       },
       "analysis": {
@@ -698,7 +707,9 @@
     "social": "Soziale Medien",
     "copyright": "Alle Rechte vorbehalten.",
     "description": "Drohneninspektion, Fotogrammetrie & Thermografie — schnell, sicher, präzise.",
-    "servicesHeading": "Leistungen",
+    "navHeading": "Navigation",
+    "contactHeading": "Kontaktdaten",
+    "servicesHeading": "Angebot",
     "serviceLinks": {
       "photogrammetry": "Fotogrammetrie",
       "thermal-imaging": "Thermografie",

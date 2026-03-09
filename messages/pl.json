@@ -34,22 +34,26 @@
       "photogrammetry": {
         "title": "Fotogrametria i modele 3D",
         "description": "Tworzenie precyzyjnych modeli 3D, ortofotomap i chmur punktów z danych pozyskanych dronem. Idealne do pomiarów i dokumentacji.",
-        "photoAlt": "Fotogrametria dronem — ortofotomapa terenu w Szczecinie"
+        "photoAlt": "Fotogrametria dronem — ortofotomapa terenu w Szczecinie",
+        "linkLabel": "Fotogrametria — szczegóły"
       },
       "thermal": {
         "title": "Termowizja z drona",
         "description": "Wykrywanie strat ciepła, usterek instalacji fotowoltaicznych i problemów z izolacją przy użyciu kamery termowizyjnej zamontowanej na dronie.",
-        "photoAlt": "Inspekcja termowizyjna paneli fotowoltaicznych z drona"
+        "photoAlt": "Inspekcja termowizyjna paneli fotowoltaicznych z drona",
+        "linkLabel": "Termowizja — szczegóły"
       },
       "windTurbines": {
         "title": "Inspekcje turbin wiatrowych",
         "description": "Wizualne inspekcje łopat i gondoli turbin wiatrowych z wykorzystaniem drona. Szybka identyfikacja uszkodzeń bez wstrzymywania pracy turbiny.",
-        "photoAlt": "Inspekcja wizualna turbiny wiatrowej dronem — łopaty i gondola"
+        "photoAlt": "Inspekcja wizualna turbiny wiatrowej dronem — łopaty i gondola",
+        "linkLabel": "Turbiny wiatrowe — szczegóły"
       },
       "wildlifeDamage": {
         "title": "Szacowanie szkód łowieckich",
         "description": "Realizujemy szacowania szkód przy pomocy dronów na terenie całego województwa zachodniopomorskiego, a po wcześniejszym uzgodnieniu – na terenie całej Polski i Niemiec. Pomagamy w przygotowaniu operatów szacunkowych w formacie PDF, obliczaniu powierzchni szkody i procentu uszkodzeń, zgodnie z rozporządzeniem Ministerstwa. W przypadku roszczeń odszkodowawczych czas gra kluczową rolę – jesteśmy w stanie szybko reagować.",
-        "photoAlt": "Szacowanie szkód łowieckich dronem — pomiar powierzchni uprawy"
+        "photoAlt": "Szacowanie szkód łowieckich dronem — pomiar powierzchni uprawy",
+        "linkLabel": "Szkody łowieckie — szczegóły"
       },
       "aerial": {
         "title": "Zdjęcia i filmy z powietrza",
@@ -124,9 +128,14 @@
   "process": {
     "heading": "Jak pracujemy",
     "subtitle": "Każdy projekt realizujemy według sprawdzonego procesu, który gwarantuje najwyższą jakość wyników.",
+    "regulations": {
+      "text": "Wszystkie loty realizujemy zgodnie z obowiązującymi przepisami —",
+      "linkText": "rozporządzeniami EASA i Urzędu Lotnictwa Cywilnego",
+      "url": "https://www.ulc.gov.pl/pl/drony"
+    },
     "steps": {
       "contact": {
-        "title": "Kontakt",
+        "title": "Zapytanie ofertowe",
         "description": "Skontaktuj się z nami telefonicznie, mailowo lub przez formularz. Omówimy Twoje potrzeby."
       },
       "analysis": {
@@ -698,7 +707,9 @@
     "social": "Media społecznościowe",
     "copyright": "Wszelkie prawa zastrzeżone.",
     "description": "Inspekcje dronem, fotogrametria i termowizja — precyzyjnie i terminowo.",
-    "servicesHeading": "Nasze usługi",
+    "navHeading": "Nawigacja",
+    "contactHeading": "Dane kontaktowe",
+    "servicesHeading": "Oferta",
     "serviceLinks": {
       "photogrammetry": "Fotogrametria",
       "thermal-imaging": "Termowizja",

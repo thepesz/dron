@@ -34,22 +34,26 @@
       "photogrammetry": {
         "title": "Photogrammetry & 3D models",
         "description": "Creation of precise 3D models, orthophotomaps, and point clouds from drone-acquired data. Ideal for surveying and documentation.",
-        "photoAlt": "Drone photogrammetry — orthophotomap of terrain in Szczecin"
+        "photoAlt": "Drone photogrammetry — orthophotomap of terrain in Szczecin",
+        "linkLabel": "Photogrammetry — details"
       },
       "thermal": {
         "title": "Thermal imaging",
         "description": "Detection of heat loss, photovoltaic system faults, and insulation deficiencies using a drone-mounted thermal camera.",
-        "photoAlt": "Thermal inspection of photovoltaic panels by drone"
+        "photoAlt": "Thermal inspection of photovoltaic panels by drone",
+        "linkLabel": "Thermal imaging — details"
       },
       "windTurbines": {
         "title": "Wind turbine inspections",
         "description": "Visual inspections of wind turbine blades and nacelles using drones. Rapid damage identification without halting turbine operation.",
-        "photoAlt": "Visual drone inspection of wind turbine blades and nacelle"
+        "photoAlt": "Visual drone inspection of wind turbine blades and nacelle",
+        "linkLabel": "Wind turbines — details"
       },
       "wildlifeDamage": {
         "title": "Wildlife damage estimation",
         "description": "We conduct wildlife damage assessments using drones throughout the West Pomeranian Voivodeship and, by prior arrangement, across the whole of Poland and Germany. We assist in preparing expert reports in PDF format, calculating the damaged area and percentage of damage in accordance with the Ministry's regulations. In the case of settlement claims, time is of the essence — we are able to respond quickly.",
-        "photoAlt": "Wildlife damage assessment by drone — measuring crop damage area"
+        "photoAlt": "Wildlife damage assessment by drone — measuring crop damage area",
+        "linkLabel": "Wildlife damage — details"
       },
       "aerial": {
         "title": "Aerial photography & video",
@@ -124,9 +128,14 @@
   "process": {
     "heading": "How we work",
     "subtitle": "Every project follows a proven process that guarantees the highest quality results.",
+    "regulations": {
+      "text": "All flights are conducted in full compliance with",
+      "linkText": "EASA drone regulations",
+      "url": "https://www.easa.europa.eu/en/domains/civil-drones"
+    },
     "steps": {
       "contact": {
-        "title": "Contact",
+        "title": "Initial enquiry",
         "description": "Reach out by phone, email, or through our contact form. We will discuss your requirements."
       },
       "analysis": {
@@ -698,7 +707,9 @@
     "social": "Social media",
     "copyright": "All rights reserved.",
     "description": "Drone inspections, photogrammetry & thermal imaging — precise, fast, reliable.",
-    "servicesHeading": "Our services",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact details",
+    "servicesHeading": "What we offer",
     "serviceLinks": {
       "photogrammetry": "Photogrammetry",
       "thermal-imaging": "Thermal imaging",

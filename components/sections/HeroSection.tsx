@@ -35,6 +35,7 @@ export function HeroSection() {
         preload="metadata"
         poster="/images/glownefoto.png"
         className="absolute inset-0 h-full w-full object-cover"
+        aria-hidden="true"
       >
         <source src="/videos/hero-drone.mp4" type="video/mp4" />
       </video>

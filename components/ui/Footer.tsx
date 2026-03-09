@@ -55,7 +55,7 @@ export function Footer() {
           {/* Navigation links */}
           <div>
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-zinc-300">
-              {tNav("about")}
+              {t("navHeading")}
             </h3>
             <nav aria-label="Footer navigation">
               <ul className="space-y-2">
@@ -97,7 +97,7 @@ export function Footer() {
           {/* Contact information */}
           <div>
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-zinc-300">
-              {tNav("contact")}
+              {t("contactHeading")}
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">

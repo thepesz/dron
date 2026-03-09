@@ -8,6 +8,7 @@ import {
   Map,
   Plane,
   FileCheck,
+  ExternalLink,
 } from "lucide-react";
 import { ProcessStep } from "@/components/ui/ProcessStep";
 import type { ReactNode } from "react";
@@ -60,6 +61,27 @@ export function ProcessSection() {
             />
           ))}
         </div>
+
+        {/* Regulatory compliance note with external link */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mx-auto mt-12 max-w-2xl text-center text-sm text-zinc-500"
+        >
+          {t("regulations.text")}{" "}
+          <a
+            href={t("regulations.url")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-brand-400 underline underline-offset-2 transition-colors hover:text-brand-300"
+          >
+            {t("regulations.linkText")}
+            <ExternalLink className="h-3 w-3" />
+          </a>
+          .
+        </motion.p>
       </div>
     </section>
   );
