@@ -1,0 +1,710 @@
+{
+  "meta": {
+    "title": "Inspekcje dronem Szczecin | Fotogrametria i termowizja",
+    "description": "Profesjonalne usługi dronowe w Szczecinie i woj. zachodniopomorskim. Inspekcje, fotogrametria, modele 3D, termowizja i szacowanie szkód łowieckich."
+  },
+  "skipToMain": "Przejdź do treści głównej",
+  "nav": {
+    "services": "Usługi",
+    "whyUs": "Dlaczego my",
+    "portfolio": "Realizacje",
+    "about": "O nas",
+    "process": "Proces",
+    "contact": "Kontakt",
+    "cta": "Bezpłatna wycena",
+    "phone": "+48 123 456 789",
+    "floatingCta": "Zadzwoń do nas"
+  },
+  "hero": {
+    "heading": "Profesjonalne inspekcje dronem w Szczecinie",
+    "subheading": "Dostarczamy precyzyjne dane z powietrza dla przemysłu, rolnictwa i energetyki. Fotogrametria, termowizja, modele 3D i inspekcje wizualne — szybko, bezpiecznie i dokładnie.",
+    "cta": "Zamów bezpłatną wycenę",
+    "secondaryCta": "Poznaj nasze usługi",
+    "trust": "Profesjonalne usługi dronowe z siedzibą w Szczecinie — realizujemy zlecenia na terenie całej Polski i Niemiec."
+  },
+  "services": {
+    "heading": "Nasze usługi",
+    "subtitle": "Oferujemy kompleksowe usługi dronowe dla firm i instytucji. Każde zlecenie realizujemy z najwyższą precyzją i dbałością o bezpieczeństwo.",
+    "items": {
+      "inspection": {
+        "title": "Inspekcje dronem",
+        "description": "Bezpieczne i dokładne inspekcje obiektów przemysłowych, budynków i infrastruktury bez konieczności użycia rusztowań czy podnośników.",
+        "photoAlt": "Inspekcja dronem obiektu przemysłowego w Szczecinie"
+      },
+      "photogrammetry": {
+        "title": "Fotogrametria i modele 3D",
+        "description": "Tworzenie precyzyjnych modeli 3D, ortofotomap i chmur punktów z danych pozyskanych dronem. Idealne do pomiarów i dokumentacji.",
+        "photoAlt": "Fotogrametria dronem — ortofotomapa terenu w Szczecinie"
+      },
+      "thermal": {
+        "title": "Termowizja z drona",
+        "description": "Wykrywanie strat ciepła, usterek instalacji fotowoltaicznych i problemów z izolacją przy użyciu kamery termowizyjnej zamontowanej na dronie.",
+        "photoAlt": "Inspekcja termowizyjna paneli fotowoltaicznych z drona"
+      },
+      "windTurbines": {
+        "title": "Inspekcje turbin wiatrowych",
+        "description": "Wizualne inspekcje łopat i gondoli turbin wiatrowych z wykorzystaniem drona. Szybka identyfikacja uszkodzeń bez wstrzymywania pracy turbiny.",
+        "photoAlt": "Inspekcja wizualna turbiny wiatrowej dronem — łopaty i gondola"
+      },
+      "wildlifeDamage": {
+        "title": "Szacowanie szkód łowieckich",
+        "description": "Realizujemy szacowania szkód przy pomocy dronów na terenie całego województwa zachodniopomorskiego, a po wcześniejszym uzgodnieniu – na terenie całej Polski i Niemiec. Pomagamy w przygotowaniu operatów szacunkowych w formacie PDF, obliczaniu powierzchni szkody i procentu uszkodzeń, zgodnie z rozporządzeniem Ministerstwa. W przypadku roszczeń odszkodowawczych czas gra kluczową rolę – jesteśmy w stanie szybko reagować.",
+        "photoAlt": "Szacowanie szkód łowieckich dronem — pomiar powierzchni uprawy"
+      },
+      "aerial": {
+        "title": "Zdjęcia i filmy z powietrza",
+        "description": "Profesjonalne zdjęcia i filmy lotnicze do celów marketingowych, dokumentacyjnych i archiwizacyjnych w rozdzielczości do 4K.",
+        "photoAlt": "Zdjęcie lotnicze terenu inwestycyjnego wykonane dronem w Szczecinie"
+      }
+    },
+    "learnMore": "Dowiedz się więcej"
+  },
+  "whyUs": {
+    "heading": "Dlaczego warto nam zaufać",
+    "subtitle": "Łączymy nowoczesną technologię z doświadczeniem, aby dostarczać wyniki na najwyższym poziomie.",
+    "items": {
+      "safety": {
+        "title": "Bezpieczniejsze inspekcje",
+        "description": "Eliminujemy konieczność pracy na wysokościach i w trudno dostępnych miejscach."
+      },
+      "speed": {
+        "title": "Szybsza ocena stanu",
+        "description": "Inspekcja dronem jest wielokrotnie szybsza niż tradycyjne metody oceny."
+      },
+      "precision": {
+        "title": "Precyzyjne dane",
+        "description": "Wysokorozdzielcze zdjęcia i pomiary zapewniają dokładność do centymetrów."
+      },
+      "access": {
+        "title": "Dostęp do trudnych miejsc",
+        "description": "Dron dotrze tam, gdzie człowiek nie może się bezpiecznie dostać."
+      },
+      "equipment": {
+        "title": "Nowoczesny sprzęt",
+        "description": "Korzystamy z profesjonalnych dronów wyposażonych w kamery RGB i termowizyjne."
+      },
+      "local": {
+        "title": "Szeroki zasięg działania",
+        "description": "Baza w Szczecinie, realizacje na terenie całego województwa zachodniopomorskiego oraz – po uzgodnieniu – w całej Polsce i Niemczech."
+      },
+      "reliability": {
+        "title": "Profesjonalizm i rzetelność",
+        "description": "Każde zlecenie traktujemy indywidualnie, z pełnym zaangażowaniem i terminowością."
+      }
+    }
+  },
+  "portfolio": {
+    "heading": "Nasze realizacje",
+    "subtitle": "Wybrane projekty i realizacje z dotychczasowych zleceń.",
+    "items": {
+      "item1": { "alt": "Inspekcja dronem obiektu przemysłowego w Szczecinie" },
+      "item2": { "alt": "Ortofotomapa terenu rolniczego wykonana dronem" },
+      "item3": { "alt": "Model 3D budynku z danych fotogrametrycznych" },
+      "item4": { "alt": "Inspekcja termowizyjna dachu z drona" },
+      "item5": { "alt": "Inspekcja wizualna turbiny wiatrowej z drona" },
+      "item6": { "alt": "Zdjęcie lotnicze terenu inwestycyjnego" }
+    },
+    "placeholder": "Zdjęcie z realizacji"
+  },
+  "about": {
+    "heading": "O nas",
+    "paragraphs": {
+      "intro": "Aero Metric to firma z siedzibą w Szczecinie, specjalizująca się w profesjonalnych usługach dronowych dla biznesu i instytucji. Łączymy zaawansowaną technologię z praktycznym doświadczeniem, dostarczając precyzyjne dane i analizy z powietrza.",
+      "industries": "Obsługujemy klientów z branży przemysłowej, rolniczej, energetycznej i infrastrukturalnej. Nasze usługi obejmują inspekcje dronem, fotogrametrię, termowizję, tworzenie modeli 3D oraz szacowanie szkód łowieckich. Działamy na terenie Polski i Niemiec.",
+      "commitment": "Stawiamy na bezpieczeństwo, precyzję i terminowość. Każde zlecenie realizujemy z najwyższą starannością, wykorzystując nowoczesny sprzęt i sprawdzone metody pracy."
+    },
+    "industries": {
+      "industry": "Przemysł",
+      "agriculture": "Rolnictwo",
+      "energy": "Energetyka",
+      "infrastructure": "Infrastruktura"
+    },
+    "photoAlt": "Dron podczas profesjonalnej misji inspekcyjnej nad Szczecinem"
+  },
+  "process": {
+    "heading": "Jak pracujemy",
+    "subtitle": "Każdy projekt realizujemy według sprawdzonego procesu, który gwarantuje najwyższą jakość wyników.",
+    "steps": {
+      "contact": {
+        "title": "Kontakt",
+        "description": "Skontaktuj się z nami telefonicznie, mailowo lub przez formularz. Omówimy Twoje potrzeby."
+      },
+      "analysis": {
+        "title": "Analiza potrzeb",
+        "description": "Dokładnie analizujemy wymagania projektu i proponujemy optymalne rozwiązanie."
+      },
+      "planning": {
+        "title": "Planowanie misji",
+        "description": "Przygotowujemy plan lotu, uzyskujemy wymagane zezwolenia i uzgodnienia."
+      },
+      "execution": {
+        "title": "Realizacja misji",
+        "description": "Przeprowadzamy lot dronem zgodnie z zatwierdzonym planem, zbierając dane."
+      },
+      "delivery": {
+        "title": "Dostarczenie wyników",
+        "description": "Przetwarzamy dane i dostarczamy gotowe materiały: raporty, modele 3D, ortofotomapy."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Skontaktuj się z nami",
+    "subtitle": "Napisz do nas, a przygotujemy bezpłatną wycenę dopasowaną do Twoich potrzeb.",
+    "fields": {
+      "name": "Imię i nazwisko",
+      "email": "Adres e-mail",
+      "phone": "Numer telefonu",
+      "message": "Wiadomość"
+    },
+    "placeholders": {
+      "name": "Jan Kowalski",
+      "email": "jan@firma.pl",
+      "phone": "+48 123 456 789",
+      "message": "Opisz, czego potrzebujesz..."
+    },
+    "submit": "Wyślij wiadomość",
+    "sending": "Wysyłanie...",
+    "validation": {
+      "nameRequired": "Imię i nazwisko jest wymagane.",
+      "nameMin": "Imię musi mieć co najmniej 2 znaki.",
+      "emailRequired": "Adres e-mail jest wymagany.",
+      "emailInvalid": "Podaj prawidłowy adres e-mail.",
+      "phoneInvalid": "Podaj prawidłowy numer telefonu.",
+      "messageRequired": "Wiadomość jest wymagana.",
+      "messageMin": "Wiadomość musi mieć co najmniej 10 znaków."
+    },
+    "success": "Dziękujemy za wiadomość! Odpowiemy najszybciej, jak to możliwe.",
+    "error": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie lub skontaktuj się telefonicznie."
+  },
+  "clients": {
+    "heading": "Zaufali nam",
+    "industries": {
+      "energy": "Energetyka",
+      "construction": "Budownictwo",
+      "industry": "Przemysł",
+      "agriculture": "Rolnictwo",
+      "insurance": "Ubezpieczenia",
+      "infrastructure": "Infrastruktura"
+    }
+  },
+  "stats": {
+    "heading": "Nasze doświadczenie w liczbach",
+    "items": {
+      "years": { "value": "7+", "label": "lat doświadczenia" },
+      "projects": { "value": "100+", "label": "zrealizowanych projektów" },
+      "specializations": { "value": "6", "label": "specjalizacji" },
+      "area": { "value": "Szczecin", "label": "i region zachodniopomorski" }
+    }
+  },
+  "testimonials": {
+    "heading": "Opinie klientów",
+    "subtitle": "Co mówią o nas nasi klienci i partnerzy biznesowi.",
+    "items": {
+      "testimonial1": {
+        "quote": "Współpraca z Aero Metric pozwoliła nam znacznie skrócić czas inspekcji naszych obiektów przemysłowych. Dane z drona były precyzyjne i dostarczone terminowo.",
+        "name": "Marek W.",
+        "company": "Zakłady przemysłowe, Szczecin"
+      },
+      "testimonial2": {
+        "quote": "Fotogrametria z drona okazała się idealnym rozwiązaniem do szacowania szkód łowieckich na naszych polach. Dokładność pomiarów przewyższyła nasze oczekiwania.",
+        "name": "Anna K.",
+        "company": "Gospodarstwo rolne, woj. zachodniopomorskie"
+      },
+      "testimonial3": {
+        "quote": "Inspekcja termowizyjna dachu naszego budynku użytkowego pomogła nam zlokalizować problemy z izolacją, zanim doszło do poważnych strat ciepła. Polecamy.",
+        "name": "Tomasz L.",
+        "company": "Zarządzanie nieruchomościami, Szczecin"
+      }
+    }
+  },
+  "servicePages": {
+    "home": "Strona główna",
+    "servicesLabel": "Usługi",
+    "backToHome": "Powrót na stronę główną",
+    "processHeading": "Jak przebiega realizacja",
+    "deliverablesHeading": "Co otrzymuje klient",
+    "areaHeading": "Obszar działania",
+    "photogrammetry": {
+      "meta": {
+        "title": "Fotogrametria dronem Szczecin | Ortofotomapy i chmury punktów",
+        "description": "Profesjonalna fotogrametria dronem w Szczecinie. Ortofotomapy, chmury punktów i modele 3D z centymetrową dokładnością dla budownictwa, geodezji i rolnictwa."
+      },
+      "hero": {
+        "heading": "Fotogrametria dronem w Szczecinie i Polsce",
+        "subheading": "Tworzymy precyzyjne ortofotomapy, chmury punktów i modele 3D z danych pozyskanych dronem. Nasze opracowania fotogrametryczne służą geodezji, budownictwu i rolnictwu w regionie zachodniopomorskim i w całej Polsce."
+      },
+      "intro": [
+        "Fotogrametria dronem pozwala na tworzenie precyzyjnych modeli 3D, ortofotomap i chmur punktów terenu lub obiektów budowlanych. Dane pozyskujemy za pomocą drona wyposażonego w kamerę RGB o rozdzielczości do 42 Mpx i układ GNSS RTK, co zapewnia dokładność poziomą i pionową na poziomie 1–3 cm bez konieczności stosowania naziemnych punktów kontrolnych.",
+        "Usługa skierowana jest do geodetów, firm budowlanych, zarządców nieruchomości, samorządów oraz inwestorów budowlanych. Realizujemy inwentaryzacje budynków, pomiary objętości hałd i wykopów, dokumentację placów budowy, ortofotomapy gruntów rolnych oraz modele 3D obiektów zabytkowych.",
+        "W porównaniu z tradycyjną tachimetrią lub skanowaniem laserowym, fotogrametria dronem jest 3–5 razy szybsza i obejmuje większy obszar w jednej sesji pomiarowej. Lot nad terenem o powierzchni 10 ha trwa ok. 20–30 minut, a kompletne opracowanie danych dostarczamy w ciągu 3–5 dni roboczych."
+      ],
+      "benefits": [
+        {
+          "title": "Dokładność 1–3 cm bez punktów kontrolnych",
+          "description": "Dron z odbiornikiem GNSS RTK zapewnia centymetrową dokładność georeferencji bez konieczności rozmieszczania naziemnych markerów GCP."
+        },
+        {
+          "title": "3–5 razy szybciej niż geodezja naziemna",
+          "description": "Lot nad 10 ha terenu trwa ok. 25 minut. Tradycyjny pomiar tachimetryczny tej samej powierzchni zajmuje 2–3 dni robocze."
+        },
+        {
+          "title": "Gotowe formaty dla GIS, CAD i BIM",
+          "description": "Dostarczamy ortofotomapy w GeoTIFF, chmury punktów w LAS/LAZ, modele mesh w OBJ/PLY — do bezpośredniego importu w oprogramowaniu klienta."
+        },
+        {
+          "title": "Pełna dokumentacja terenu w jednym nalocie",
+          "description": "Z jednego lotu generujemy ortofotomapę, NMT, NMPT, chmurę punktów i model 3D — komplet danych do różnych analiz."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Inwentaryzacja budynków dla zarządców nieruchomości",
+          "description": "Model 3D budynku mieszkalnego lub biurowego z dokładnością do 2 cm — podstawa do planowania remontów, dobudów i przebudów bez potrzeby wielokrotnych wizyt na obiekcie."
+        },
+        {
+          "title": "Pomiary objętości hałd i wykopów na budowie",
+          "description": "Obliczanie kubatury składowanych mas ziemnych, żwiru lub kruszywa na placach budowy i w kopalniach odkrywkowych — raport objętościowy w ciągu 48 godzin."
+        },
+        {
+          "title": "Monitoring postępu budowy co 2–4 tygodnie",
+          "description": "Cykliczne naloty dokumentujące kolejne etapy inwestycji. Porównanie ortofotomap i modeli 3D z projektem pozwala wykryć opóźnienia i odstępstwa."
+        },
+        {
+          "title": "Ortofotomapy pól dla rolnictwa precyzyjnego",
+          "description": "Mapy pól uprawnych o rozdzielczości 2 cm/px wspierają planowanie nawożenia, oprysku i nawadniania. Dane eksportujemy w formatach zgodnych z oprogramowaniem maszyn rolniczych."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Kontakt i analiza wymagań",
+          "description": "Ustalamy zakres projektu: rodzaj terenu, wymaganą dokładność, formaty danych wyjściowych i termin realizacji."
+        },
+        {
+          "step": "2",
+          "title": "Planowanie misji lotniczej",
+          "description": "Wyznaczamy parametry lotu — wysokość, nakładki zdjęć, rozdzielczość terenową (GSD). Uzyskujemy zezwolenia, jeśli teren wymaga zgody PAŻP."
+        },
+        {
+          "step": "3",
+          "title": "Nalot dronem i pozyskanie zdjęć",
+          "description": "Wykonujemy lot automatyczny po wcześniej zaprogramowanej trasie. Dla terenu 10 ha lot trwa ok. 25 minut."
+        },
+        {
+          "step": "4",
+          "title": "Przetwarzanie danych fotogrametrycznych",
+          "description": "Zdjęcia lotnicze przetwarzamy w oprogramowaniu fotogrametrycznym, generując ortofotomapę, chmurę punktów, NMT i model 3D."
+        },
+        {
+          "step": "5",
+          "title": "Dostawa materiałów",
+          "description": "Dostarczamy gotowe pliki w ustalonych formatach przez link do pobrania lub nośnik danych. Termin: 3–5 dni roboczych od nalotu."
+        }
+      ],
+      "deliverables": {
+        "heading": "Co otrzymuje klient",
+        "items": [
+          "Ortofotomapa w formacie GeoTIFF (rozdzielczość 1–3 cm/px)",
+          "Chmura punktów w formacie LAS/LAZ",
+          "Model 3D siatki (mesh) w formacie OBJ lub PLY",
+          "Cyfrowy Model Terenu (NMT/DTM) i Cyfrowy Model Pokrycia Terenu (NMPT/DSM)",
+          "Raport z dokładności pomiaru (GSD, RMSE, parametry lotu)"
+        ]
+      },
+      "area": {
+        "heading": "Obszar działania",
+        "text": "Baza operacyjna w Szczecinie. Realizujemy zlecenia na terenie całego województwa zachodniopomorskiego i — po wcześniejszym uzgodnieniu — w całej Polsce. Dojeżdżamy na teren zlecenia własnym transportem; w cenę wliczony jest dojazd do 50 km od Szczecina."
+      },
+      "cta": {
+        "heading": "Potrzebujesz ortofotomapy lub modelu 3D?",
+        "text": "Skontaktuj się z nami, a przygotujemy bezpłatną wycenę fotogrametrii dronem dopasowaną do Twojego projektu."
+      },
+      "breadcrumb": "Fotogrametria"
+    },
+    "thermal-imaging": {
+      "meta": {
+        "title": "Termowizja dronem Szczecin | Inspekcje dachów, hal i PV",
+        "description": "Inspekcje termowizyjne dronem w Szczecinie. Wykrywanie strat ciepła, usterek paneli fotowoltaicznych i problemów z izolacją dachów i hal przemysłowych."
+      },
+      "hero": {
+        "heading": "Termowizja z drona — inspekcje dachów, hal i instalacji PV",
+        "subheading": "Wykorzystujemy kamerę termowizyjną zamontowaną na dronie do wykrywania strat ciepła, diagnostyki paneli fotowoltaicznych i inspekcji izolacji dachów. Szybko, bezpiecznie i z centymetrową precyzją."
+      },
+      "intro": [
+        "Wykonujemy inspekcje termowizyjne dachów płaskich i skośnych, elewacji budynków, hal przemysłowych oraz farm fotowoltaicznych z wykorzystaniem drona wyposażonego w kamerę termowizyjną o rozdzielczości radiometrycznej 640 x 512 px. Kamera rejestruje temperaturę każdego piksela, co pozwala na precyzyjną lokalizację anomalii cieplnych — mostków termicznych, zawilgoceń, nieszczelności i wadliwych cel PV.",
+        "Usługa skierowana jest do zarządców nieruchomości, firm budowlanych, audytorów energetycznych, właścicieli hal magazynowych i operatorów farm fotowoltaicznych. Termowizja z drona zastępuje inspekcję z poziomu gruntu, która nie obejmuje powierzchni dachowych, oraz inspekcję z podnośnika, która jest droższa i wolniejsza.",
+        "Każdą inspekcję kończymy raportem PDF zawierającym termogramy z nałożoną skalą temperatury, odpowiadające im zdjęcia RGB, opis i lokalizację każdej anomalii oraz rekomendacje dotyczące działań naprawczych. Raport dostarczamy w ciągu 2–3 dni roboczych od wykonania nalotu."
+      ],
+      "benefits": [
+        {
+          "title": "Pełny obraz dachu bez rusztowań i podnośników",
+          "description": "Dron obejmuje całą powierzchnię dachu w jednym locie — nawet hale o powierzchni powyżej 5 000 m². Nie trzeba zamykać obiektu ani organizować dostępu na dach."
+        },
+        {
+          "title": "Wykrywanie defektów niewidocznych gołym okiem",
+          "description": "Kamera termowizyjna identyfikuje mostki cieplne, zawilgocenia pod warstwą hydroizolacji, nieszczelności wokół obróbek blacharskich i wadliwe ogniwa PV z dokładnością do 5 cm."
+        },
+        {
+          "title": "Raport z termogramami i rekomendacjami",
+          "description": "Raport PDF zawiera termogramy, zdjęcia RGB, lokalizację anomalii na rzucie dachu, opis przyczyn i konkretne zalecenia naprawcze — gotowy do przekazania wykonawcy remontu."
+        },
+        {
+          "title": "Inspekcja farmy PV: 1 MW w 30 minut",
+          "description": "Termowizja z drona pozwala na przeskanowanie farmy PV o mocy 1 MW w ok. 30 minut. Raport wskazuje wadliwe stringi, hotspoty i uszkodzenia mechaniczne paneli."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Inspekcja termowizyjna dachu hali magazynowej",
+          "description": "Wykrywanie strat ciepła i zawilgoceń na dachach płaskich hal o powierzchni od kilkuset do kilku tysięcy m² — podstawa do planowania remontu pokrycia dachowego."
+        },
+        {
+          "title": "Diagnostyka farmy fotowoltaicznej",
+          "description": "Skanowanie paneli PV pod kątem wadliwych cel, hotspotów, uszkodzeń mechanicznych i zacienienia. Raport z mapą usterek ułatwia planowanie serwisu."
+        },
+        {
+          "title": "Wsparcie audytu energetycznego budynku",
+          "description": "Bezdotykowa ocena jakości izolacji elewacji, stolarki okiennej i połączenia dachu ze ścianą — dane uzupełniające audyt energetyczny wymagany przy termomodernizacji."
+        },
+        {
+          "title": "Monitoring termiczny rurociągów i zbiorników",
+          "description": "Wczesne wykrywanie wycieków ciepłej wody, pary lub mediów chemicznych w instalacjach przemysłowych — bez przerywania pracy zakładu."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Kontakt i ustalenie zakresu",
+          "description": "Określamy typ obiektu (dach, elewacja, farma PV, instalacja przemysłowa), jego powierzchnię i cel inspekcji."
+        },
+        {
+          "step": "2",
+          "title": "Dobór warunków i terminu",
+          "description": "Inspekcja termowizyjna wymaga odpowiednich warunków — min. 10°C różnicy temperatur między wnętrzem a otoczeniem, brak opadów i silnego wiatru. Proponujemy optymalną datę."
+        },
+        {
+          "step": "3",
+          "title": "Nalot dronem z kamerą termowizyjną",
+          "description": "Wykonujemy lot nad obiektem, rejestrując termogramy i zdjęcia RGB z nakładką. Typowy dach hali — ok. 15–30 minut."
+        },
+        {
+          "step": "4",
+          "title": "Analiza i przygotowanie raportu",
+          "description": "Analizujemy termogramy, identyfikujemy anomalie, opisujemy przyczyny i przygotowujemy raport PDF z rekomendacjami naprawczymi."
+        }
+      ],
+      "deliverables": {
+        "heading": "Co otrzymuje klient",
+        "items": [
+          "Raport PDF z termogramami, zdjęciami RGB i opisem anomalii",
+          "Mapa anomalii nałożona na rzut obiektu",
+          "Rekomendacje naprawcze z priorytetyzacją",
+          "Surowe pliki termogramów (RJPG) na życzenie",
+          "Ortofotomapa termiczna obiektu (opcjonalnie)"
+        ]
+      },
+      "area": {
+        "heading": "Obszar działania",
+        "text": "Realizujemy inspekcje termowizyjne z bazy w Szczecinie na terenie woj. zachodniopomorskiego i lubuskiego. Po wcześniejszym uzgodnieniu podejmujemy zlecenia na terenie całej Polski. W cenę wliczony jest dojazd do 50 km od Szczecina."
+      },
+      "cta": {
+        "heading": "Potrzebujesz inspekcji termowizyjnej?",
+        "text": "Skontaktuj się z nami, a dobierzemy optymalny zakres badania termowizyjnego dla Twojego obiektu."
+      },
+      "breadcrumb": "Termowizja"
+    },
+    "3d-models": {
+      "meta": {
+        "title": "Modele 3D z drona Szczecin | Cyfrowe modele terenu",
+        "description": "Tworzenie modeli 3D z drona w Szczecinie. Cyfrowe modele terenu, inwentaryzacja 3D budynków i realistyczne modele mesh dla budownictwa i geodezji."
+      },
+      "hero": {
+        "heading": "Modele 3D i cyfrowe mapy terenu z danych dronowych",
+        "subheading": "Tworzymy cyfrowe modele terenu, realistyczne modele 3D mesh i inwentaryzacje budynków na podstawie danych fotogrametrycznych pozyskanych dronem. Dokładność do 2 cm — gotowe do importu w oprogramowaniu CAD i BIM."
+      },
+      "intro": [
+        "Tworzymy cyfrowe modele 3D budynków, obiektów przemysłowych i terenu na podstawie zdjęć lotniczych pozyskanych dronem. Z setek nachodzących na siebie fotografii generujemy gęstą chmurę punktów, a następnie model siatki 3D (mesh) z nałożoną teksturą fotograficzną — wiernie odwzorowującą wygląd i geometrię obiektu.",
+        "Usługa skierowana jest do firm budowlanych, biur projektowych, geodetów, samorządów i zarządców nieruchomości. Modele 3D z drona wykorzystywane są do inwentaryzacji budynków przed remontem, tworzenia map terenu inwestycyjnego, dokumentacji zabytkowej oraz wizualizacji postępu budowy — bez potrzeby wielokrotnego skanowania laserowego.",
+        "Inwentaryzacja dronem jest 3–5 razy szybsza od naziemnego skanowania laserowego i pokrywa większy obszar w jednej sesji. Model 3D budynku o powierzchni zabudowy 500 m² dostarczamy w ciągu 5 dni roboczych od nalotu w formatach OBJ, PLY lub FBX — gotowy do importu w oprogramowaniu Autodesk, ArchiCAD czy SketchUp."
+      ],
+      "benefits": [
+        {
+          "title": "Centymetrowa dokładność geometrii",
+          "description": "Modele 3D odwzorowują kształt i wymiary obiektu z dokładnością 1–3 cm — wystarczającą do projektowania przebudów, dobudów i analiz kolizji."
+        },
+        {
+          "title": "Cyfrowy model terenu (NMT) i pokrycia (NMPT)",
+          "description": "Generujemy modele wysokościowe terenu w formatach GeoTIFF i ASC — gotowe do analiz hydrologicznych, projektowania dróg i planowania inwestycji."
+        },
+        {
+          "title": "Szybsza i tańsza alternatywa dla skanowania laserowego",
+          "description": "Inwentaryzacja dronem budynku o pow. 500 m² trwa 1 dzień roboczy zamiast 3–4 dni potrzebnych na naziemne skanowanie laserowe — przy porównywalnej dokładności."
+        },
+        {
+          "title": "Eksport do CAD, BIM i GIS",
+          "description": "Dostarczamy modele w formatach OBJ, PLY, FBX, DXF i GeoTIFF — kompatybilnych z Autodesk Revit, ArchiCAD, Civil 3D, QGIS i ArcGIS."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Inwentaryzacja 3D budynku przed remontem",
+          "description": "Model 3D kamienicy, budynku biurowego lub hali przemysłowej — podstawa do opracowania projektu przebudowy bez wielokrotnych wizyt pomiarowych na obiekcie."
+        },
+        {
+          "title": "Cyfrowy model terenu inwestycyjnego",
+          "description": "NMT i NMPT działki lub terenu o powierzchni do kilkudziesięciu hektarów — do projektu drogowego, analizy zalewowej i planowania przestrzennego."
+        },
+        {
+          "title": "Wizualizacja postępu budowy w 3D",
+          "description": "Porównanie modeli 3D z kolejnych miesięcy budowy z modelem projektowym (BIM) — do wykrywania opóźnień i odchyleń od projektu."
+        },
+        {
+          "title": "Dokumentacja 3D zabytków i obiektów kultury",
+          "description": "Precyzyjne modele 3D kościołów, kamienic i obiektów zabytkowych — na potrzeby konserwatorów, architektów i projektantów rekonstrukcji."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Kontakt i specyfikacja projektu",
+          "description": "Ustalamy zakres opracowania: typ obiektu, wymagana dokładność, formaty plików wyjściowych i termin dostawy."
+        },
+        {
+          "step": "2",
+          "title": "Nalot dronem i pozyskanie zdjęć",
+          "description": "Wykonujemy lot automatyczny wokół obiektu lub nad terenem, rejestrując kilkaset zdjęć z nakładką min. 75%. Budynek — ok. 20 min, teren 10 ha — ok. 30 min."
+        },
+        {
+          "step": "3",
+          "title": "Przetwarzanie danych i generowanie modelu",
+          "description": "Zdjęcia przetwarzamy w oprogramowaniu fotogrametrycznym. Generujemy chmurę punktów, model mesh z teksturą i modele numeryczne terenu."
+        },
+        {
+          "step": "4",
+          "title": "Kontrola jakości i dostawa",
+          "description": "Sprawdzamy dokładność modelu, eksportujemy dane w ustalonych formatach i dostarczamy klientowi przez link do pobrania. Termin: 5–7 dni roboczych."
+        }
+      ],
+      "deliverables": {
+        "heading": "Co otrzymuje klient",
+        "items": [
+          "Model 3D siatki (mesh) z teksturą fotograficzną w formacie OBJ, PLY lub FBX",
+          "Gęsta chmura punktów w formacie LAS/LAZ",
+          "Cyfrowy Model Terenu (NMT) w formacie GeoTIFF lub ASC",
+          "Cyfrowy Model Pokrycia Terenu (NMPT/DSM)",
+          "Raport z dokładności modelu i parametrów przetwarzania"
+        ]
+      },
+      "area": {
+        "heading": "Obszar działania",
+        "text": "Realizujemy inwentaryzacje 3D z bazy w Szczecinie na terenie województwa zachodniopomorskiego. Zlecenia w innych regionach Polski przyjmujemy po uzgodnieniu terminu i logistyki. Dojazd do 50 km od Szczecina wliczony w cenę."
+      },
+      "cta": {
+        "heading": "Potrzebujesz modelu 3D lub cyfrowego modelu terenu?",
+        "text": "Skontaktuj się z nami, a przygotujemy ofertę na model 3D dopasowany do skali i specyfiki Twojego projektu."
+      },
+      "breadcrumb": "Modele 3D"
+    },
+    "wildlife-damage": {
+      "meta": {
+        "title": "Szacowanie szkód łowieckich dronem | Operat PDF",
+        "description": "Szacowanie szkód łowieckich dronem w woj. zachodniopomorskim. Operaty szacunkowe, obliczanie powierzchni szkód i dokumentacja zgodna z rozporządzeniem."
+      },
+      "hero": {
+        "heading": "Szacowanie szkód łowieckich dronem — operat szacunkowy i PDF",
+        "subheading": "Realizujemy szacowania szkód łowieckich przy pomocy dronów na terenie województwa zachodniopomorskiego, całej Polski i Niemiec. Szybka reakcja, precyzyjne pomiary powierzchni szkody i dokumentacja zgodna z rozporządzeniem Ministerstwa Środowiska."
+      },
+      "intro": [
+        "Wykonujemy naloty dronem nad polami uprawnymi, na których wystąpiły szkody wyrządzone przez dziki, jelenie, sarny i inne zwierzęta łowne. Na podstawie zdjęć lotniczych generujemy ortofotomapę pola, na której precyzyjnie wyznaczamy granice uszkodzonej uprawy i obliczamy jej powierzchnię w metrach kwadratowych oraz procent zniszczeń — dane te stanowią podstawę operatu szacunkowego.",
+        "Usługa skierowana jest do rolników, kół łowieckich, rzeczoznawców i ubezpieczycieli. Ortofotomapa z drona eliminuje subiektywność ręcznego pomiaru — powierzchnia szkody jest obliczana z dokładności geodezyjnej (1–3 cm), a dokumentacja jest odporna na zakwestionowanie w procesie odszkodowawczym.",
+        "Czas jest kluczowym czynnikiem: stan uszkodzonej uprawy zmienia się z dnia na dzień, dlatego dokumentację trzeba wykonać możliwie szybko po zgłoszeniu. Dzięki mobilności drona jesteśmy w stanie dotrzeć na pole i wykonać nalot w ciągu kilku godzin od kontaktu — nawet tego samego dnia."
+      ],
+      "benefits": [
+        {
+          "title": "Geodezyjnie precyzyjny pomiar powierzchni",
+          "description": "Ortofotomapa z drona pozwala obliczyć powierzchnię szkody z dokładnością do 1–3 cm — eliminując spory o wielkość strat między rolnikiem a kołem łowieckim."
+        },
+        {
+          "title": "Nalot tego samego dnia po zgłoszeniu",
+          "description": "W pilnych przypadkach wyjeżdżamy na pole tego samego dnia. Szybkość reakcji jest kluczowa, bo stan uprawy zmienia się z dnia na dzień."
+        },
+        {
+          "title": "Dokumentacja zgodna z rozporządzeniem",
+          "description": "Operat szacunkowy zawiera ortofotomapę, obliczenie powierzchni szkody, procent uszkodzenia i dokumentację fotograficzną — zgodnie z rozporządzeniem Ministra Środowiska."
+        },
+        {
+          "title": "Materiał dowodowy do postępowania sądowego",
+          "description": "Ortofotomapa z drona i operat PDF stanowią wiarygodny materiał dowodowy w sporach odszkodowawczych między rolnikami a kołami łowieckimi."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Szkody wyrządzone przez dziki w kukurydzy i zbożach",
+          "description": "Dokumentacja zniszczeń na polach kukurydzy, pszenicy i rzepaku spowodowanych przez dziki — najczęstszy typ szkody łowieckiej w regionie zachodniopomorskim."
+        },
+        {
+          "title": "Szkody wyrządzone przez jelenie i sarny w uprawach ozimych",
+          "description": "Szacowanie strat w uprawach ozimych i młodych plantacjach leśnych spowodowanych żerowaniem jeleni, saren i danieli — ortofotomapa i operat PDF."
+        },
+        {
+          "title": "Obiektywne dane dla komisji szacunkowej koła łowieckiego",
+          "description": "Dostarczanie ortofotomapy i obliczeń powierzchni szkody na potrzeby komisji szacunkowej — eliminacja sporów o subiektywną ocenę wizualną."
+        },
+        {
+          "title": "Dokumentacja fotogrametryczna na potrzeby sądu",
+          "description": "Przygotowanie profesjonalnej dokumentacji z ortofotomapą, obliczeniami i metadanymi GPS — służącej jako materiał dowodowy w postępowaniu sądowym."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Zgłoszenie szkody",
+          "description": "Rolnik lub koło łowieckie kontaktuje się telefonicznie lub mailowo. Ustalamy lokalizację pola, typ uprawy i przybliżony zakres szkody."
+        },
+        {
+          "step": "2",
+          "title": "Nalot dronem nad polem",
+          "description": "Wyjeżdżamy na pole i wykonujemy nalot dronem. Lot nad polem o powierzchni 5–10 ha trwa ok. 15–25 minut."
+        },
+        {
+          "step": "3",
+          "title": "Przetwarzanie danych i obliczenie powierzchni",
+          "description": "Generujemy ortofotomapę pola, wyznaczamy granice uszkodzonej uprawy i obliczamy powierzchnię szkody w m² oraz procent zniszczeń."
+        },
+        {
+          "step": "4",
+          "title": "Przygotowanie operatu szacunkowego PDF",
+          "description": "Operat zawiera ortofotomapę, obliczenia, dokumentację fotograficzną i metadane lotu. Dostarczamy go w ciągu 2–3 dni roboczych od nalotu."
+        }
+      ],
+      "deliverables": {
+        "heading": "Co otrzymuje klient",
+        "items": [
+          "Operat szacunkowy w formacie PDF (zgodny z rozporządzeniem)",
+          "Ortofotomapa pola z naniesionymi granicami szkody",
+          "Obliczenie powierzchni szkody (m²) i procentu uszkodzenia",
+          "Dokumentacja fotograficzna z lotu (zdjęcia RGB w pełnej rozdzielczości)",
+          "Metadane lotu: data, współrzędne GPS, parametry drona"
+        ]
+      },
+      "area": {
+        "heading": "Obszar działania",
+        "text": "Szacowania szkód łowieckich realizujemy na terenie całego województwa zachodniopomorskiego, a po wcześniejszym uzgodnieniu — również w innych regionach Polski i w Niemczech (Meklemburgia-Pomorze Przednie, Brandenburgia). W pilnych przypadkach jesteśmy w stanie dotrzeć na pole tego samego dnia."
+      },
+      "cta": {
+        "heading": "Szkoda łowiecka? Działamy szybko.",
+        "text": "Skontaktuj się z nami telefonicznie lub mailowo — w pilnych przypadkach jesteśmy w stanie wykonać nalot tego samego dnia."
+      },
+      "breadcrumb": "Szkody łowieckie"
+    },
+    "wind-turbines": {
+      "meta": {
+        "title": "Inspekcja turbin wiatrowych dronem | Łopaty i gondole",
+        "description": "Inspekcje wizualne turbin wiatrowych dronem w Szczecinie i regionie. Przegląd łopat, gondoli i wież wiatrowych bez wstrzymywania pracy turbiny."
+      },
+      "hero": {
+        "heading": "Inspekcja dronem turbin wiatrowych — łopaty, gondole, maszty",
+        "subheading": "Realizujemy inspekcje wizualne łopat, gondoli i wież turbin wiatrowych z wykorzystaniem drona. Szybka identyfikacja pęknięć, erozji i uszkodzeń piorunowych — bez alpinistów i bez przestojów w produkcji energii."
+      },
+      "intro": [
+        "Wykonujemy inspekcje wizualne turbin wiatrowych dronem wyposażonym w kamerę o rozdzielczości 42 Mpx i zoomem optycznym. Dron zbliża się do łopat wirnika, gondoli i wieży z odległości 3–5 metrów, rejestrując zdjęcia o rozdzielczości umożliwiającej identyfikację pęknięć, delaminacji, erozji krawędzi natarcia i uszkodzeń piorunowych.",
+        "Usługa skierowana jest do operatorów farm wiatrowych, serwisantów turbin i firm ubezpieczeniowych. Inspekcja dronem jest 3–5 razy szybsza niż inspekcja z udziałem alpinistów przemysłowych i nie wymaga wstrzymania pracy turbiny — wystarczy zablokować łopaty w pozycji inspekcyjnej.",
+        "Każda inspekcja kończy się raportem fotograficznym, w którym każdy zidentyfikowany defekt jest zlokalizowany na schemacie łopaty/gondoli/wieży, opisany i sklasyfikowany według skali istotności (1 – monitorować, 2 – naprawić przy następnym serwisie, 3 – naprawa pilna). Raport umożliwia zaplanowanie przeglądów i napraw z wyprzedzeniem."
+      ],
+      "benefits": [
+        {
+          "title": "Inspekcja bez wstrzymania turbiny",
+          "description": "Wystarczy zablokować łopaty w pozycji inspekcyjnej. Turbina nie musi być odłączana od sieci — minimalizacja strat w produkcji energii."
+        },
+        {
+          "title": "3–5 razy szybciej niż metoda alpinistyczna",
+          "description": "Inspekcja jednej turbiny dronem trwa 1–2 godziny. Alpiniści potrzebują na to samo 6–8 godzin plus czas na montaż sprzętu."
+        },
+        {
+          "title": "Zdjęcia defektów z odległości 3–5 metrów",
+          "description": "Kamera drona rejestruje pęknięcia o szerokości poniżej 1 mm, erozję krawędzi natarcia, ślady uderzeń piorunów i rozwarstwienia laminatu z bliska."
+        },
+        {
+          "title": "Raport z klasyfikacją defektów wg istotności",
+          "description": "Każdy defekt jest zlokalizowany na schemacie turbiny, opisany i sklasyfikowany: 1 – monitoruj, 2 – napraw przy serwisie, 3 – naprawa pilna."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Przegląd łopat wirnika po sezonie wietrznym",
+          "description": "Inspekcja trzech łopat pod kątem pęknięć, delaminacji, erozji krawędzi natarcia i uszkodzeń piorunowych — raport z klasyfikacją defektów w ciągu 3 dni."
+        },
+        {
+          "title": "Inspekcja gondoli i obudowy",
+          "description": "Ocena stanu obudowy gondoli, systemu odgromowego, uszczelek i elementów mechanicznych widocznych z zewnątrz."
+        },
+        {
+          "title": "Okresowy przegląd całej farmy wiatrowej",
+          "description": "Planowa inspekcja 10–20 turbin w ciągu 3–5 dni — raport zbiorczy dla operatora farmy z priorytetyzacją napraw."
+        },
+        {
+          "title": "Inspekcja powypadkowa po uderzeniu pioruna",
+          "description": "Szybka inspekcja dronem w ciągu 24–48 godzin od zdarzenia. Dokumentacja uszkodzeń na potrzeby producenta, ubezpieczyciela i planowania naprawy."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Uzgodnienie zakresu i terminu",
+          "description": "Ustalamy liczbę turbin, zakres inspekcji (łopaty, gondola, wieża) i termin realizacji. Koordynujemy dostęp do farmy z operatorem."
+        },
+        {
+          "step": "2",
+          "title": "Przygotowanie turbiny",
+          "description": "Operator blokuje łopaty w pozycji inspekcyjnej (każda łopata jest obracana do pozycji 6 godzin). Turbina nie musi być odłączana od sieci."
+        },
+        {
+          "step": "3",
+          "title": "Inspekcja dronem",
+          "description": "Pilot wykonuje nalot wokół każdej łopaty, gondoli i wieży, rejestrując zdjęcia z odległości 3–5 m. Jedna turbina — ok. 1–2 godziny."
+        },
+        {
+          "step": "4",
+          "title": "Analiza zdjęć i raport",
+          "description": "Przeglądamy zdjęcia, identyfikujemy defekty, klasyfikujemy je i przygotowujemy raport fotograficzny z mapą defektów. Termin: 3–5 dni roboczych."
+        }
+      ],
+      "deliverables": {
+        "heading": "Co otrzymuje klient",
+        "items": [
+          "Raport fotograficzny PDF z lokalizacją, opisem i klasyfikacją każdego defektu",
+          "Schemat łopat/gondoli/wieży z naniesionymi defektami",
+          "Zdjęcia wysokiej rozdzielczości każdego zidentyfikowanego uszkodzenia",
+          "Podsumowanie z priorytetyzacją napraw (monitoruj / napraw / pilne)",
+          "Surowe zdjęcia z lotu w pełnej rozdzielczości na nośniku danych"
+        ]
+      },
+      "area": {
+        "heading": "Obszar działania",
+        "text": "Inspekcje turbin wiatrowych realizujemy na terenie województwa zachodniopomorskiego, pomorskiego i wielkopolskiego — regionów o największej koncentracji farm wiatrowych w Polsce. Po uzgodnieniu podejmujemy zlecenia w całym kraju."
+      },
+      "cta": {
+        "heading": "Planujesz inspekcję turbin wiatrowych?",
+        "text": "Skontaktuj się z nami, a przygotujemy ofertę na inspekcję dronem dopasowaną do wielkości farmy i zakresu przeglądu."
+      },
+      "breadcrumb": "Turbiny wiatrowe"
+    }
+  },
+  "footer": {
+    "company": "Aero Metric",
+    "location": "Szczecin, Polska",
+    "email": "kontakt@aerometric.pl",
+    "phone": "+48 123 456 789",
+    "social": "Media społecznościowe",
+    "copyright": "Wszelkie prawa zastrzeżone.",
+    "description": "Profesjonalne usługi dronowe z siedzibą w Szczecinie. Inspekcje, fotogrametria, termowizja i modele 3D — realizujemy zlecenia w Polsce i Niemczech.",
+    "servicesHeading": "Nasze usługi",
+    "serviceLinks": {
+      "photogrammetry": "Fotogrametria",
+      "thermal-imaging": "Termowizja",
+      "3d-models": "Modele 3D",
+      "wildlife-damage": "Szkody łowieckie",
+      "wind-turbines": "Turbiny wiatrowe"
+    }
+  }
+}

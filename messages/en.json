@@ -1,0 +1,710 @@
+{
+  "meta": {
+    "title": "Drone inspections Szczecin | Photogrammetry & thermal imaging",
+    "description": "Drone inspections, photogrammetry, 3D modelling, and thermal imaging in Szczecin. Serving industry, agriculture, and energy across Poland and Germany."
+  },
+  "skipToMain": "Skip to main content",
+  "nav": {
+    "services": "Services",
+    "whyUs": "Why us",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Free quote",
+    "phone": "+48 123 456 789",
+    "floatingCta": "Call us"
+  },
+  "hero": {
+    "heading": "Professional drone inspections in Szczecin",
+    "subheading": "We deliver precise aerial data for industry, agriculture, and the energy sector. Photogrammetry, thermal imaging, 3D models, and visual inspections — fast, safe, and accurate.",
+    "cta": "Request a free quote",
+    "secondaryCta": "Explore our services",
+    "trust": "Professional drone services based in Szczecin — operating across Poland and Germany."
+  },
+  "services": {
+    "heading": "Our services",
+    "subtitle": "We offer comprehensive drone services for businesses and institutions. Every project is carried out with the highest precision and a strong commitment to safety.",
+    "items": {
+      "inspection": {
+        "title": "Drone inspections",
+        "description": "Safe and accurate inspections of industrial facilities, buildings, and infrastructure — without the need for scaffolding or aerial lifts.",
+        "photoAlt": "Drone inspection of an industrial facility in Szczecin"
+      },
+      "photogrammetry": {
+        "title": "Photogrammetry & 3D models",
+        "description": "Creation of precise 3D models, orthophotomaps, and point clouds from drone-acquired data. Ideal for surveying and documentation.",
+        "photoAlt": "Drone photogrammetry — orthophotomap of terrain in Szczecin"
+      },
+      "thermal": {
+        "title": "Thermal imaging",
+        "description": "Detection of heat loss, photovoltaic system faults, and insulation deficiencies using a drone-mounted thermal camera.",
+        "photoAlt": "Thermal inspection of photovoltaic panels by drone"
+      },
+      "windTurbines": {
+        "title": "Wind turbine inspections",
+        "description": "Visual inspections of wind turbine blades and nacelles using drones. Rapid damage identification without halting turbine operation.",
+        "photoAlt": "Visual drone inspection of wind turbine blades and nacelle"
+      },
+      "wildlifeDamage": {
+        "title": "Wildlife damage estimation",
+        "description": "We conduct wildlife damage assessments using drones throughout the West Pomeranian Voivodeship and, by prior arrangement, across the whole of Poland and Germany. We assist in preparing expert reports in PDF format, calculating the damaged area and percentage of damage in accordance with the Ministry's regulations. In the case of settlement claims, time is of the essence — we are able to respond quickly.",
+        "photoAlt": "Wildlife damage assessment by drone — measuring crop damage area"
+      },
+      "aerial": {
+        "title": "Aerial photography & video",
+        "description": "Professional aerial photography and videography for marketing, documentation, and archival purposes in up to 4K resolution.",
+        "photoAlt": "Aerial photograph of a development site taken by drone in Szczecin"
+      }
+    },
+    "learnMore": "Learn more"
+  },
+  "whyUs": {
+    "heading": "Why choose us",
+    "subtitle": "We combine modern technology with hands-on experience to deliver results of the highest quality.",
+    "items": {
+      "safety": {
+        "title": "Safer inspections",
+        "description": "We eliminate the need for working at heights and in hard-to-reach locations."
+      },
+      "speed": {
+        "title": "Faster assessments",
+        "description": "Drone inspections are significantly faster than traditional assessment methods."
+      },
+      "precision": {
+        "title": "Precise data",
+        "description": "High-resolution imagery and measurements ensure centimetre-level accuracy."
+      },
+      "access": {
+        "title": "Access to difficult areas",
+        "description": "Drones reach places where personnel cannot safely operate."
+      },
+      "equipment": {
+        "title": "Modern equipment",
+        "description": "We use professional-grade drones equipped with RGB and thermal imaging cameras."
+      },
+      "local": {
+        "title": "Wide coverage",
+        "description": "Based in Szczecin, we cover the West Pomeranian region and — by arrangement — operate throughout Poland and Germany."
+      },
+      "reliability": {
+        "title": "Professionalism & reliability",
+        "description": "Every project is handled individually, with full dedication and on-time delivery."
+      }
+    }
+  },
+  "portfolio": {
+    "heading": "Our work",
+    "subtitle": "Selected projects and completed assignments from our portfolio.",
+    "items": {
+      "item1": { "alt": "Drone inspection of an industrial facility in Szczecin" },
+      "item2": { "alt": "Orthophotomap of agricultural land created by drone" },
+      "item3": { "alt": "3D model of a building from photogrammetric data" },
+      "item4": { "alt": "Thermal inspection of a roof captured by drone" },
+      "item5": { "alt": "Visual inspection of a wind turbine from a drone" },
+      "item6": { "alt": "Aerial photograph of a development site" }
+    },
+    "placeholder": "Project photo"
+  },
+  "about": {
+    "heading": "About us",
+    "paragraphs": {
+      "intro": "Aero Metric is a Szczecin-based company specialising in professional drone services for business and institutional clients. We combine advanced technology with hands-on experience to deliver precise aerial data and analysis.",
+      "industries": "We serve clients in the industrial, agricultural, energy, and infrastructure sectors. Our services include drone inspections, photogrammetry, thermal imaging, 3D modelling, and wildlife damage estimation. We operate across Poland and Germany.",
+      "commitment": "We prioritise safety, precision, and timely delivery. Every project is carried out with meticulous care, using modern equipment and proven methods."
+    },
+    "industries": {
+      "industry": "Industry",
+      "agriculture": "Agriculture",
+      "energy": "Energy",
+      "infrastructure": "Infrastructure"
+    },
+    "photoAlt": "Drone during a professional inspection mission over Szczecin"
+  },
+  "process": {
+    "heading": "How we work",
+    "subtitle": "Every project follows a proven process that guarantees the highest quality results.",
+    "steps": {
+      "contact": {
+        "title": "Contact",
+        "description": "Reach out by phone, email, or through our contact form. We will discuss your requirements."
+      },
+      "analysis": {
+        "title": "Needs analysis",
+        "description": "We thoroughly analyse the project requirements and propose the optimal solution."
+      },
+      "planning": {
+        "title": "Mission planning",
+        "description": "We prepare the flight plan and obtain all required permits and approvals."
+      },
+      "execution": {
+        "title": "Mission execution",
+        "description": "We conduct the drone flight according to the approved plan, collecting the required data."
+      },
+      "delivery": {
+        "title": "Delivery of results",
+        "description": "We process the data and deliver finished materials: reports, 3D models, and orthophotomaps."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Get in touch",
+    "subtitle": "Send us a message and we will prepare a free quote tailored to your needs.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "John Smith",
+      "email": "john@company.com",
+      "phone": "+48 123 456 789",
+      "message": "Describe what you need..."
+    },
+    "submit": "Send message",
+    "sending": "Sending...",
+    "validation": {
+      "nameRequired": "Full name is required.",
+      "nameMin": "Name must be at least 2 characters long.",
+      "emailRequired": "Email address is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "phoneInvalid": "Please enter a valid phone number.",
+      "messageRequired": "Message is required.",
+      "messageMin": "Message must be at least 10 characters long."
+    },
+    "success": "Thank you for your message! We will respond as soon as possible.",
+    "error": "An error occurred while sending your message. Please try again or contact us by phone."
+  },
+  "clients": {
+    "heading": "Trusted by",
+    "industries": {
+      "energy": "Energy",
+      "construction": "Construction",
+      "industry": "Industry",
+      "agriculture": "Agriculture",
+      "insurance": "Insurance",
+      "infrastructure": "Infrastructure"
+    }
+  },
+  "stats": {
+    "heading": "Our experience in numbers",
+    "items": {
+      "years": { "value": "7+", "label": "years of experience" },
+      "projects": { "value": "100+", "label": "completed projects" },
+      "specializations": { "value": "6", "label": "specialisations" },
+      "area": { "value": "Szczecin", "label": "& the surrounding region" }
+    }
+  },
+  "testimonials": {
+    "heading": "Client testimonials",
+    "subtitle": "What our clients and business partners say about us.",
+    "items": {
+      "testimonial1": {
+        "quote": "Working with Aero Metric allowed us to significantly reduce the inspection time of our industrial facilities. The drone data was precise and delivered on schedule.",
+        "name": "Marek W.",
+        "company": "Industrial plant, Szczecin"
+      },
+      "testimonial2": {
+        "quote": "Drone photogrammetry proved to be the ideal solution for estimating wildlife damage on our fields. The measurement accuracy exceeded our expectations.",
+        "name": "Anna K.",
+        "company": "Agricultural farm, West Pomeranian region"
+      },
+      "testimonial3": {
+        "quote": "The thermal inspection of our commercial building's roof helped us locate insulation issues before serious heat loss occurred. Highly recommended.",
+        "name": "Tomasz L.",
+        "company": "Property management, Szczecin"
+      }
+    }
+  },
+  "servicePages": {
+    "home": "Home",
+    "servicesLabel": "Services",
+    "backToHome": "Back to homepage",
+    "processHeading": "How the project works",
+    "deliverablesHeading": "What the client receives",
+    "areaHeading": "Area of operation",
+    "photogrammetry": {
+      "meta": {
+        "title": "Drone photogrammetry Szczecin | 3D models & orthophotomaps",
+        "description": "Professional drone photogrammetry in Szczecin. Orthophotomaps, point clouds and 3D models with centimetre accuracy for construction, surveying and agriculture."
+      },
+      "hero": {
+        "heading": "Drone photogrammetry in Szczecin and across Poland",
+        "subheading": "We create precise orthophotomaps, point clouds and 3D models from drone-acquired data. Our photogrammetric products serve the surveying, construction and agriculture sectors across Poland."
+      },
+      "intro": [
+        "Drone photogrammetry produces precise 3D models, orthophotomaps and point clouds of terrain or built structures. We acquire data using a drone equipped with an RGB camera of up to 42 Mpx and a GNSS RTK receiver, achieving horizontal and vertical accuracy of 1-3 cm without the need for ground control points.",
+        "This service is aimed at surveyors, construction firms, property managers, local authorities and development investors. We carry out building inventories, stockpile and excavation volume measurements, construction site documentation, agricultural land orthophotomaps and 3D models of heritage structures.",
+        "Compared with traditional total-station surveying or terrestrial laser scanning, drone photogrammetry is 3-5 times faster and covers a larger area in a single survey session. A flight over 10 ha of terrain takes approximately 20-30 minutes, and we deliver the complete processed dataset within 3-5 working days."
+      ],
+      "benefits": [
+        {
+          "title": "1-3 cm accuracy without ground control points",
+          "description": "A drone with a GNSS RTK receiver achieves centimetre-level georeferencing accuracy without the need to place ground-based GCP markers."
+        },
+        {
+          "title": "3-5 times faster than ground-based surveying",
+          "description": "A flight over 10 ha of terrain takes approx. 25 minutes. A traditional total-station survey of the same area would require 2-3 working days."
+        },
+        {
+          "title": "Ready-made formats for GIS, CAD and BIM",
+          "description": "We deliver orthophotomaps in GeoTIFF, point clouds in LAS/LAZ, mesh models in OBJ/PLY -- ready for direct import into your software."
+        },
+        {
+          "title": "Complete terrain documentation from a single flight",
+          "description": "From one flight we generate an orthophotomap, DTM, DSM, point cloud and 3D model -- a full dataset for multiple types of analysis."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Building inventory for property managers",
+          "description": "A 3D model of a residential or office building with 2 cm accuracy -- the basis for planning renovations, extensions and refurbishments without multiple site visits."
+        },
+        {
+          "title": "Stockpile and excavation volume measurements",
+          "description": "Calculating volumes of stored earthworks, gravel or aggregate on construction sites and open-pit mines -- volumetric report delivered within 48 hours."
+        },
+        {
+          "title": "Construction progress monitoring every 2-4 weeks",
+          "description": "Regular aerial surveys documenting successive stages of a project. Comparing orthophotomaps and 3D models against the design helps detect delays and deviations."
+        },
+        {
+          "title": "Field maps for precision agriculture",
+          "description": "Crop field maps at 2 cm/px resolution supporting fertilisation, spraying and irrigation planning. Data exported in formats compatible with agricultural machinery software."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Contact and requirements analysis",
+          "description": "We define the project scope: terrain type, required accuracy, output data formats and delivery deadline."
+        },
+        {
+          "step": "2",
+          "title": "Flight mission planning",
+          "description": "We set the flight parameters -- altitude, image overlap, ground sampling distance (GSD). We obtain permits if the site requires CAA clearance."
+        },
+        {
+          "step": "3",
+          "title": "Drone flight and image acquisition",
+          "description": "We fly an automated mission along a pre-programmed route. For a 10 ha site, the flight takes approx. 25 minutes."
+        },
+        {
+          "step": "4",
+          "title": "Photogrammetric data processing",
+          "description": "Aerial images are processed in photogrammetric software, generating the orthophotomap, point cloud, DTM and 3D model."
+        },
+        {
+          "step": "5",
+          "title": "Delivery of materials",
+          "description": "We deliver the finished files in the agreed formats via a download link or data carrier. Typical turnaround: 3-5 working days from the flight."
+        }
+      ],
+      "deliverables": {
+        "heading": "What the client receives",
+        "items": [
+          "Orthophotomap in GeoTIFF format (1-3 cm/px resolution)",
+          "Point cloud in LAS/LAZ format",
+          "3D mesh model in OBJ or PLY format",
+          "Digital Terrain Model (DTM) and Digital Surface Model (DSM)",
+          "Accuracy report (GSD, RMSE, flight parameters)"
+        ]
+      },
+      "area": {
+        "heading": "Area of operation",
+        "text": "Based in Szczecin. We carry out commissions across the West Pomeranian Voivodeship and -- by prior arrangement -- throughout Poland. We travel to the site in our own vehicle; travel up to 50 km from Szczecin is included in the price."
+      },
+      "cta": {
+        "heading": "Need an orthophotomap or 3D model?",
+        "text": "Get in touch and we will prepare a free drone photogrammetry quote tailored to your project."
+      },
+      "breadcrumb": "Photogrammetry"
+    },
+    "thermal-imaging": {
+      "meta": {
+        "title": "Thermal imaging drone Szczecin | Roofs, halls & solar panels",
+        "description": "Drone thermal imaging inspections in Szczecin. Detecting heat loss, solar panel faults and roof insulation deficiencies in industrial halls and buildings."
+      },
+      "hero": {
+        "heading": "Thermal imaging by drone — roofs, industrial halls & PV systems",
+        "subheading": "We use a drone-mounted thermal camera to detect heat loss, diagnose solar panel faults and inspect roof insulation. Fast, safe and with centimetre precision."
+      },
+      "intro": [
+        "We carry out thermal inspections of flat and pitched roofs, building facades, industrial halls and photovoltaic farms using a drone fitted with a radiometric thermal camera (640 x 512 px resolution). The camera records the temperature of every pixel, enabling precise localisation of thermal anomalies -- thermal bridges, damp, air leaks and faulty PV cells.",
+        "This service is aimed at property managers, construction firms, energy auditors, warehouse owners and PV farm operators. Drone thermography replaces ground-level inspection (which cannot cover roof surfaces) and cherry-picker inspection (which is slower and more expensive).",
+        "Every inspection concludes with a PDF report containing thermograms with a temperature scale overlay, corresponding RGB photographs, a description and location of each anomaly, and recommendations for remedial action. We deliver the report within 2-3 working days of the flight."
+      ],
+      "benefits": [
+        {
+          "title": "Full roof coverage without scaffolding or cherry pickers",
+          "description": "The drone covers the entire roof surface in a single flight -- even halls exceeding 5,000 m2. No need to close the building or arrange roof access."
+        },
+        {
+          "title": "Detection of defects invisible to the naked eye",
+          "description": "The thermal camera identifies thermal bridges, damp beneath the waterproofing layer, air leaks around flashings and faulty PV cells with 5 cm precision."
+        },
+        {
+          "title": "Report with thermograms and recommendations",
+          "description": "The PDF report contains thermograms, RGB images, anomaly locations on a roof plan, cause descriptions and specific repair recommendations -- ready to hand to a contractor."
+        },
+        {
+          "title": "PV farm inspection: 1 MW in 30 minutes",
+          "description": "Drone thermography can scan a 1 MW PV farm in approx. 30 minutes. The report identifies faulty strings, hotspots and mechanical panel damage."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Thermal inspection of a warehouse roof",
+          "description": "Detecting heat loss and damp on flat roofs of halls ranging from several hundred to several thousand m2 -- the basis for planning roof covering repairs."
+        },
+        {
+          "title": "Photovoltaic farm diagnostics",
+          "description": "Scanning PV panels for faulty cells, hotspots, mechanical damage and shading. A defect map report facilitates service planning."
+        },
+        {
+          "title": "Building energy audit support",
+          "description": "Non-contact assessment of facade insulation, window frames and roof-wall junctions -- supplementary data for the energy audit required for thermal modernisation."
+        },
+        {
+          "title": "Thermal monitoring of pipelines and tanks",
+          "description": "Early detection of hot water, steam or chemical media leaks in industrial installations -- without interrupting plant operations."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Contact and scope definition",
+          "description": "We determine the object type (roof, facade, PV farm, industrial installation), its area and the inspection objective."
+        },
+        {
+          "step": "2",
+          "title": "Selecting conditions and scheduling",
+          "description": "Thermal inspection requires suitable conditions -- a minimum 10 C temperature difference between interior and exterior, no rain and low wind. We propose the optimal date."
+        },
+        {
+          "step": "3",
+          "title": "Drone flight with thermal camera",
+          "description": "We fly over the object recording thermograms and RGB images with overlay. A typical warehouse roof takes approx. 15-30 minutes."
+        },
+        {
+          "step": "4",
+          "title": "Analysis and report preparation",
+          "description": "We analyse the thermograms, identify anomalies, describe causes and prepare a PDF report with repair recommendations."
+        }
+      ],
+      "deliverables": {
+        "heading": "What the client receives",
+        "items": [
+          "PDF report with thermograms, RGB images and anomaly descriptions",
+          "Anomaly map overlaid on the building plan",
+          "Prioritised repair recommendations",
+          "Raw thermogram files (RJPG) on request",
+          "Thermal orthophotomap of the object (optional)"
+        ]
+      },
+      "area": {
+        "heading": "Area of operation",
+        "text": "We carry out thermal inspections from our base in Szczecin across the West Pomeranian and Lubusz Voivodeships. By prior arrangement, we accept commissions throughout Poland. Travel up to 50 km from Szczecin is included in the price."
+      },
+      "cta": {
+        "heading": "Need a thermal inspection?",
+        "text": "Get in touch and we will recommend the optimal scope of thermal survey for your property."
+      },
+      "breadcrumb": "Thermal imaging"
+    },
+    "3d-models": {
+      "meta": {
+        "title": "3D models from drone Szczecin | Digital terrain & building models",
+        "description": "Creating 3D models from drone data in Szczecin. Digital terrain models, 3D building inventory and realistic mesh models for construction and surveying."
+      },
+      "hero": {
+        "heading": "3D models and digital terrain maps from drone data",
+        "subheading": "We create digital terrain models, realistic 3D mesh models and building inventories from photogrammetric drone data. Accuracy down to 2 cm -- ready for import into CAD and BIM software."
+      },
+      "intro": [
+        "We create digital 3D models of buildings, industrial structures and terrain from aerial photographs acquired by drone. From hundreds of overlapping images we generate a dense point cloud and then a 3D mesh model with photographic texture -- faithfully reproducing the appearance and geometry of the object.",
+        "This service is aimed at construction firms, design offices, surveyors, local authorities and property managers. Drone 3D models are used for building inventory before refurbishment, creating terrain maps for development sites, heritage documentation and construction progress visualisation -- without the need for repeated laser scanning.",
+        "Drone inventory is 3-5 times faster than terrestrial laser scanning and covers a larger area in a single session. A 3D model of a building with a 500 m2 footprint is delivered within 5 working days of the flight in OBJ, PLY or FBX format -- ready for import into Autodesk, ArchiCAD or SketchUp."
+      ],
+      "benefits": [
+        {
+          "title": "Centimetre-level geometric accuracy",
+          "description": "3D models reproduce the shape and dimensions of an object with 1-3 cm accuracy -- sufficient for designing refurbishments, extensions and clash detection."
+        },
+        {
+          "title": "Digital Terrain Model (DTM) and Surface Model (DSM)",
+          "description": "We generate elevation models in GeoTIFF and ASC formats -- ready for hydrological analysis, road design and investment planning."
+        },
+        {
+          "title": "Faster and cheaper than laser scanning",
+          "description": "Drone inventory of a 500 m2 building takes 1 working day instead of the 3-4 days required for terrestrial laser scanning -- with comparable accuracy."
+        },
+        {
+          "title": "Export to CAD, BIM and GIS",
+          "description": "We deliver models in OBJ, PLY, FBX, DXF and GeoTIFF formats -- compatible with Autodesk Revit, ArchiCAD, Civil 3D, QGIS and ArcGIS."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "3D building inventory before refurbishment",
+          "description": "A 3D model of a townhouse, office building or industrial hall -- the basis for designing a refurbishment without multiple measurement visits to the site."
+        },
+        {
+          "title": "Digital terrain model for a development site",
+          "description": "DTM and DSM of a plot or terrain up to several dozen hectares -- for road design, flood risk analysis and spatial planning."
+        },
+        {
+          "title": "3D construction progress visualisation",
+          "description": "Comparing 3D models from successive months against the design model (BIM) -- for detecting delays and deviations from the project."
+        },
+        {
+          "title": "3D documentation of heritage and cultural sites",
+          "description": "Precise 3D models of churches, townhouses and heritage structures -- for conservators, architects and reconstruction designers."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Contact and project specification",
+          "description": "We define the scope: object type, required accuracy, output file formats and delivery deadline."
+        },
+        {
+          "step": "2",
+          "title": "Drone flight and image acquisition",
+          "description": "We fly an automated mission around the object or over the terrain, capturing several hundred images with min. 75% overlap. Building -- approx. 20 min, 10 ha terrain -- approx. 30 min."
+        },
+        {
+          "step": "3",
+          "title": "Data processing and model generation",
+          "description": "Images are processed in photogrammetric software. We generate the point cloud, textured mesh model and digital terrain models."
+        },
+        {
+          "step": "4",
+          "title": "Quality control and delivery",
+          "description": "We verify model accuracy, export data in the agreed formats and deliver to the client via download link. Typical turnaround: 5-7 working days."
+        }
+      ],
+      "deliverables": {
+        "heading": "What the client receives",
+        "items": [
+          "3D mesh model with photographic texture in OBJ, PLY or FBX format",
+          "Dense point cloud in LAS/LAZ format",
+          "Digital Terrain Model (DTM) in GeoTIFF or ASC format",
+          "Digital Surface Model (DSM)",
+          "Accuracy and processing parameters report"
+        ]
+      },
+      "area": {
+        "heading": "Area of operation",
+        "text": "We carry out 3D inventories from our base in Szczecin across the West Pomeranian Voivodeship. Commissions in other regions of Poland are accepted by prior arrangement. Travel up to 50 km from Szczecin is included in the price."
+      },
+      "cta": {
+        "heading": "Need a 3D model or digital terrain model?",
+        "text": "Get in touch and we will prepare a quote for a 3D model tailored to the scale and requirements of your project."
+      },
+      "breadcrumb": "3D models"
+    },
+    "wildlife-damage": {
+      "meta": {
+        "title": "Wildlife damage assessment by drone | Expert reports & PDF",
+        "description": "Wildlife damage estimation by drone in Poland. Crop damage assessment, expert reports and documentation compliant with Polish Ministry regulations."
+      },
+      "hero": {
+        "heading": "Wildlife damage estimation by drone — expert reports & PDF",
+        "subheading": "We carry out wildlife damage assessments using drones across the West Pomeranian Voivodeship, throughout Poland and in Germany. Rapid response, precise area measurements and documentation compliant with Ministry of Environment regulations."
+      },
+      "intro": [
+        "We fly drones over crop fields where damage caused by wild boar, deer, roe deer and other game has occurred. From the aerial photographs we generate an orthophotomap of the field, on which we precisely delineate the boundaries of the damaged crop and calculate its area in square metres and the percentage of destruction -- data that forms the basis of the official expert report.",
+        "This service is aimed at farmers, hunting associations, expert assessors and insurers. A drone orthophotomap eliminates the subjectivity of manual measurement -- the damaged area is calculated with geodetic accuracy (1-3 cm), and the documentation is resistant to challenge in compensation proceedings.",
+        "Time is the critical factor: the condition of a damaged crop changes from day to day, so documentation must be produced as quickly as possible after notification. Thanks to drone mobility, we can reach the field and complete the survey within hours of contact -- even on the same day."
+      ],
+      "benefits": [
+        {
+          "title": "Geodetically precise area measurement",
+          "description": "A drone orthophotomap calculates the damaged area with 1-3 cm accuracy -- eliminating disputes about the scale of losses between the farmer and the hunting association."
+        },
+        {
+          "title": "Same-day survey after notification",
+          "description": "In urgent cases we travel to the field on the same day. Speed of response is critical because crop condition changes from day to day."
+        },
+        {
+          "title": "Documentation compliant with regulations",
+          "description": "The expert report contains an orthophotomap, area calculations, damage percentage and photographic documentation -- in accordance with the Ministry of Environment regulations."
+        },
+        {
+          "title": "Evidence for legal proceedings",
+          "description": "The drone orthophotomap and PDF expert report constitute credible evidence in compensation disputes between farmers and hunting associations."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Wild boar damage to maize and cereals",
+          "description": "Documenting destruction in maize, wheat and rapeseed fields caused by wild boar -- the most common type of hunting damage in the West Pomeranian region."
+        },
+        {
+          "title": "Deer and roe deer damage to winter crops",
+          "description": "Estimating losses to winter crops and young forestry plantations caused by deer, roe deer and fallow deer grazing -- orthophotomap and PDF expert report."
+        },
+        {
+          "title": "Objective data for the hunting association assessment committee",
+          "description": "Providing an orthophotomap and area calculations for the assessment committee -- eliminating disputes over subjective visual estimates."
+        },
+        {
+          "title": "Photogrammetric documentation for court proceedings",
+          "description": "Preparing professional documentation with orthophotomap, calculations and GPS metadata -- serving as evidence in legal proceedings."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Damage notification",
+          "description": "The farmer or hunting association contacts us by phone or email. We establish the field location, crop type and approximate extent of damage."
+        },
+        {
+          "step": "2",
+          "title": "Drone flight over the field",
+          "description": "We travel to the field and fly the drone. A flight over a 5-10 ha field takes approx. 15-25 minutes."
+        },
+        {
+          "step": "3",
+          "title": "Data processing and area calculation",
+          "description": "We generate an orthophotomap of the field, delineate the boundaries of the damaged crop and calculate the damaged area in m2 and the destruction percentage."
+        },
+        {
+          "step": "4",
+          "title": "Expert report preparation (PDF)",
+          "description": "The report contains the orthophotomap, calculations, photographic documentation and flight metadata. We deliver it within 2-3 working days of the flight."
+        }
+      ],
+      "deliverables": {
+        "heading": "What the client receives",
+        "items": [
+          "Expert report in PDF format (compliant with regulations)",
+          "Orthophotomap of the field with damage boundaries marked",
+          "Damaged area calculation (m2) and destruction percentage",
+          "Flight photographic documentation (full-resolution RGB images)",
+          "Flight metadata: date, GPS coordinates, drone parameters"
+        ]
+      },
+      "area": {
+        "heading": "Area of operation",
+        "text": "We carry out wildlife damage assessments across the West Pomeranian Voivodeship, and by prior arrangement in other regions of Poland and in Germany (Mecklenburg-Vorpommern, Brandenburg). In urgent cases we can reach the field on the same day."
+      },
+      "cta": {
+        "heading": "Wildlife damage? We respond fast.",
+        "text": "Contact us by phone or email — in urgent cases, we can conduct a survey on the same day."
+      },
+      "breadcrumb": "Wildlife damage"
+    },
+    "wind-turbines": {
+      "meta": {
+        "title": "Wind turbine inspection by drone | Blades & nacelle surveys",
+        "description": "Visual drone inspection of wind turbines in Szczecin and region. Blade inspection, nacelle inspection and tower surveys without halting turbine operation."
+      },
+      "hero": {
+        "heading": "Drone inspection of wind turbines — blades, nacelles & masts",
+        "subheading": "We carry out visual inspections of wind turbine blades, nacelles and towers using drones. Rapid identification of cracks, erosion and lightning damage -- without rope-access technicians and without halting energy production."
+      },
+      "intro": [
+        "We carry out visual inspections of wind turbines using a drone equipped with a 42 Mpx camera and optical zoom. The drone approaches the rotor blades, nacelle and tower at a distance of 3-5 metres, capturing images at a resolution that allows identification of cracks, delamination, leading-edge erosion and lightning damage.",
+        "This service is aimed at wind farm operators, turbine service providers and insurance companies. Drone inspection is 3-5 times faster than inspection using rope-access technicians and does not require a turbine shutdown -- the blades only need to be locked in the inspection position.",
+        "Every inspection concludes with a photographic report in which each identified defect is located on a blade/nacelle/tower diagram, described and classified according to a severity scale (1 -- monitor, 2 -- repair at next service, 3 -- urgent repair). The report enables advance planning of inspections and repairs."
+      ],
+      "benefits": [
+        {
+          "title": "Inspection without turbine shutdown",
+          "description": "The blades only need to be locked in the inspection position. The turbine does not need to be disconnected from the grid -- minimising energy production losses."
+        },
+        {
+          "title": "3-5 times faster than rope-access methods",
+          "description": "A drone inspection of one turbine takes 1-2 hours. Rope-access technicians need 6-8 hours plus equipment setup time for the same scope."
+        },
+        {
+          "title": "Defect imagery from 3-5 metres distance",
+          "description": "The drone camera captures cracks narrower than 1 mm, leading-edge erosion, lightning strike marks and laminate delamination at close range."
+        },
+        {
+          "title": "Report with defect severity classification",
+          "description": "Each defect is located on a turbine diagram, described and classified: 1 -- monitor, 2 -- repair at service, 3 -- urgent repair."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Rotor blade inspection after the windy season",
+          "description": "Inspection of all three blades for cracks, delamination, leading-edge erosion and lightning damage -- defect classification report within 3 days."
+        },
+        {
+          "title": "Nacelle and housing inspection",
+          "description": "Assessment of the nacelle housing condition, lightning protection system, seals and externally visible mechanical components."
+        },
+        {
+          "title": "Periodic inspection of an entire wind farm",
+          "description": "Planned inspection of 10-20 turbines over 3-5 days -- a consolidated report for the farm operator with repair prioritisation."
+        },
+        {
+          "title": "Post-incident inspection after lightning strike",
+          "description": "Rapid drone inspection within 24-48 hours of the event. Damage documentation for the manufacturer, insurer and repair planning."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Scope and schedule agreement",
+          "description": "We establish the number of turbines, inspection scope (blades, nacelle, tower) and schedule. We coordinate site access with the operator."
+        },
+        {
+          "step": "2",
+          "title": "Turbine preparation",
+          "description": "The operator locks the blades in the inspection position (each blade is rotated to the 6 o'clock position). The turbine does not need to be disconnected from the grid."
+        },
+        {
+          "step": "3",
+          "title": "Drone inspection",
+          "description": "The pilot flies around each blade, nacelle and tower, capturing images from 3-5 m distance. One turbine takes approx. 1-2 hours."
+        },
+        {
+          "step": "4",
+          "title": "Image analysis and report",
+          "description": "We review the images, identify defects, classify them and prepare a photographic report with a defect map. Typical turnaround: 3-5 working days."
+        }
+      ],
+      "deliverables": {
+        "heading": "What the client receives",
+        "items": [
+          "Photographic PDF report with location, description and classification of each defect",
+          "Blade/nacelle/tower diagram with defects marked",
+          "High-resolution images of every identified defect",
+          "Summary with repair prioritisation (monitor / repair / urgent)",
+          "Raw flight images at full resolution on a data carrier"
+        ]
+      },
+      "area": {
+        "heading": "Area of operation",
+        "text": "We carry out wind turbine inspections across the West Pomeranian, Pomeranian and Greater Poland Voivodeships -- regions with the highest concentration of wind farms in Poland. By arrangement we accept commissions nationwide."
+      },
+      "cta": {
+        "heading": "Planning a wind turbine inspection?",
+        "text": "Get in touch and we will prepare a drone inspection quote tailored to the size of your wind farm and scope of survey."
+      },
+      "breadcrumb": "Wind turbines"
+    }
+  },
+  "footer": {
+    "company": "Aero Metric",
+    "location": "Szczecin, Poland",
+    "email": "kontakt@aerometric.pl",
+    "phone": "+48 123 456 789",
+    "social": "Social media",
+    "copyright": "All rights reserved.",
+    "description": "Professional drone services based in Szczecin. Inspections, photogrammetry, thermal imaging, and 3D models — operating across Poland and Germany.",
+    "servicesHeading": "Our services",
+    "serviceLinks": {
+      "photogrammetry": "Photogrammetry",
+      "thermal-imaging": "Thermal imaging",
+      "3d-models": "3D models",
+      "wildlife-damage": "Wildlife damage",
+      "wind-turbines": "Wind turbines"
+    }
+  }
+}

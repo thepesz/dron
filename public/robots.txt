@@ -1,0 +1,8 @@
+# Aero Metric - Drone Inspection Services
+# https://loty-dronem.pl
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://loty-dronem.pl/sitemap.xml

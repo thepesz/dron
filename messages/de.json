@@ -1,0 +1,710 @@
+{
+  "meta": {
+    "title": "Drohneninspektion Stettin | Fotogrammetrie & Thermografie",
+    "description": "Drohneninspektion, Fotogrammetrie, 3D-Modelle und Thermografie in Stettin. Wir bedienen Industrie und Landwirtschaft in Polen und Deutschland."
+  },
+  "skipToMain": "Zum Hauptinhalt springen",
+  "nav": {
+    "services": "Leistungen",
+    "whyUs": "Vorteile",
+    "portfolio": "Referenzen",
+    "about": "Über uns",
+    "process": "Ablauf",
+    "contact": "Kontakt",
+    "cta": "Kostenloses Angebot",
+    "phone": "+48 123 456 789",
+    "floatingCta": "Anrufen"
+  },
+  "hero": {
+    "heading": "Professionelle Drohneninspektionen in Stettin",
+    "subheading": "Wir liefern präzise Luftdaten für Industrie, Landwirtschaft und Energiewirtschaft. Fotogrammetrie, Thermografie, 3D-Modelle und visuelle Inspektionen — schnell, sicher und genau.",
+    "cta": "Kostenloses Angebot anfordern",
+    "secondaryCta": "Unsere Leistungen entdecken",
+    "trust": "Professionelle Drohnendienstleistungen mit Sitz in Stettin — Einsätze in ganz Polen und Deutschland."
+  },
+  "services": {
+    "heading": "Unsere Leistungen",
+    "subtitle": "Wir bieten umfassende Drohnendienstleistungen für Unternehmen und Institutionen. Jedes Projekt wird mit höchster Präzision und Sicherheit durchgeführt.",
+    "items": {
+      "inspection": {
+        "title": "Drohneninspektionen",
+        "description": "Sichere und präzise Inspektionen von Industrieanlagen, Gebäuden und Infrastruktur — ohne Gerüste oder Hebebühnen.",
+        "photoAlt": "Drohneninspektion einer Industrieanlage in Stettin"
+      },
+      "photogrammetry": {
+        "title": "Fotogrammetrie und 3D-Modelle",
+        "description": "Erstellung präziser 3D-Modelle, Orthofotokarten und Punktwolken aus Drohnendaten. Ideal für Vermessungen und Dokumentation.",
+        "photoAlt": "Drohnen-Fotogrammetrie — Orthofotokarte in der Region Stettin"
+      },
+      "thermal": {
+        "title": "Thermografie mit Drohne",
+        "description": "Erkennung von Wärmeverlusten, Photovoltaik-Fehlern und Dämmproblemen mit einer auf der Drohne montierten Wärmebildkamera.",
+        "photoAlt": "Thermografische Inspektion von Photovoltaikanlage per Drohne"
+      },
+      "windTurbines": {
+        "title": "Inspektion von Windkraftanlagen",
+        "description": "Visuelle Inspektionen von Rotorblättern und Gondeln mit Drohnen. Schnelle Schadenserkennung ohne Stillstand der Anlage.",
+        "photoAlt": "Visuelle Drohneninspektion von Windkraftanlage — Rotorblätter und Gondel"
+      },
+      "wildlifeDamage": {
+        "title": "Wildschadenbewertung",
+        "description": "Wir führen Wildschadensbewertungen mit Drohnen in der gesamten Woiwodschaft Westpommern und nach vorheriger Absprache in ganz Polen und Deutschland durch. Wir unterstützen bei der Erstellung von Gutachten im PDF-Format sowie bei der Berechnung der Schadensfläche und des Schadensanteils gemäß den Ministeriumsverordnungen. Bei Ersatzforderungen spielt die Zeit eine entscheidende Rolle — wir können schnell reagieren.",
+        "photoAlt": "Wildschadensbewertung per Drohne — Vermessung beschädigter Anbaufläche"
+      },
+      "aerial": {
+        "title": "Luftaufnahmen und Videos",
+        "description": "Professionelle Luftbilder und Videos für Marketing, Dokumentation und Archivierung in bis zu 4K-Auflösung.",
+        "photoAlt": "Luftaufnahme eines Baugeländes per Drohne in der Region Stettin"
+      }
+    },
+    "learnMore": "Mehr erfahren"
+  },
+  "whyUs": {
+    "heading": "Warum Sie uns wählen sollten",
+    "subtitle": "Wir verbinden moderne Technologie mit praktischer Erfahrung, um Ergebnisse höchster Qualität zu liefern.",
+    "items": {
+      "safety": {
+        "title": "Sicherere Inspektionen",
+        "description": "Wir vermeiden Arbeiten in der Höhe und an schwer zugänglichen Stellen."
+      },
+      "speed": {
+        "title": "Schnellere Bewertung",
+        "description": "Eine Drohneninspektion ist um ein Vielfaches schneller als herkömmliche Methoden."
+      },
+      "precision": {
+        "title": "Präzise Daten",
+        "description": "Hochauflösende Bilder und Messungen gewährleisten zentimetergenaue Ergebnisse."
+      },
+      "access": {
+        "title": "Zugang zu schwierigen Bereichen",
+        "description": "Drohnen erreichen Orte, die für Menschen nicht sicher zugänglich sind."
+      },
+      "equipment": {
+        "title": "Moderne Ausrüstung",
+        "description": "Wir setzen professionelle Drohnen mit RGB- und Wärmebildkameras ein."
+      },
+      "local": {
+        "title": "Großes Einsatzgebiet",
+        "description": "Mit Sitz in Stettin decken wir die Region Westpommern ab und führen nach Absprache Einsätze in ganz Polen und Deutschland durch."
+      },
+      "reliability": {
+        "title": "Professionalität und Zuverlässigkeit",
+        "description": "Jedes Projekt wird individuell behandelt — mit vollem Engagement und Pünktlichkeit."
+      }
+    }
+  },
+  "portfolio": {
+    "heading": "Unsere Referenzen",
+    "subtitle": "Ausgewählte Projekte und abgeschlossene Aufträge aus unserem Portfolio.",
+    "items": {
+      "item1": { "alt": "Drohneninspektion einer Industrieanlage in Stettin" },
+      "item2": { "alt": "Orthofotokarte einer landwirtschaftlichen Fläche per Drohne" },
+      "item3": { "alt": "3D-Modell eines Gebäudes aus fotogrammetrischen Daten" },
+      "item4": { "alt": "Thermische Inspektion eines Dachs per Drohne" },
+      "item5": { "alt": "Visuelle Inspektion einer Windkraftanlage per Drohne" },
+      "item6": { "alt": "Luftaufnahme eines Baugeländes" }
+    },
+    "placeholder": "Projektfoto"
+  },
+  "about": {
+    "heading": "Über uns",
+    "paragraphs": {
+      "intro": "Aero Metric ist ein in Stettin ansässiges Unternehmen, das sich auf professionelle Drohnendienstleistungen für Geschäfts- und institutionelle Kunden spezialisiert hat. Wir verbinden fortschrittliche Technologie mit praktischer Erfahrung, um präzise Luftdaten und Analysen zu liefern.",
+      "industries": "Wir betreuen Kunden aus den Bereichen Industrie, Landwirtschaft, Energie und Infrastruktur. Unsere Leistungen umfassen Drohneninspektionen, Fotogrammetrie, Thermografie, 3D-Modellierung und Wildschadenbewertung. Wir sind in ganz Polen und Deutschland tätig.",
+      "commitment": "Wir legen Wert auf Sicherheit, Präzision und termingerechte Lieferung. Jedes Projekt wird mit größter Sorgfalt unter Einsatz moderner Ausrüstung und bewährter Methoden durchgeführt."
+    },
+    "industries": {
+      "industry": "Industrie",
+      "agriculture": "Landwirtschaft",
+      "energy": "Energie",
+      "infrastructure": "Infrastruktur"
+    },
+    "photoAlt": "Drohne während einer professionellen Inspektionsmission über Stettin"
+  },
+  "process": {
+    "heading": "Unser Ablauf",
+    "subtitle": "Jedes Projekt folgt einem bewährten Prozess, der höchste Qualität der Ergebnisse gewährleistet.",
+    "steps": {
+      "contact": {
+        "title": "Kontaktaufnahme",
+        "description": "Kontaktieren Sie uns telefonisch, per E-Mail oder über das Kontaktformular. Wir besprechen Ihre Anforderungen."
+      },
+      "analysis": {
+        "title": "Bedarfsanalyse",
+        "description": "Wir analysieren die Projektanforderungen gründlich und schlagen die optimale Lösung vor."
+      },
+      "planning": {
+        "title": "Missionsplanung",
+        "description": "Wir erstellen den Flugplan und beschaffen alle erforderlichen Genehmigungen."
+      },
+      "execution": {
+        "title": "Durchführung",
+        "description": "Wir führen den Drohnenflug gemäß dem genehmigten Plan durch und erfassen die Daten."
+      },
+      "delivery": {
+        "title": "Ergebnislieferung",
+        "description": "Wir verarbeiten die Daten und liefern fertige Materialien: Berichte, 3D-Modelle und Orthofotokarten."
+      }
+    }
+  },
+  "contact": {
+    "heading": "Kontaktieren Sie uns",
+    "subtitle": "Schreiben Sie uns und wir erstellen ein kostenloses, auf Ihre Bedürfnisse zugeschnittenes Angebot.",
+    "fields": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "message": "Nachricht"
+    },
+    "placeholders": {
+      "name": "Max Mustermann",
+      "email": "max@firma.de",
+      "phone": "+49 123 456 789",
+      "message": "Beschreiben Sie, was Sie benötigen..."
+    },
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "validation": {
+      "nameRequired": "Vollständiger Name ist erforderlich.",
+      "nameMin": "Der Name muss mindestens 2 Zeichen lang sein.",
+      "emailRequired": "E-Mail-Adresse ist erforderlich.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "phoneInvalid": "Bitte geben Sie eine gültige Telefonnummer ein.",
+      "messageRequired": "Nachricht ist erforderlich.",
+      "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein."
+    },
+    "success": "Vielen Dank für Ihre Nachricht! Wir werden so schnell wie möglich antworten.",
+    "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch."
+  },
+  "clients": {
+    "heading": "Unsere Kunden",
+    "industries": {
+      "energy": "Energie",
+      "construction": "Bauwesen",
+      "industry": "Industrie",
+      "agriculture": "Landwirtschaft",
+      "insurance": "Versicherung",
+      "infrastructure": "Infrastruktur"
+    }
+  },
+  "stats": {
+    "heading": "Unsere Erfahrung in Zahlen",
+    "items": {
+      "years": { "value": "7+", "label": "Jahre Erfahrung" },
+      "projects": { "value": "100+", "label": "abgeschlossene Projekte" },
+      "specializations": { "value": "6", "label": "Spezialisierungen" },
+      "area": { "value": "Stettin", "label": "und Region" }
+    }
+  },
+  "testimonials": {
+    "heading": "Kundenstimmen",
+    "subtitle": "Was unsere Kunden und Geschäftspartner über uns sagen.",
+    "items": {
+      "testimonial1": {
+        "quote": "Die Zusammenarbeit mit Aero Metric hat die Inspektionszeit unserer Industrieanlagen deutlich verkürzt. Die Drohnendaten waren präzise und wurden termingerecht geliefert.",
+        "name": "Marek W.",
+        "company": "Industriewerk, Stettin"
+      },
+      "testimonial2": {
+        "quote": "Die Drohnenfotogrammetrie erwies sich als ideale Lösung zur Schätzung von Wildschäden auf unseren Feldern. Die Messgenauigkeit übertraf unsere Erwartungen.",
+        "name": "Anna K.",
+        "company": "Landwirtschaftsbetrieb, Region Westpommern"
+      },
+      "testimonial3": {
+        "quote": "Die thermische Inspektion des Daches unseres Gewerbegebäudes half uns, Dämmprobleme zu lokalisieren, bevor ernsthafte Wärmeverluste auftraten. Sehr empfehlenswert.",
+        "name": "Tomasz L.",
+        "company": "Immobilienverwaltung, Stettin"
+      }
+    }
+  },
+  "servicePages": {
+    "home": "Startseite",
+    "servicesLabel": "Leistungen",
+    "backToHome": "Zurück zur Startseite",
+    "processHeading": "Projektablauf",
+    "deliverablesHeading": "Was der Auftraggeber erhält",
+    "areaHeading": "Einsatzgebiet",
+    "photogrammetry": {
+      "meta": {
+        "title": "Drohnen-Fotogrammetrie Stettin | 3D-Modelle & Orthofotokarten",
+        "description": "Professionelle Drohnen-Fotogrammetrie in Stettin. Orthofotokarten, Punktwolken und 3D-Modelle mit Zentimetergenauigkeit für Bau, Vermessung und Landwirtschaft."
+      },
+      "hero": {
+        "heading": "Drohnen-Fotogrammetrie in Stettin und Polen",
+        "subheading": "Wir erstellen präzise Orthofotokarten, Punktwolken und 3D-Modelle aus Drohnendaten. Unsere fotogrammetrischen Produkte dienen der Vermessung, dem Bauwesen und der Landwirtschaft in ganz Polen."
+      },
+      "intro": [
+        "Die Drohnen-Fotogrammetrie ermöglicht die Erstellung präziser 3D-Modelle, Orthofotokarten und Punktwolken von Gelände und Bauwerken. Die Datenerfassung erfolgt mit einer Drohne, die mit einer RGB-Kamera mit bis zu 42 Mpx und einem GNSS-RTK-Empfänger ausgestattet ist — für eine Lage- und Höhengenauigkeit von 1–3 cm ohne Passpunkte am Boden.",
+        "Die Leistung richtet sich an Vermesser, Baufirmen, Immobilienverwalter, Kommunen und Bauinvestoren. Wir führen Gebäudeinventarisierungen, Volumenberechnungen von Halden und Aushub, Baustellendokumentation, Orthofotokarten landwirtschaftlicher Flächen und 3D-Modelle denkmalgeschützter Objekte durch.",
+        "Im Vergleich zur klassischen Tachymetrie oder zum terrestrischen Laserscanning ist die Drohnen-Fotogrammetrie 3–5-mal schneller und erfasst eine größere Fläche in einer Messsitzung. Eine Befliegung von 10 ha dauert ca. 20–30 Minuten; die vollständige Datenaufbereitung liefern wir innerhalb von 3–5 Werktagen."
+      ],
+      "benefits": [
+        {
+          "title": "1–3 cm Genauigkeit ohne Passpunkte",
+          "description": "Die Drohne mit GNSS-RTK-Empfänger erreicht zentimetergenaue Georeferenzierung ohne das Auslegen von Bodenmarkierungen (GCPs)."
+        },
+        {
+          "title": "3–5-mal schneller als terrestrische Vermessung",
+          "description": "Eine Befliegung von 10 ha dauert ca. 25 Minuten. Eine klassische Tachymeter-Vermessung derselben Fläche benötigt 2–3 Werktage."
+        },
+        {
+          "title": "Fertige Formate für GIS, CAD und BIM",
+          "description": "Wir liefern Orthofotokarten in GeoTIFF, Punktwolken in LAS/LAZ, Mesh-Modelle in OBJ/PLY — zum direkten Import in Ihre Software."
+        },
+        {
+          "title": "Vollständige Geländedokumentation aus einem Flug",
+          "description": "Aus einer Befliegung erzeugen wir Orthofotokarte, DGM, DOM, Punktwolke und 3D-Modell — ein Komplettdatensatz für vielfältige Analysen."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Gebäudeinventarisierung für Immobilienverwalter",
+          "description": "3D-Modell eines Wohn- oder Bürogebäudes mit 2 cm Genauigkeit — Grundlage für Sanierungs-, An- und Umbauplanung ohne wiederholte Vor-Ort-Aufmaße."
+        },
+        {
+          "title": "Volumenberechnung von Halden und Aushub",
+          "description": "Kubaturberechnung gelagerter Erdmassen, Schotter oder Zuschlagstoffe auf Baustellen und in Tagebauen — Volumenbericht innerhalb von 48 Stunden."
+        },
+        {
+          "title": "Baufortschrittskontrolle alle 2–4 Wochen",
+          "description": "Regelmäßige Befliegungen zur Dokumentation aufeinanderfolgender Bauphasen. Der Vergleich von Orthofotokarten und 3D-Modellen mit der Planung deckt Verzögerungen und Abweichungen auf."
+        },
+        {
+          "title": "Feldkarten für die Präzisionslandwirtschaft",
+          "description": "Ackerkarten mit 2 cm/px Auflösung zur Unterstützung der Düngung, des Pflanzenschutzes und der Bewässerung. Datenexport in Formaten, die mit der Software landwirtschaftlicher Maschinen kompatibel sind."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Kontaktaufnahme und Anforderungsanalyse",
+          "description": "Wir definieren den Projektumfang: Geländetyp, gewünschte Genauigkeit, Ausgabeformate und Liefertermin."
+        },
+        {
+          "step": "2",
+          "title": "Flugmissionsplanung",
+          "description": "Wir legen die Flugparameter fest — Flughöhe, Bildüberlappung, Bodenauflösung (GSD). Ggf. holen wir Fluggenehmigungen ein."
+        },
+        {
+          "step": "3",
+          "title": "Drohnenflug und Bilderfassung",
+          "description": "Wir führen einen automatisierten Flug auf einer vorprogrammierten Route durch. Für ein 10 ha großes Gelände dauert der Flug ca. 25 Minuten."
+        },
+        {
+          "step": "4",
+          "title": "Fotogrammetrische Datenverarbeitung",
+          "description": "Die Luftbilder werden in Fotogrammetrie-Software verarbeitet; daraus entstehen Orthofotokarte, Punktwolke, DGM und 3D-Modell."
+        },
+        {
+          "step": "5",
+          "title": "Lieferung der Ergebnisse",
+          "description": "Wir liefern die fertigen Dateien in den vereinbarten Formaten per Download-Link oder Datenträger. Lieferfrist: 3–5 Werktage nach dem Flug."
+        }
+      ],
+      "deliverables": {
+        "heading": "Was der Auftraggeber erhält",
+        "items": [
+          "Orthofotokarte im GeoTIFF-Format (Auflösung 1–3 cm/px)",
+          "Punktwolke im LAS/LAZ-Format",
+          "3D-Mesh-Modell im OBJ- oder PLY-Format",
+          "Digitales Geländemodell (DGM) und Digitales Oberflächenmodell (DOM)",
+          "Genauigkeitsbericht (GSD, RMSE, Flugparameter)"
+        ]
+      },
+      "area": {
+        "heading": "Einsatzgebiet",
+        "text": "Standort Stettin. Wir führen Aufträge in der gesamten Woiwodschaft Westpommern und — nach vorheriger Absprache — in ganz Polen durch. Die Anfahrt bis 50 km von Stettin ist im Preis inbegriffen."
+      },
+      "cta": {
+        "heading": "Brauchen Sie eine Orthofotokarte oder ein 3D-Modell?",
+        "text": "Kontaktieren Sie uns und wir erstellen ein kostenloses Angebot für Drohnen-Fotogrammetrie, zugeschnitten auf Ihr Projekt."
+      },
+      "breadcrumb": "Fotogrammetrie"
+    },
+    "thermal-imaging": {
+      "meta": {
+        "title": "Thermografie Drohne Stettin | Dächer, Hallen & Solaranlagen",
+        "description": "Thermografische Drohneninspektionen in Stettin. Erkennung von Wärmeverlusten, Photovoltaik-Fehlern und Dachdämmungsproblemen in Industriehallen und Gebäuden."
+      },
+      "hero": {
+        "heading": "Thermografie per Drohne — Dächer, Hallen & Photovoltaikanlagen",
+        "subheading": "Wir setzen eine auf der Drohne montierte Wärmebildkamera ein, um Wärmeverluste zu erkennen, Photovoltaikanlagen zu diagnostizieren und die Dachdämmung zu überprüfen. Schnell, sicher und zentimetergenau."
+      },
+      "intro": [
+        "Wir führen thermografische Inspektionen von Flach- und Steildächern, Gebäudefassaden, Industriehallen und Photovoltaikanlagen mit einer Drohne durch, die mit einer radiometrischen Wärmebildkamera (Auflösung 640 x 512 px) ausgestattet ist. Die Kamera erfasst die Temperatur jedes Pixels und ermöglicht so die präzise Lokalisierung thermischer Anomalien — Wärmebrücken, Feuchtigkeit, Undichtigkeiten und defekte PV-Zellen.",
+        "Die Leistung richtet sich an Immobilienverwalter, Baufirmen, Energieauditoren, Lagerhallenbetreiber und PV-Anlagenbetreiber. Die Drohnen-Thermografie ersetzt die Inspektion vom Boden (die keine Dachflächen erfasst) und die Inspektion per Hubarbeitsbühne (die langsamer und teurer ist).",
+        "Jede Inspektion schließen wir mit einem PDF-Bericht ab, der Thermogramme mit Temperaturskala, zugehörige RGB-Aufnahmen, Beschreibung und Lokalisierung jeder Anomalie sowie Sanierungsempfehlungen enthält. Der Bericht wird innerhalb von 2–3 Werktagen nach dem Flug geliefert."
+      ],
+      "benefits": [
+        {
+          "title": "Komplette Dacherfassung ohne Gerüst und Hubsteiger",
+          "description": "Die Drohne erfasst die gesamte Dachfläche in einem Flug — auch Hallen über 5.000 m². Keine Gebäudesperrung und kein Dachzugang erforderlich."
+        },
+        {
+          "title": "Erkennung unsichtbarer Mängel",
+          "description": "Die Wärmebildkamera identifiziert Wärmebrücken, Feuchtigkeit unter der Abdichtung, Undichtigkeiten an Blechanschlüssen und defekte PV-Zellen mit 5 cm Genauigkeit."
+        },
+        {
+          "title": "Bericht mit Thermogrammen und Empfehlungen",
+          "description": "Der PDF-Bericht enthält Thermogramme, RGB-Bilder, Anomalielokalisierung auf dem Dachgrundriss, Ursachenbeschreibungen und konkrete Sanierungsempfehlungen — fertig zur Weitergabe an den Handwerker."
+        },
+        {
+          "title": "PV-Inspektion: 1 MW in 30 Minuten",
+          "description": "Mittels Drohnen-Thermografie kann eine PV-Anlage mit 1 MW Leistung in ca. 30 Minuten gescannt werden. Der Bericht zeigt defekte Strings, Hotspots und mechanische Schäden."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Thermische Dachinspektion einer Lagerhalle",
+          "description": "Erkennung von Wärmeverlusten und Feuchtigkeit auf Flachdächern von Hallen mit Flächen von mehreren hundert bis mehreren tausend m² — Grundlage für die Planung einer Dachsanierung."
+        },
+        {
+          "title": "Diagnostik einer Photovoltaikanlage",
+          "description": "Prüfung von PV-Modulen auf defekte Zellen, Hotspots, mechanische Schäden und Verschattung. Ein Fehlerkartenbericht erleichtert die Serviceplanung."
+        },
+        {
+          "title": "Unterstützung beim Energieaudit",
+          "description": "Berührungslose Bewertung der Fassadendämmung, Fensterrahmen und Dach-Wand-Anschlüsse — ergänzende Daten für das Energieaudit bei thermischer Sanierung."
+        },
+        {
+          "title": "Thermische Überwachung von Rohrleitungen und Tanks",
+          "description": "Früherkennung von Warmwasser-, Dampf- oder Chemikalienlecks in Industrieanlagen — ohne Betriebsunterbrechung."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Kontakt und Umfangsdefinition",
+          "description": "Wir bestimmen den Objekttyp (Dach, Fassade, PV-Anlage, Industrieanlage), seine Fläche und das Inspektionsziel."
+        },
+        {
+          "step": "2",
+          "title": "Wahl der Bedingungen und Terminierung",
+          "description": "Thermografische Inspektionen erfordern geeignete Bedingungen — mind. 10 °C Temperaturdifferenz zwischen Innen- und Außenbereich, kein Niederschlag und wenig Wind. Wir schlagen den optimalen Termin vor."
+        },
+        {
+          "step": "3",
+          "title": "Drohnenflug mit Wärmebildkamera",
+          "description": "Wir befliegen das Objekt und erfassen Thermogramme sowie RGB-Bilder. Ein typisches Hallendach dauert ca. 15–30 Minuten."
+        },
+        {
+          "step": "4",
+          "title": "Analyse und Berichterstellung",
+          "description": "Wir analysieren die Thermogramme, identifizieren Anomalien, beschreiben Ursachen und erstellen den PDF-Bericht mit Sanierungsempfehlungen."
+        }
+      ],
+      "deliverables": {
+        "heading": "Was der Auftraggeber erhält",
+        "items": [
+          "PDF-Bericht mit Thermogrammen, RGB-Bildern und Anomaliebeschreibungen",
+          "Anomaliekarte auf dem Gebäudegrundriss",
+          "Priorisierte Sanierungsempfehlungen",
+          "Rohdateien der Thermogramme (RJPG) auf Wunsch",
+          "Thermische Orthofotokarte des Objekts (optional)"
+        ]
+      },
+      "area": {
+        "heading": "Einsatzgebiet",
+        "text": "Wir führen thermografische Inspektionen von unserem Standort Stettin aus in den Woiwodschaften Westpommern und Lebus durch. Nach vorheriger Absprache übernehmen wir Aufträge in ganz Polen. Die Anfahrt bis 50 km von Stettin ist im Preis inbegriffen."
+      },
+      "cta": {
+        "heading": "Brauchen Sie eine thermografische Inspektion?",
+        "text": "Kontaktieren Sie uns und wir empfehlen den optimalen Umfang der thermischen Untersuchung für Ihr Objekt."
+      },
+      "breadcrumb": "Thermografie"
+    },
+    "3d-models": {
+      "meta": {
+        "title": "3D-Modelle per Drohne Stettin | Digitale Geländemodelle",
+        "description": "Erstellung von 3D-Modellen aus Drohnendaten in Stettin. Digitale Geländemodelle, 3D-Gebäudeinventarisierung und realistische Mesh-Modelle für Bau und Vermessung."
+      },
+      "hero": {
+        "heading": "3D-Modelle und digitale Geländekarten aus Drohnendaten",
+        "subheading": "Wir erstellen digitale Geländemodelle, realistische 3D-Mesh-Modelle und Gebäudeinventarisierungen aus fotogrammetrischen Drohnendaten. Genauigkeit bis 2 cm — fertig zum Import in CAD- und BIM-Software."
+      },
+      "intro": [
+        "Wir erstellen digitale 3D-Modelle von Gebäuden, Industrieobjekten und Gelände auf der Grundlage von Luftbildern, die per Drohne aufgenommen werden. Aus Hunderten überlappender Aufnahmen erzeugen wir eine dichte Punktwolke und anschließend ein 3D-Mesh-Modell mit fotografischer Textur — das Aussehen und die Geometrie des Objekts originalgetreu abbildend.",
+        "Die Leistung richtet sich an Baufirmen, Planungsbüros, Vermesser, Kommunen und Immobilienverwalter. 3D-Modelle per Drohne werden für die Gebäudeinventarisierung vor Sanierungen, die Erstellung von Geländekarten für Bauvorhaben, die Denkmaldokumentation und die Baufortschrittsvisualisierung eingesetzt — ohne wiederholtes Laserscanning.",
+        "Die Drohneninventarisierung ist 3–5-mal schneller als terrestrisches Laserscanning und erfasst eine größere Fläche in einer Sitzung. Ein 3D-Modell eines Gebäudes mit 500 m² Grundfläche liefern wir innerhalb von 5 Werktagen nach der Befliegung in den Formaten OBJ, PLY oder FBX — fertig zum Import in Autodesk, ArchiCAD oder SketchUp."
+      ],
+      "benefits": [
+        {
+          "title": "Zentimetergenaue Geometrie",
+          "description": "3D-Modelle bilden Form und Abmessungen des Objekts mit 1–3 cm Genauigkeit ab — ausreichend für Umbauplanung, Anbauten und Kollisionsprüfungen."
+        },
+        {
+          "title": "Digitales Geländemodell (DGM) und Oberflächenmodell (DOM)",
+          "description": "Wir erzeugen Höhenmodelle in den Formaten GeoTIFF und ASC — fertig für hydrologische Analysen, Straßenplanung und Investitionsplanung."
+        },
+        {
+          "title": "Schneller und günstiger als Laserscanning",
+          "description": "Die Drohneninventarisierung eines 500 m² großen Gebäudes dauert 1 Werktag statt 3–4 Tage für terrestrisches Laserscanning — bei vergleichbarer Genauigkeit."
+        },
+        {
+          "title": "Export in CAD, BIM und GIS",
+          "description": "Wir liefern Modelle in den Formaten OBJ, PLY, FBX, DXF und GeoTIFF — kompatibel mit Autodesk Revit, ArchiCAD, Civil 3D, QGIS und ArcGIS."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "3D-Inventarisierung vor Sanierung",
+          "description": "3D-Modell eines Stadthauses, Bürogebäudes oder einer Industriehalle — Grundlage für die Umbauplanung ohne wiederholte Vor-Ort-Aufmaße."
+        },
+        {
+          "title": "Digitales Geländemodell für ein Bauvorhaben",
+          "description": "DGM und DOM eines Grundstücks oder Geländes bis zu mehreren Dutzend Hektar — für Straßenprojekte, Hochwasseranalysen und Raumplanung."
+        },
+        {
+          "title": "3D-Baufortschrittsvisualisierung",
+          "description": "Vergleich von 3D-Modellen aus aufeinanderfolgenden Monaten mit dem Planungsmodell (BIM) — zur Erkennung von Verzögerungen und Abweichungen."
+        },
+        {
+          "title": "3D-Dokumentation von Denkmälern und Kulturgütern",
+          "description": "Präzise 3D-Modelle von Kirchen, Stadthäusern und denkmalgeschützten Objekten — für Denkmalpfleger, Architekten und Rekonstruktionsplaner."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Kontakt und Projektspezifikation",
+          "description": "Wir definieren den Umfang: Objekttyp, gewünschte Genauigkeit, Ausgabeformate und Liefertermin."
+        },
+        {
+          "step": "2",
+          "title": "Drohnenflug und Bilderfassung",
+          "description": "Wir führen einen automatisierten Flug um das Objekt oder über das Gelände durch und erfassen mehrere hundert Bilder mit mind. 75 % Überlappung. Gebäude — ca. 20 Min., 10 ha Gelände — ca. 30 Min."
+        },
+        {
+          "step": "3",
+          "title": "Datenverarbeitung und Modellerstellung",
+          "description": "Die Bilder werden in Fotogrammetrie-Software verarbeitet. Wir erzeugen Punktwolke, texturiertes Mesh-Modell und digitale Geländemodelle."
+        },
+        {
+          "step": "4",
+          "title": "Qualitätskontrolle und Lieferung",
+          "description": "Wir prüfen die Modellgenauigkeit, exportieren in die vereinbarten Formate und liefern per Download-Link. Lieferfrist: 5–7 Werktage."
+        }
+      ],
+      "deliverables": {
+        "heading": "Was der Auftraggeber erhält",
+        "items": [
+          "3D-Mesh-Modell mit fotografischer Textur im OBJ-, PLY- oder FBX-Format",
+          "Dichte Punktwolke im LAS/LAZ-Format",
+          "Digitales Geländemodell (DGM) im GeoTIFF- oder ASC-Format",
+          "Digitales Oberflächenmodell (DOM)",
+          "Genauigkeits- und Verarbeitungsparameterbericht"
+        ]
+      },
+      "area": {
+        "heading": "Einsatzgebiet",
+        "text": "Wir führen 3D-Inventarisierungen von unserem Standort Stettin aus in der Woiwodschaft Westpommern durch. Aufträge in anderen Regionen Polens übernehmen wir nach Absprache. Die Anfahrt bis 50 km von Stettin ist im Preis inbegriffen."
+      },
+      "cta": {
+        "heading": "Brauchen Sie ein 3D-Modell oder digitales Geländemodell?",
+        "text": "Kontaktieren Sie uns und wir erstellen ein Angebot für ein 3D-Modell, zugeschnitten auf den Umfang und die Anforderungen Ihres Projekts."
+      },
+      "breadcrumb": "3D-Modelle"
+    },
+    "wildlife-damage": {
+      "meta": {
+        "title": "Wildschadenbewertung per Drohne | Gutachten & Flächen",
+        "description": "Wildschadenbewertung per Drohne in Polen und Deutschland. Ernteschäden-Vermessung, Gutachten und Dokumentation gemäß den polnischen Ministeriumsverordnungen."
+      },
+      "hero": {
+        "heading": "Wildschadenbewertung per Drohne — Gutachten & Flächenberechnung",
+        "subheading": "Wir führen Wildschadensbewertungen mit Drohnen in der Woiwodschaft Westpommern, in ganz Polen und in Deutschland durch. Schnelle Reaktion, präzise Flächenberechnung und Dokumentation gemäß den Ministeriumsverordnungen."
+      },
+      "intro": [
+        "Wir befliegen Ackerflächen, auf denen Schäden durch Wildschweine, Rot-, Reh- und Damwild aufgetreten sind. Aus den Luftbildern erstellen wir eine Orthofotokarte des Feldes, auf der wir die Grenzen der beschädigten Kultur präzise abgrenzen und die Schadensfläche in Quadratmetern sowie den Schadensanteil berechnen — diese Daten bilden die Grundlage des offiziellen Gutachtens.",
+        "Die Leistung richtet sich an Landwirte, Jagdgenossenschaften, Sachverständige und Versicherer. Die Drohnen-Orthofotokarte eliminiert die Subjektivität manueller Vermessungen — die Schadensfläche wird mit geodätischer Genauigkeit (1–3 cm) berechnet, und die Dokumentation ist im Schadensverfahren belastbar.",
+        "Die Zeit ist der entscheidende Faktor: Der Zustand der geschädigten Kultur ändert sich von Tag zu Tag, daher muss die Dokumentation schnellstmöglich nach der Meldung erstellt werden. Dank der Mobilität der Drohne können wir das Feld innerhalb weniger Stunden erreichen und befliegen — auch noch am selben Tag."
+      ],
+      "benefits": [
+        {
+          "title": "Geodätisch präzise Flächenberechnung",
+          "description": "Die Drohnen-Orthofotokarte berechnet die Schadensfläche mit 1–3 cm Genauigkeit — Streitigkeiten über den Schadensumfang zwischen Landwirt und Jagdgenossenschaft werden minimiert."
+        },
+        {
+          "title": "Befliegung am Tag der Meldung",
+          "description": "In dringenden Fällen fahren wir noch am selben Tag zum Feld. Schnelles Handeln ist entscheidend, weil sich der Kulturzustand täglich ändert."
+        },
+        {
+          "title": "Verordnungskonforme Dokumentation",
+          "description": "Das Gutachten enthält Orthofotokarte, Flächenberechnung, Schadensanteil und Fotodokumentation — gemäß den polnischen Ministeriumsverordnungen zur Wildschadenbewertung."
+        },
+        {
+          "title": "Beweismaterial für Gerichtsverfahren",
+          "description": "Die Drohnen-Orthofotokarte und das PDF-Gutachten sind belastbares Beweismaterial in Schadenersatzstreitigkeiten zwischen Landwirten und Jagdgenossenschaften."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Schwarzwildschäden in Mais und Getreide",
+          "description": "Dokumentation von Zerstörungen auf Mais-, Weizen- und Rapsfeldern durch Wildschweine — die häufigste Wildschadensart in Westpommern."
+        },
+        {
+          "title": "Rot- und Rehwildschäden an Winterkulturen",
+          "description": "Schätzung von Verlusten an Winterkulturen und jungen Forstpflanzungen durch Verbiss von Rot-, Reh- und Damwild — Orthofotokarte und PDF-Gutachten."
+        },
+        {
+          "title": "Objektive Daten für die Schätzungskommission",
+          "description": "Bereitstellung von Orthofotokarten und Flächenberechnungen für die Schätzungskommission — Eliminierung von Streitigkeiten über subjektive Sichtschätzungen."
+        },
+        {
+          "title": "Fotogrammetrische Dokumentation für Gerichtsverfahren",
+          "description": "Erstellung professioneller Dokumentation mit Orthofotokarte, Berechnungen und GPS-Metadaten — als Beweismaterial in Gerichtsverfahren."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Schadensmeldung",
+          "description": "Der Landwirt oder die Jagdgenossenschaft kontaktiert uns telefonisch oder per E-Mail. Wir klären den Feldstandort, die Kulturart und den ungefähren Schadensumfang."
+        },
+        {
+          "step": "2",
+          "title": "Drohnenflug über das Feld",
+          "description": "Wir fahren zum Feld und führen die Befliegung durch. Ein Flug über ein 5–10 ha großes Feld dauert ca. 15–25 Minuten."
+        },
+        {
+          "step": "3",
+          "title": "Datenverarbeitung und Flächenberechnung",
+          "description": "Wir erstellen eine Orthofotokarte des Feldes, grenzen die beschädigte Kultur ab und berechnen die Schadensfläche in m² sowie den Schadensanteil."
+        },
+        {
+          "step": "4",
+          "title": "Erstellung des Gutachtens (PDF)",
+          "description": "Das Gutachten enthält Orthofotokarte, Berechnungen, Fotodokumentation und Flugmetadaten. Lieferung innerhalb von 2–3 Werktagen nach der Befliegung."
+        }
+      ],
+      "deliverables": {
+        "heading": "Was der Auftraggeber erhält",
+        "items": [
+          "Gutachten im PDF-Format (verordnungskonform)",
+          "Orthofotokarte des Feldes mit eingezeichneten Schadensgrenzen",
+          "Berechnung der Schadensfläche (m²) und des Schadensanteils",
+          "Flug-Fotodokumentation (RGB-Bilder in voller Auflösung)",
+          "Flugmetadaten: Datum, GPS-Koordinaten, Drohnenparameter"
+        ]
+      },
+      "area": {
+        "heading": "Einsatzgebiet",
+        "text": "Wildschadensbewertungen führen wir in der gesamten Woiwodschaft Westpommern und nach vorheriger Absprache auch in anderen Regionen Polens und in Deutschland (Mecklenburg-Vorpommern, Brandenburg) durch. In dringenden Fällen können wir das Feld noch am selben Tag erreichen."
+      },
+      "cta": {
+        "heading": "Wildschaden? Wir reagieren schnell.",
+        "text": "Kontaktieren Sie uns telefonisch oder per E-Mail — in dringenden Fällen können wir die Befliegung noch am selben Tag durchführen."
+      },
+      "breadcrumb": "Wildschäden"
+    },
+    "wind-turbines": {
+      "meta": {
+        "title": "Windkraftanlage Inspektion Drohne | Rotorblätter & Gondeln",
+        "description": "Visuelle Drohneninspektion von Windkraftanlagen in Stettin und Umgebung. Rotorblatt-Inspektion, Gondel-Inspektion und Turmprüfung ohne Anlagenstillstand."
+      },
+      "hero": {
+        "heading": "Drohneninspektion von Windkraftanlagen — Rotorblätter, Gondeln, Masten",
+        "subheading": "Wir führen visuelle Inspektionen von Rotorblättern, Gondeln und Türmen von Windkraftanlagen mit Drohnen durch. Schnelle Erkennung von Rissen, Erosion und Blitzschäden — ohne Industriekletterer und ohne Produktionsausfall."
+      },
+      "intro": [
+        "Wir führen visuelle Inspektionen von Windkraftanlagen mit einer Drohne durch, die mit einer 42-Mpx-Kamera und optischem Zoom ausgestattet ist. Die Drohne nähert sich den Rotorblättern, der Gondel und dem Turm auf 3–5 Meter Abstand und erfasst Aufnahmen in einer Auflösung, die die Identifikation von Rissen, Delaminationen, Vorderkantenerosion und Blitzschäden ermöglicht.",
+        "Die Leistung richtet sich an Windparkbetreiber, Turbinen-Serviceunternehmen und Versicherungsgesellschaften. Die Drohneninspektion ist 3–5-mal schneller als die Inspektion durch Industriekletterer und erfordert keinen Anlagenstillstand — die Rotorblätter müssen lediglich in der Inspektionsposition arretiert werden.",
+        "Jede Inspektion wird mit einem fotografischen Bericht abgeschlossen, in dem jeder identifizierte Defekt auf einem Blatt-/Gondel-/Turmschema lokalisiert, beschrieben und nach einer Schweregradskala klassifiziert wird (1 — beobachten, 2 — bei nächster Wartung reparieren, 3 — dringende Reparatur). Der Bericht ermöglicht die vorausschauende Planung von Inspektionen und Reparaturen."
+      ],
+      "benefits": [
+        {
+          "title": "Inspektion ohne Anlagenstillstand",
+          "description": "Die Rotorblätter müssen lediglich in der Inspektionsposition arretiert werden. Die Anlage muss nicht vom Netz getrennt werden — minimale Produktionsverluste."
+        },
+        {
+          "title": "3–5-mal schneller als Seilzugangstechnik",
+          "description": "Eine Drohneninspektion einer Anlage dauert 1–2 Stunden. Industriekletterer benötigen 6–8 Stunden plus Rüstzeit für denselben Umfang."
+        },
+        {
+          "title": "Schadensaufnahmen aus 3–5 Metern Entfernung",
+          "description": "Die Drohnenkamera erfasst Risse unter 1 mm Breite, Vorderkantenerosion, Blitzeinschlagspuren und Laminatdelaminationen aus nächster Nähe."
+        },
+        {
+          "title": "Bericht mit Schadensklassifizierung nach Schweregrad",
+          "description": "Jeder Defekt wird im Turbinenschema lokalisiert, beschrieben und klassifiziert: 1 — beobachten, 2 — bei Wartung reparieren, 3 — dringende Reparatur."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Rotorblattinspektion nach der Windsaison",
+          "description": "Inspektion aller drei Blätter auf Risse, Delaminationen, Vorderkantenerosion und Blitzschäden — Defektklassifizierungsbericht innerhalb von 3 Tagen."
+        },
+        {
+          "title": "Gondel- und Gehäuseinspektion",
+          "description": "Bewertung des Gondelgehäusezustands, des Blitzschutzsystems, der Dichtungen und der von außen sichtbaren mechanischen Komponenten."
+        },
+        {
+          "title": "Periodische Inspektion eines gesamten Windparks",
+          "description": "Planmäßige Inspektion von 10–20 Anlagen in 3–5 Tagen — konsolidierter Bericht für den Betreiber mit Reparaturpriorisierung."
+        },
+        {
+          "title": "Inspektion nach Blitzeinschlag",
+          "description": "Schnelle Drohneninspektion innerhalb von 24–48 Stunden nach dem Ereignis. Schadensdokumentation für Hersteller, Versicherer und Reparaturplanung."
+        }
+      ],
+      "process": [
+        {
+          "step": "1",
+          "title": "Umfang und Terminvereinbarung",
+          "description": "Wir klären die Anlagenanzahl, den Inspektionsumfang (Blätter, Gondel, Turm) und den Zeitplan. Wir koordinieren den Zugang mit dem Betreiber."
+        },
+        {
+          "step": "2",
+          "title": "Anlagenvorbereitung",
+          "description": "Der Betreiber arretiert die Rotorblätter in der Inspektionsposition (jedes Blatt wird in die 6-Uhr-Position gedreht). Die Anlage muss nicht vom Netz getrennt werden."
+        },
+        {
+          "step": "3",
+          "title": "Drohneninspektion",
+          "description": "Der Pilot umfliegt jedes Blatt, die Gondel und den Turm und erfasst Aufnahmen aus 3–5 m Entfernung. Eine Anlage — ca. 1–2 Stunden."
+        },
+        {
+          "step": "4",
+          "title": "Bildanalyse und Bericht",
+          "description": "Wir sichten die Aufnahmen, identifizieren Defekte, klassifizieren sie und erstellen den fotografischen Bericht mit Defektkarte. Lieferfrist: 3–5 Werktage."
+        }
+      ],
+      "deliverables": {
+        "heading": "Was der Auftraggeber erhält",
+        "items": [
+          "Fotografischer PDF-Bericht mit Lokalisierung, Beschreibung und Klassifizierung jedes Defekts",
+          "Blatt-/Gondel-/Turmschema mit eingezeichneten Defekten",
+          "Hochauflösende Bilder jedes identifizierten Schadens",
+          "Zusammenfassung mit Reparaturpriorisierung (beobachten / reparieren / dringend)",
+          "Rohe Flugbilder in voller Auflösung auf Datenträger"
+        ]
+      },
+      "area": {
+        "heading": "Einsatzgebiet",
+        "text": "Inspektionen von Windkraftanlagen führen wir in den Woiwodschaften Westpommern, Pommern und Großpolen durch — Regionen mit der höchsten Windparkdichte in Polen. Nach Absprache übernehmen wir Aufträge landesweit."
+      },
+      "cta": {
+        "heading": "Planen Sie eine Inspektion Ihrer Windkraftanlagen?",
+        "text": "Kontaktieren Sie uns und wir erstellen ein Angebot für eine Drohneninspektion, zugeschnitten auf die Größe Ihres Windparks und den Inspektionsumfang."
+      },
+      "breadcrumb": "Windkraftanlagen"
+    }
+  },
+  "footer": {
+    "company": "Aero Metric",
+    "location": "Stettin, Polen",
+    "email": "kontakt@aerometric.pl",
+    "phone": "+48 123 456 789",
+    "social": "Soziale Medien",
+    "copyright": "Alle Rechte vorbehalten.",
+    "description": "Professionelle Drohnendienstleistungen mit Sitz in Stettin. Inspektionen, Fotogrammetrie, Thermografie und 3D-Modelle — Einsätze in Polen und Deutschland.",
+    "servicesHeading": "Leistungen",
+    "serviceLinks": {
+      "photogrammetry": "Fotogrammetrie",
+      "thermal-imaging": "Thermografie",
+      "3d-models": "3D-Modelle",
+      "wildlife-damage": "Wildschäden",
+      "wind-turbines": "Windkraftanlagen"
+    }
+  }
+}
