@@ -539,7 +539,11 @@
         },
         {
           "title": "Dokumentacja zgodna z rozporządzeniem",
-          "description": "Operat szacunkowy zawiera ortofotomapę, obliczenie powierzchni szkody, procent uszkodzenia i dokumentację fotograficzną — zgodnie z rozporządzeniem Ministra Środowiska."
+          "description": "Operat szacunkowy zawiera ortofotomapę, obliczenie powierzchni szkody, procent uszkodzenia i dokumentację fotograficzną — zgodnie z rozporządzeniem Ministra Środowiska.",
+          "link": {
+            "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20190000776",
+            "text": "Rozporządzenie Ministra Środowiska (ISAP)"
+          }
         },
         {
           "title": "Materiał dowodowy do postępowania sądowego",

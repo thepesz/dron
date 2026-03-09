@@ -18,6 +18,7 @@ export type ServiceSlug = (typeof serviceSlugs)[number];
 interface BenefitItem {
   title: string;
   description: string;
+  link?: { url: string; text: string };
 }
 
 interface UseCaseItem {
@@ -166,6 +167,16 @@ export function ServicePageLayout({
                 <p className="text-sm leading-relaxed text-slate-600">
                   {benefit.description}
                 </p>
+                {benefit.link && (
+                  <a
+                    href={benefit.link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-sm font-medium text-brand-600 underline hover:text-brand-500"
+                  >
+                    {benefit.link.text}
+                  </a>
+                )}
               </div>
             ))}
           </div>

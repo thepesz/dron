@@ -539,7 +539,11 @@
         },
         {
           "title": "Verordnungskonforme Dokumentation",
-          "description": "Das Gutachten enthält Orthofotokarte, Flächenberechnung, Schadensanteil und Fotodokumentation — gemäß den polnischen Ministeriumsverordnungen zur Wildschadenbewertung."
+          "description": "Das Gutachten enthält Orthofotokarte, Flächenberechnung, Schadensanteil und Fotodokumentation — gemäß den polnischen Ministeriumsverordnungen zur Wildschadenbewertung.",
+          "link": {
+            "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20190000776",
+            "text": "Ministeriumsverordnung (ISAP)"
+          }
         },
         {
           "title": "Beweismaterial für Gerichtsverfahren",

@@ -83,7 +83,7 @@ export default async function ServicePage({
   // Use t.raw() to extract raw JSON arrays from translations.
   // This avoids iterating with try/catch and produces no MISSING_MESSAGE warnings.
   const introParagraphs = t.raw("intro") as string[];
-  const benefits = t.raw("benefits") as { title: string; description: string }[];
+  const benefits = t.raw("benefits") as { title: string; description: string; link?: { url: string; text: string } }[];
   const useCases = t.raw("useCases") as { title: string; description: string }[];
   const processSteps = t.raw("process") as { step: string; title: string; description: string }[];
   const deliverables = t.raw("deliverables") as { heading: string; items: string[] };

@@ -539,7 +539,11 @@
         },
         {
           "title": "Documentation compliant with regulations",
-          "description": "The expert report contains an orthophotomap, area calculations, damage percentage and photographic documentation -- in accordance with the Ministry of Environment regulations."
+          "description": "The expert report contains an orthophotomap, area calculations, damage percentage and photographic documentation -- in accordance with the Ministry of Environment regulations.",
+          "link": {
+            "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20190000776",
+            "text": "Ministry of Environment Regulation (ISAP)"
+          }
         },
         {
           "title": "Evidence for legal proceedings",
