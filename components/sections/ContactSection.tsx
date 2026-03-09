@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { ContactForm } from "@/components/ui/ContactForm";
+import { ObfuscatedEmail } from "@/components/ui/ObfuscatedEmail";
 
 export function ContactSection() {
   const t = useTranslations("contact");
@@ -65,12 +66,11 @@ export function ContactSection() {
                 <li className="flex items-start gap-3">
                   <Mail className="mt-0.5 h-5 w-5 shrink-0 text-brand-400" />
                   <div>
-                    <a
-                      href={`mailto:${tFooter("email")}`}
+                    <ObfuscatedEmail
+                      user="info"
+                      domain="loty-dronem.pl"
                       className="font-medium text-zinc-200 transition-colors hover:text-brand-400"
-                    >
-                      {tFooter("email")}
-                    </a>
+                    />
                   </div>
                 </li>
 

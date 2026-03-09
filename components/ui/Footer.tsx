@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { MapPin, Mail, Phone } from "lucide-react";
+import { ObfuscatedEmail } from "@/components/ui/ObfuscatedEmail";
 
 interface NavLinkDef {
   key: string;
@@ -105,12 +106,11 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                <a
-                  href={`mailto:${t("email")}`}
+                <ObfuscatedEmail
+                  user="info"
+                  domain="loty-dronem.pl"
                   className="text-sm text-zinc-400 transition-colors hover:text-brand-400"
-                >
-                  {t("email")}
-                </a>
+                />
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
