@@ -66,11 +66,10 @@ export function generateLocalizedMetadata({
     },
     icons: {
       icon: [
+        { url: "/favicon.ico", sizes: "48x48" },
         { url: "/favicon.svg", type: "image/svg+xml" },
       ],
-      // TODO: Generate apple-touch-icon.png (180x180) from the SVG favicon
-      // using https://realfavicongenerator.net before launch, then uncomment:
-      // apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
     },
     manifest: "/site.webmanifest",
     openGraph: {
