@@ -53,6 +53,8 @@ export function generateStructuredData(locale: Locale): string {
       url: `${baseUrl}/images/logo.png`,
       contentUrl: `${baseUrl}/images/logo.png`,
       caption: "Aero Metric",
+      width: 140,
+      height: 48,
     },
     image: {
       "@type": "ImageObject",
@@ -95,19 +97,25 @@ export function generateStructuredData(locale: Locale): string {
       "Wildlife Damage Estimation",
       "Aerial Photography",
     ],
-    availableLanguage: ["Polish", "English", "German"],
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-      ],
-      opens: "08:00",
-      closes: "17:00",
-    },
+    availableLanguage: [
+      { "@type": "Language", name: "Polish", alternateName: "pl" },
+      { "@type": "Language", name: "English", alternateName: "en" },
+      { "@type": "Language", name: "German", alternateName: "de" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+        ],
+        opens: "08:00",
+        closes: "17:00",
+      },
+    ],
     priceRange: "$$",
     // TODO: Add real social media profile URLs before going live:
     // sameAs: ["https://linkedin.com/company/aerometric", "https://instagram.com/aerometric"],
@@ -120,6 +128,14 @@ export function generateStructuredData(locale: Locale): string {
     name: "Aero Metric",
     publisher: { "@id": `${baseUrl}/#business` },
     inLanguage: locales.map((loc) => languageTags[loc]),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${baseUrl}/${locale}?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 
   const graph = {

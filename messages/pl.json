@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Inspekcje dronem Szczecin | Fotogrametria i termowizja",
-    "description": "Profesjonalne usługi dronowe w Szczecinie i woj. zachodniopomorskim. Inspekcje, fotogrametria, modele 3D, termowizja i szacowanie szkód łowieckich."
+    "description": "Inspekcje dronem, fotogrametria, modele 3D i termowizja w Szczecinie. Obsługujemy przemysł, rolnictwo i energetykę."
   },
   "skipToMain": "Przejdź do treści głównej",
   "nav": {
@@ -236,7 +236,7 @@
     "photogrammetry": {
       "meta": {
         "title": "Fotogrametria dronem Szczecin | Ortofotomapy i chmury punktów",
-        "description": "Profesjonalna fotogrametria dronem w Szczecinie. Ortofotomapy, chmury punktów i modele 3D z centymetrową dokładnością dla budownictwa, geodezji i rolnictwa."
+        "description": "Fotogrametria dronem w Szczecinie. Ortofotomapy, chmury punktów i modele 3D z dokładnością 1–3 cm."
       },
       "hero": {
         "heading": "Fotogrametria dronem w Szczecinie i Polsce",
@@ -333,7 +333,7 @@
     "thermal-imaging": {
       "meta": {
         "title": "Termowizja dronem Szczecin | Inspekcje dachów, hal i PV",
-        "description": "Inspekcje termowizyjne dronem w Szczecinie. Wykrywanie strat ciepła, usterek paneli fotowoltaicznych i problemów z izolacją dachów i hal przemysłowych."
+        "description": "Termowizja dronem w Szczecinie. Wykrywanie strat ciepła, usterek PV i problemów z izolacją dachów i hal."
       },
       "hero": {
         "heading": "Termowizja z drona — inspekcje dachów, hal i instalacji PV",
@@ -425,7 +425,7 @@
     "3d-models": {
       "meta": {
         "title": "Modele 3D z drona Szczecin | Cyfrowe modele terenu",
-        "description": "Tworzenie modeli 3D z drona w Szczecinie. Cyfrowe modele terenu, inwentaryzacja 3D budynków i realistyczne modele mesh dla budownictwa i geodezji."
+        "description": "Modele 3D z drona w Szczecinie. Cyfrowe modele terenu, inwentaryzacja budynków i modele mesh dla budownictwa."
       },
       "hero": {
         "heading": "Modele 3D i cyfrowe mapy terenu z danych dronowych",
@@ -517,7 +517,7 @@
     "wildlife-damage": {
       "meta": {
         "title": "Szacowanie szkód łowieckich dronem | Operat PDF",
-        "description": "Szacowanie szkód łowieckich dronem w woj. zachodniopomorskim. Operaty szacunkowe, obliczanie powierzchni szkód i dokumentacja zgodna z rozporządzeniem."
+        "description": "Szacowanie szkód łowieckich dronem. Operaty szacunkowe PDF, pomiar powierzchni i dokumentacja zgodna z rozporządzeniem."
       },
       "hero": {
         "heading": "Szacowanie szkód łowieckich dronem — operat szacunkowy i PDF",
@@ -613,7 +613,7 @@
     "wind-turbines": {
       "meta": {
         "title": "Inspekcja turbin wiatrowych dronem | Łopaty i gondole",
-        "description": "Inspekcje wizualne turbin wiatrowych dronem w Szczecinie i regionie. Przegląd łopat, gondoli i wież wiatrowych bez wstrzymywania pracy turbiny."
+        "description": "Inspekcje turbin wiatrowych dronem. Przegląd łopat, gondoli i wież bez wstrzymywania pracy turbiny."
       },
       "hero": {
         "heading": "Inspekcja dronem turbin wiatrowych — łopaty, gondole, maszty",

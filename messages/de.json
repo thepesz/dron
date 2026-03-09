@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Drohneninspektion Stettin | Fotogrammetrie & Thermografie",
-    "description": "Drohneninspektion, Fotogrammetrie, 3D-Modelle und Thermografie in Stettin. Wir bedienen Industrie und Landwirtschaft in Polen und Deutschland."
+    "description": "Drohneninspektion, Fotogrammetrie, 3D-Modelle und Thermografie in Stettin. Industrie, Landwirtschaft und Energie."
   },
   "skipToMain": "Zum Hauptinhalt springen",
   "nav": {
@@ -236,7 +236,7 @@
     "photogrammetry": {
       "meta": {
         "title": "Drohnen-Fotogrammetrie Stettin | 3D-Modelle & Orthofotokarten",
-        "description": "Professionelle Drohnen-Fotogrammetrie in Stettin. Orthofotokarten, Punktwolken und 3D-Modelle mit Zentimetergenauigkeit für Bau, Vermessung und Landwirtschaft."
+        "description": "Drohnen-Fotogrammetrie in Stettin. Orthofotokarten, Punktwolken und 3D-Modelle mit 1–3 cm Genauigkeit."
       },
       "hero": {
         "heading": "Drohnen-Fotogrammetrie in Stettin und Polen",
@@ -333,7 +333,7 @@
     "thermal-imaging": {
       "meta": {
         "title": "Thermografie Drohne Stettin | Dächer, Hallen & Solaranlagen",
-        "description": "Thermografische Drohneninspektionen in Stettin. Erkennung von Wärmeverlusten, Photovoltaik-Fehlern und Dachdämmungsproblemen in Industriehallen und Gebäuden."
+        "description": "Thermografie per Drohne in Stettin. Erkennung von Wärmeverlusten, PV-Fehlern und Dämmungsproblemen an Dächern."
       },
       "hero": {
         "heading": "Thermografie per Drohne — Dächer, Hallen & Photovoltaikanlagen",
@@ -425,7 +425,7 @@
     "3d-models": {
       "meta": {
         "title": "3D-Modelle per Drohne Stettin | Digitale Geländemodelle",
-        "description": "Erstellung von 3D-Modellen aus Drohnendaten in Stettin. Digitale Geländemodelle, 3D-Gebäudeinventarisierung und realistische Mesh-Modelle für Bau und Vermessung."
+        "description": "3D-Modelle aus Drohnendaten in Stettin. Digitale Geländemodelle, Gebäudeinventarisierung und Mesh-Modelle für Bau."
       },
       "hero": {
         "heading": "3D-Modelle und digitale Geländekarten aus Drohnendaten",
@@ -517,7 +517,7 @@
     "wildlife-damage": {
       "meta": {
         "title": "Wildschadenbewertung per Drohne | Gutachten & Flächen",
-        "description": "Wildschadenbewertung per Drohne in Polen und Deutschland. Ernteschäden-Vermessung, Gutachten und Dokumentation gemäß den polnischen Ministeriumsverordnungen."
+        "description": "Wildschadenbewertung per Drohne in Polen und Deutschland. Gutachten, Flächenberechnung und konforme Dokumentation."
       },
       "hero": {
         "heading": "Wildschadenbewertung per Drohne — Gutachten & Flächenberechnung",
@@ -613,7 +613,7 @@
     "wind-turbines": {
       "meta": {
         "title": "Windkraftanlage Inspektion Drohne | Rotorblätter & Gondeln",
-        "description": "Visuelle Drohneninspektion von Windkraftanlagen in Stettin und Umgebung. Rotorblatt-Inspektion, Gondel-Inspektion und Turmprüfung ohne Anlagenstillstand."
+        "description": "Drohneninspektion von Windkraftanlagen in Stettin. Rotorblatt-, Gondel- und Turmprüfung ohne Anlagenstillstand."
       },
       "hero": {
         "heading": "Drohneninspektion von Windkraftanlagen — Rotorblätter, Gondeln, Masten",

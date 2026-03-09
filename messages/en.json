@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Drone inspections Szczecin | Photogrammetry & thermal imaging",
-    "description": "Drone inspections, photogrammetry, 3D modelling, and thermal imaging in Szczecin. Serving industry, agriculture, and energy across Poland and Germany."
+    "description": "Drone inspections, photogrammetry, 3D models and thermal imaging in Szczecin. Serving industry, agriculture and energy."
   },
   "skipToMain": "Skip to main content",
   "nav": {
@@ -236,7 +236,7 @@
     "photogrammetry": {
       "meta": {
         "title": "Drone photogrammetry Szczecin | 3D models & orthophotomaps",
-        "description": "Professional drone photogrammetry in Szczecin. Orthophotomaps, point clouds and 3D models with centimetre accuracy for construction, surveying and agriculture."
+        "description": "Drone photogrammetry in Szczecin. Orthophotomaps, point clouds and 3D models with 1-3 cm accuracy."
       },
       "hero": {
         "heading": "Drone photogrammetry in Szczecin and across Poland",
@@ -333,7 +333,7 @@
     "thermal-imaging": {
       "meta": {
         "title": "Thermal imaging drone Szczecin | Roofs, halls & solar panels",
-        "description": "Drone thermal imaging inspections in Szczecin. Detecting heat loss, solar panel faults and roof insulation deficiencies in industrial halls and buildings."
+        "description": "Drone thermal imaging in Szczecin. Detecting heat loss, solar panel faults and insulation issues in roofs and halls."
       },
       "hero": {
         "heading": "Thermal imaging by drone — roofs, industrial halls & PV systems",
@@ -425,7 +425,7 @@
     "3d-models": {
       "meta": {
         "title": "3D models from drone Szczecin | Digital terrain & building models",
-        "description": "Creating 3D models from drone data in Szczecin. Digital terrain models, 3D building inventory and realistic mesh models for construction and surveying."
+        "description": "3D models from drone data in Szczecin. Digital terrain models, building inventory and mesh models for construction."
       },
       "hero": {
         "heading": "3D models and digital terrain maps from drone data",
@@ -517,7 +517,7 @@
     "wildlife-damage": {
       "meta": {
         "title": "Wildlife damage assessment by drone | Expert reports & PDF",
-        "description": "Wildlife damage estimation by drone in Poland. Crop damage assessment, expert reports and documentation compliant with Polish Ministry regulations."
+        "description": "Wildlife damage estimation by drone in Poland. Crop damage assessment, expert PDF reports and compliant documentation."
       },
       "hero": {
         "heading": "Wildlife damage estimation by drone — expert reports & PDF",
@@ -613,7 +613,7 @@
     "wind-turbines": {
       "meta": {
         "title": "Wind turbine inspection by drone | Blades & nacelle surveys",
-        "description": "Visual drone inspection of wind turbines in Szczecin and region. Blade inspection, nacelle inspection and tower surveys without halting turbine operation."
+        "description": "Drone inspection of wind turbines in Szczecin. Blade, nacelle and tower surveys without halting turbine operation."
       },
       "hero": {
         "heading": "Drone inspection of wind turbines — blades, nacelles & masts",
