@@ -97,6 +97,20 @@
   }
 }
 
+/* ── Infinite horizontal marquee for PhotoStrip ── */
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 60s linear infinite;
+}
+
 /* ── Reduced motion: disable all animations for users who prefer it ── */
 @media (prefers-reduced-motion: reduce) {
   *,

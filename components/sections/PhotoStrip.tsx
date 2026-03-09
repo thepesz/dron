@@ -13,12 +13,12 @@ const stripPhotos = [
   "/images/agro1.jpg",
   "/images/budynek3d1.jpg",
   "/images/pv1.jpg",
-  "/images/gsm1.png",
+  "/images/gsm1.jpg",
   "/images/las1.jpg",
   "/images/dron2.jpg",
   "/images/agro2.jpg",
   "/images/dron3.jpg",
-  "/images/budynek3d2.png",
+  "/images/budynek3d2.jpg",
   "/images/agro3.jpg",
 ];
 
@@ -51,7 +51,7 @@ export function PhotoStrip() {
               src={src}
               alt=""
               fill
-              sizes="320px"
+              sizes="(min-width: 768px) 420px, 288px"
               className="object-cover"
               loading="lazy"
             />

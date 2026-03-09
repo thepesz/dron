@@ -34,8 +34,9 @@ export function Header() {
           <Image
             src="/images/logo.png"
             alt="Aero Metric"
-            width={280}
-            height={96}
+            width={560}
+            height={305}
+            sizes="147px"
             className="h-20 w-auto object-contain"
             priority
           />

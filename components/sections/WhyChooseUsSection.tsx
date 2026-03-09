@@ -35,12 +35,12 @@ const bgPhotos = [
   "/images/agro1.jpg",
   "/images/budynek3d1.jpg",
   "/images/pv1.jpg",
-  "/images/gsm1.png",
+  "/images/gsm1.jpg",
   "/images/las1.jpg",
   "/images/dron2.jpg",
   "/images/agro2.jpg",
   "/images/dron3.jpg",
-  "/images/budynek3d2.png",
+  "/images/budynek3d2.jpg",
   "/images/agro3.jpg",
 ];
 

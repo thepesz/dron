@@ -42,9 +42,11 @@ export function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="Aero Metric"
-                width={120}
-                height={40}
+                width={560}
+                height={305}
+                sizes="66px"
                 className="h-9 w-auto object-contain"
+                loading="lazy"
               />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-zinc-400">

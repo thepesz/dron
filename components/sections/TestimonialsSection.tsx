@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
+import { useInView } from "@/lib/hooks/useInView";
 
 const testimonialKeys = [
   "testimonial1",
@@ -14,9 +14,14 @@ const testimonialKeys = [
  * Testimonials section with 3 client quote cards.
  * Dark card style consistent with the industrial service card aesthetic.
  * Uses left border accent and quote icon for visual hierarchy.
+ *
+ * Uses CSS-based entrance animations via useInView instead of framer-motion
+ * to avoid pulling in the full framer-motion bundle.
  */
 export function TestimonialsSection() {
   const t = useTranslations("testimonials");
+  const { ref: headerRef, isInView: headerInView } = useInView();
+  const { ref: gridRef, isInView: gridInView } = useInView();
 
   return (
     <section
@@ -26,29 +31,26 @@ export function TestimonialsSection() {
     >
       <div className="container-wide">
         {/* Section header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-14 text-center"
+        <div
+          ref={headerRef}
+          className={`animate-on-scroll mb-14 text-center ${headerInView ? "in-view" : ""}`}
         >
           <h2 id="testimonials-heading" className="heading-section">
             {t("heading")}
           </h2>
           <p className="text-body mx-auto mt-4 max-w-2xl">{t("subtitle")}</p>
-        </motion.div>
+        </div>
 
         {/* Testimonial cards grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          ref={gridRef}
+          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
           {testimonialKeys.map((key, index) => (
-            <motion.blockquote
+            <blockquote
               key={key}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative border border-slate-700/60 border-l-4 border-l-brand-500 bg-slate-900 p-6 sm:p-8"
+              className={`animate-on-scroll relative border border-slate-700/60 border-l-4 border-l-brand-500 bg-slate-900 p-6 sm:p-8 ${gridInView ? "in-view" : ""}`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Quote icon */}
               <Quote className="mb-4 h-8 w-8 text-brand-500/30" />
@@ -69,7 +71,7 @@ export function TestimonialsSection() {
                   </p>
                 </cite>
               </footer>
-            </motion.blockquote>
+            </blockquote>
           ))}
         </div>
       </div>

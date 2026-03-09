@@ -34,7 +34,7 @@ const serviceItems: ServiceItem[] = [
   { key: "inspection", icon: <ScanSearch className="h-6 w-6" />, photo: "/images/dron1.jpg" },
   { key: "photogrammetry", icon: <Box className="h-6 w-6" />, photo: "/images/budynek3d1.jpg", slug: "photogrammetry" },
   { key: "thermal", icon: <Thermometer className="h-6 w-6" />, photo: "/images/pv1.jpg", slug: "thermal-imaging" },
-  { key: "windTurbines", icon: <Wind className="h-6 w-6" />, photo: "/images/gsm1.png", slug: "wind-turbines" },
+  { key: "windTurbines", icon: <Wind className="h-6 w-6" />, photo: "/images/gsm1.jpg", slug: "wind-turbines" },
   { key: "wildlifeDamage", icon: <TreePine className="h-6 w-6" />, photo: "/images/agro1.jpg", slug: "wildlife-damage" },
   { key: "aerial", icon: <Camera className="h-6 w-6" />, photo: "/images/las1.jpg" },
 ];

@@ -58,8 +58,8 @@ export function generateStructuredData(locale: Locale): string {
     },
     image: {
       "@type": "ImageObject",
-      url: `${baseUrl}/images/glownefoto.png`,
-      contentUrl: `${baseUrl}/images/glownefoto.png`,
+      url: `${baseUrl}/images/glownefoto.jpg`,
+      contentUrl: `${baseUrl}/images/glownefoto.jpg`,
     },
     email: "info@loty-dronem.pl",
     telephone: "+48 123 456 789",

@@ -24,7 +24,7 @@ export function HeroSection() {
         {/* Photo background */}
         {/* Decorative background image — video plays on top; alt="" is correct */}
         <Image
-          src="/images/glownefoto.png"
+          src="/images/glownefoto.jpg"
           alt=""
           fill
           priority
@@ -33,14 +33,16 @@ export function HeroSection() {
           className="object-cover object-center"
         />
 
-        {/* Video background -- shown on top of photo once loaded */}
+        {/* Video background -- shown on top of photo once loaded.
+            No poster attribute: the <Image priority> above already
+            handles the LCP element and preloads it. Adding poster
+            here would cause a duplicate fetch of the same file. */}
         <video
           autoPlay
           muted
           loop
           playsInline
           preload="metadata"
-          poster="/images/glownefoto.png"
           className="absolute inset-0 h-full w-full object-cover"
           aria-hidden="true"
         >

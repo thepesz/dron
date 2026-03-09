@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { useInView } from "@/lib/hooks/useInView";
 
 const statKeys = ["years", "projects", "specializations", "area"] as const;
 
@@ -9,9 +9,13 @@ const statKeys = ["years", "projects", "specializations", "area"] as const;
  * Statistics section displaying 4 key numbers/facts about the company.
  * Large orange accent numbers with descriptive labels below.
  * Placed between Services and WhyChooseUs for trust-building.
+ *
+ * Uses CSS-based entrance animations via useInView instead of framer-motion
+ * to avoid pulling in the full framer-motion bundle.
  */
 export function StatsSection() {
   const t = useTranslations("stats");
+  const { ref: gridRef, isInView: gridInView } = useInView();
 
   return (
     <section
@@ -19,15 +23,15 @@ export function StatsSection() {
       aria-label={t("heading")}
     >
       <div className="container-wide">
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12">
+        <div
+          ref={gridRef}
+          className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-12"
+        >
           {statKeys.map((key, index) => (
-            <motion.div
+            <div
               key={key}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-30px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
+              className={`animate-on-scroll text-center ${gridInView ? "in-view" : ""}`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               <p className="text-3xl font-bold tracking-tight text-brand-500 sm:text-4xl lg:text-5xl">
                 {t(`items.${key}.value`)}
@@ -35,7 +39,7 @@ export function StatsSection() {
               <p className="mt-2 text-sm font-medium text-zinc-400 sm:text-base">
                 {t(`items.${key}.label`)}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
