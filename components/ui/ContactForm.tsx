@@ -43,10 +43,12 @@ export function ContactForm() {
   async function onSubmit(data: ContactFormData) {
     setStatus("submitting");
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      if (process.env.NODE_ENV === "development") {
-        console.log("Contact form submitted:", data);
-      }
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("Failed");
       setStatus("success");
       reset();
     } catch {
