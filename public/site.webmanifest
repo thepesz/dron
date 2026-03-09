@@ -1,0 +1,16 @@
+{
+  "name": "Aero Metric - Profesjonalne usługi dronowe",
+  "short_name": "Aero Metric",
+  "description": "Profesjonalne loty dronem, inspekcje, fotogrametria i modele 3D - Szczecin i region",
+  "start_url": "/pl",
+  "display": "browser",
+  "background_color": "#0f172a",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

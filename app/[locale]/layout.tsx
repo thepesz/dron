@@ -59,6 +59,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable} suppressHydrationWarning>
       <head>
+        <meta name="theme-color" content="#f97316" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: structuredData }}
