@@ -137,9 +137,10 @@ export async function POST(request: NextRequest) {
       { status: 201 }
     );
   } catch (error) {
-    console.error("POST /api/jobs error:", error);
+    const msg = error instanceof Error ? error.message : String(error);
+    console.error("POST /api/jobs error:", msg);
     return NextResponse.json(
-      { error: "Failed to create job" },
+      { error: "Failed to create job", reason: msg },
       { status: 500 }
     );
   }
