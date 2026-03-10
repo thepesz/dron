@@ -769,6 +769,73 @@
       "a1a3": "A1/A3",
       "a2": "A2",
       "sts": "STS"
+    },
+    "newJob": {
+      "metaTitle": "Drohnenanzeige aufgeben",
+      "metaDescription": "Geben Sie eine Anzeige auf der Drohnen-Jobbörse auf. Finden Sie einen Drohnenpiloten oder bieten Sie Ihre Dienste an.",
+      "heading": "Anzeige aufgeben",
+      "subheading": "Füllen Sie das Formular aus, um eine Anzeige auf der Drohnen-Jobbörse zu veröffentlichen.",
+      "typeLabel": "Angebotstyp",
+      "titleLabel": "Titel der Anzeige",
+      "titlePlaceholder": "z.B. Fotogrammetrie des Baugebiets — Stettin",
+      "descriptionLabel": "Beschreibung",
+      "descriptionPlaceholder": "Beschreiben Sie Ihre Anforderungen, den Arbeitsumfang, den Zeitrahmen...",
+      "contactNameLabel": "Kontaktname",
+      "contactNamePlaceholder": "Firma oder vollständiger Name",
+      "locationLabel": "Standort",
+      "radiusLabel": "Radius",
+      "submit": "Anzeige veröffentlichen",
+      "success": "Anzeige erfolgreich veröffentlicht. Weiterleitung zur Jobbörse...",
+      "errorTitle": "Der Titel der Anzeige ist erforderlich.",
+      "errorDescription": "Die Beschreibung der Anzeige ist erforderlich.",
+      "errorServices": "Wählen Sie mindestens eine Leistung aus.",
+      "errorGeneric": "Anzeige konnte nicht veröffentlicht werden. Bitte versuchen Sie es erneut."
+    }
+  },
+  "auth": {
+    "login": {
+      "metaTitle": "Anmelden",
+      "metaDescription": "Melden Sie sich an, um Anzeigen auf der Drohnen-Jobbörse aufzugeben.",
+      "heading": "Anmelden",
+      "subheading": "Melden Sie sich an, um Anzeigen aufzugeben und auf Drohnenaufträge zu antworten.",
+      "google": "Mit Google anmelden",
+      "or": "oder",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "ihre@email.de",
+      "passwordLabel": "Passwort",
+      "passwordPlaceholder": "Passwort eingeben",
+      "submit": "Anmelden",
+      "noAccount": "Noch kein Konto?",
+      "registerLink": "Registrieren"
+    },
+    "register": {
+      "metaTitle": "Registrieren",
+      "metaDescription": "Erstellen Sie ein Konto, um Anzeigen auf der Drohnen-Jobbörse aufzugeben.",
+      "heading": "Konto erstellen",
+      "subheading": "Registrieren Sie sich, um Anzeigen auf der Drohnen-Jobbörse aufzugeben.",
+      "google": "Mit Google registrieren",
+      "or": "oder",
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Max Mustermann",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "ihre@email.de",
+      "passwordLabel": "Passwort",
+      "passwordPlaceholder": "Mindestens 6 Zeichen",
+      "passwordHint": "Das Passwort muss mindestens 6 Zeichen lang sein.",
+      "submit": "Konto erstellen",
+      "hasAccount": "Bereits ein Konto?",
+      "loginLink": "Anmelden"
+    },
+    "errors": {
+      "fieldsRequired": "Bitte füllen Sie alle erforderlichen Felder aus.",
+      "invalidCredentials": "Ungültige E-Mail-Adresse oder Passwort.",
+      "tooManyRequests": "Zu viele Anmeldeversuche. Bitte versuchen Sie es später erneut.",
+      "loginFailed": "Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "googleFailed": "Google-Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "emailInUse": "Diese E-Mail-Adresse ist bereits registriert.",
+      "passwordTooShort": "Das Passwort muss mindestens 6 Zeichen lang sein.",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "registerFailed": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut."
     }
   },
   "footer": {

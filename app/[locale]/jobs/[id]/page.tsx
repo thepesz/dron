@@ -1,19 +1,60 @@
 import type { Metadata } from "next";
 import { locales, type Locale, baseUrl } from "@/lib/i18n/config";
 import { generateLocalizedMetadata } from "@/lib/seo/metadata";
-import { getJobById, mockJobs } from "@/lib/jobs/mockData";
+import { getJobById, mockJobs, type JobListing } from "@/lib/jobs/mockData";
 import { JobDetailContent } from "@/components/jobs/JobDetailContent";
+import { adminDb } from "@/lib/firebase/admin";
+
+/**
+ * Force dynamic rendering — Firestore document IDs are dynamic and cannot
+ * be statically enumerated at build time (unlike the 8 mock IDs).
+ */
+export const dynamic = "force-dynamic";
 
 interface JobDetailPageProps {
   params: { locale: string; id: string };
 }
 
 /**
- * Pre-generate all job detail variants at build time:
- * 8 jobs x 3 locales = 24 static pages.
+ * Attempt to load a job from Firestore by document ID.
+ * Returns null if not found or on error.
  */
-export function generateStaticParams() {
-  return mockJobs.map((job) => ({ id: job.id }));
+async function getFirestoreJobById(id: string): Promise<JobListing | null> {
+  try {
+    const docRef = adminDb.collection("jobs").doc(id);
+    const docSnap = await docRef.get();
+
+    if (!docSnap.exists) return null;
+
+    const data = docSnap.data()!;
+    const now = new Date();
+    const postedAt = data.postedAt?.toDate?.() ?? now;
+    const diffMs = now.getTime() - postedAt.getTime();
+    const postedDaysAgo = Math.max(0, Math.floor(diffMs / (1000 * 60 * 60 * 24)));
+    const rateValue = data.rate != null ? String(data.rate) : "do negocjacji";
+
+    return {
+      id: docSnap.id,
+      type: data.type ?? "seeking_operator",
+      title: data.title ?? "",
+      location: data.location ?? "Szczecin",
+      lat: data.coordinates?.lat ?? 53.4285,
+      lng: data.coordinates?.lng ?? 14.5528,
+      radiusKm: data.radius ?? 50,
+      services: data.services ?? [],
+      drones: data.droneTypes ?? [],
+      licenses: data.licenses ?? [],
+      rate: rateValue,
+      rateType: data.rateType ?? "negotiable",
+      description: data.description ?? "",
+      postedDaysAgo,
+      contactName: data.contactName ?? data.postedByName ?? "Anonymous",
+      province: data.province ?? "zachodniopomorskie",
+    };
+  } catch (error) {
+    console.error("Failed to fetch job from Firestore:", error);
+    return null;
+  }
 }
 
 /**
@@ -27,7 +68,9 @@ export async function generateMetadata({
     ? (locale as Locale)
     : "pl";
 
-  const job = getJobById(id);
+  // Try Firestore first, then mock data
+  const job = (await getFirestoreJobById(id)) ?? getJobById(id);
+
   if (!job) {
     return generateLocalizedMetadata({
       locale: validLocale,
@@ -55,9 +98,7 @@ export async function generateMetadata({
 /**
  * Generate JSON-LD for a single job posting (only if type is "seeking_operator").
  */
-function generateJobDetailJsonLd(
-  job: (typeof mockJobs)[number]
-): string | null {
+function generateJobDetailJsonLd(job: JobListing): string | null {
   if (job.type !== "seeking_operator") return null;
 
   const now = new Date();
@@ -108,13 +149,15 @@ function generateJobDetailJsonLd(
 
 /**
  * Job detail page (Server Component).
- * Exports generateMetadata for SEO and passes the job data to the client component.
- * Falls back to first job if ID not found.
+ * Tries Firestore first, falls back to mock data.
  */
-export default function JobDetailPage({
+export default async function JobDetailPage({
   params: { id },
 }: JobDetailPageProps) {
-  const job = getJobById(id) ?? mockJobs[0];
+  // Try Firestore first, then mock data, then first mock as ultimate fallback
+  const job =
+    (await getFirestoreJobById(id)) ?? getJobById(id) ?? mockJobs[0];
+
   const jsonLd = generateJobDetailJsonLd(job);
 
   return (

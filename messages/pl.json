@@ -769,6 +769,73 @@
       "a1a3": "A1/A3",
       "a2": "A2",
       "sts": "STS"
+    },
+    "newJob": {
+      "metaTitle": "Dodaj ogłoszenie dronowe",
+      "metaDescription": "Dodaj ogłoszenie na tablicy zleceń dronowych. Znajdź operatora drona lub opublikuj swoje usługi.",
+      "heading": "Dodaj ogłoszenie",
+      "subheading": "Wypełnij formularz, aby opublikować ogłoszenie na tablicy zleceń dronowych.",
+      "typeLabel": "Typ ogłoszenia",
+      "titleLabel": "Tytuł ogłoszenia",
+      "titlePlaceholder": "np. Fotogrametria terenu inwestycyjnego — Szczecin",
+      "descriptionLabel": "Opis",
+      "descriptionPlaceholder": "Opisz szczegółowo wymagania, zakres prac, termin realizacji...",
+      "contactNameLabel": "Nazwa kontaktowa",
+      "contactNamePlaceholder": "Firma lub imię i nazwisko",
+      "locationLabel": "Lokalizacja",
+      "radiusLabel": "Promień",
+      "submit": "Opublikuj ogłoszenie",
+      "success": "Ogłoszenie zostało opublikowane. Przekierowanie na listę ogłoszeń...",
+      "errorTitle": "Tytuł ogłoszenia jest wymagany.",
+      "errorDescription": "Opis ogłoszenia jest wymagany.",
+      "errorServices": "Wybierz co najmniej jedną usługę.",
+      "errorGeneric": "Nie udało się opublikować ogłoszenia. Spróbuj ponownie."
+    }
+  },
+  "auth": {
+    "login": {
+      "metaTitle": "Logowanie",
+      "metaDescription": "Zaloguj się, aby dodawać ogłoszenia na tablicy zleceń dronowych.",
+      "heading": "Zaloguj się",
+      "subheading": "Zaloguj się, aby dodawać ogłoszenia i odpowiadać na zlecenia.",
+      "google": "Zaloguj się przez Google",
+      "or": "lub",
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "twoj@email.pl",
+      "passwordLabel": "Hasło",
+      "passwordPlaceholder": "Wpisz hasło",
+      "submit": "Zaloguj się",
+      "noAccount": "Nie masz konta?",
+      "registerLink": "Zarejestruj się"
+    },
+    "register": {
+      "metaTitle": "Rejestracja",
+      "metaDescription": "Załóż konto, aby dodawać ogłoszenia na tablicy zleceń dronowych.",
+      "heading": "Utwórz konto",
+      "subheading": "Zarejestruj się, aby dodawać ogłoszenia na tablicy zleceń dronowych.",
+      "google": "Zarejestruj się przez Google",
+      "or": "lub",
+      "nameLabel": "Imię i nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "twoj@email.pl",
+      "passwordLabel": "Hasło",
+      "passwordPlaceholder": "Minimum 6 znaków",
+      "passwordHint": "Hasło musi mieć co najmniej 6 znaków.",
+      "submit": "Zarejestruj się",
+      "hasAccount": "Masz już konto?",
+      "loginLink": "Zaloguj się"
+    },
+    "errors": {
+      "fieldsRequired": "Wypełnij wszystkie wymagane pola.",
+      "invalidCredentials": "Nieprawidłowy e-mail lub hasło.",
+      "tooManyRequests": "Zbyt wiele prób logowania. Spróbuj ponownie za chwilę.",
+      "loginFailed": "Logowanie nie powiodło się. Spróbuj ponownie.",
+      "googleFailed": "Logowanie przez Google nie powiodło się. Spróbuj ponownie.",
+      "emailInUse": "Ten adres e-mail jest już zarejestrowany.",
+      "passwordTooShort": "Hasło musi mieć co najmniej 6 znaków.",
+      "invalidEmail": "Podaj prawidłowy adres e-mail.",
+      "registerFailed": "Rejestracja nie powiodła się. Spróbuj ponownie."
     }
   },
   "footer": {

@@ -3,7 +3,15 @@ import { getTranslations } from "next-intl/server";
 import { locales, type Locale, baseUrl } from "@/lib/i18n/config";
 import { generateLocalizedMetadata } from "@/lib/seo/metadata";
 import { mockJobs } from "@/lib/jobs/mockData";
+import { getFirestoreJobs } from "@/lib/firebase/jobs-server";
 import { JobsPageContent } from "@/components/jobs/JobsPageContent";
+
+/**
+ * Force dynamic rendering so we always read fresh data from Firestore.
+ * Without this, Next.js would try to statically render the page at build time,
+ * which would fail if Firebase Admin SDK credentials are not available.
+ */
+export const dynamic = "force-dynamic";
 
 interface JobsPageProps {
   params: { locale: string };
@@ -34,10 +42,12 @@ export async function generateMetadata({
  * Google only indexes JobPosting for employer-to-worker direction.
  * "seeking_job" listings (operator looking for work) are excluded.
  */
-function generateJobPostingsJsonLd(): string {
+function generateJobPostingsJsonLd(
+  jobs: typeof mockJobs
+): string {
   const now = new Date();
 
-  const jobPostings = mockJobs
+  const jobPostings = jobs
     .filter((job) => job.type === "seeking_operator")
     .map((job) => {
       // Compute absolute date from relative postedDaysAgo
@@ -98,11 +108,16 @@ function generateJobPostingsJsonLd(): string {
 
 /**
  * Jobs listing page (Server Component).
+ * Fetches jobs from Firestore via Admin SDK, falls back to mock data if empty.
  * Exports generateMetadata for SEO and injects JSON-LD structured data.
  * The interactive content is rendered by the JobsPageContent client component.
  */
-export default function JobsPage() {
-  const jsonLd = generateJobPostingsJsonLd();
+export default async function JobsPage() {
+  // Fetch real jobs from Firestore, fall back to mock data
+  const firestoreJobs = await getFirestoreJobs();
+  const jobs = firestoreJobs.length > 0 ? firestoreJobs : mockJobs;
+
+  const jsonLd = generateJobPostingsJsonLd(jobs);
 
   return (
     <>
@@ -110,7 +125,7 @@ export default function JobsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
-      <JobsPageContent />
+      <JobsPageContent initialJobs={jobs} />
     </>
   );
 }

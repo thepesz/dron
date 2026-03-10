@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Search, Plus, X } from "lucide-react";
 
 /**
@@ -9,6 +9,7 @@ import { Search, Plus, X } from "lucide-react";
  */
 export function JobFilters({ onClose }: { onClose?: () => void }) {
   const t = useTranslations("jobs");
+  const locale = useLocale();
 
   const serviceOptions = [
     "photogrammetry",
@@ -201,10 +202,13 @@ export function JobFilters({ onClose }: { onClose?: () => void }) {
 
       {/* Post ad CTA at bottom */}
       <div className="border-t border-slate-800 p-4">
-        <button className="flex w-full min-h-[44px] items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400">
+        <a
+          href={`/${locale}/jobs/new`}
+          className="flex w-full min-h-[44px] items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400"
+        >
           <Plus className="h-4 w-4" />
           {t("postAd")}
-        </button>
+        </a>
       </div>
     </div>
   );

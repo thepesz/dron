@@ -769,6 +769,73 @@
       "a1a3": "A1/A3",
       "a2": "A2",
       "sts": "STS"
+    },
+    "newJob": {
+      "metaTitle": "Post a drone listing",
+      "metaDescription": "Post a listing on the drone job board. Find a drone operator or advertise your services.",
+      "heading": "Post a listing",
+      "subheading": "Fill in the form to publish a listing on the drone job board.",
+      "typeLabel": "Listing type",
+      "titleLabel": "Listing title",
+      "titlePlaceholder": "e.g. Photogrammetry of development site — Szczecin",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Describe your requirements, scope of work, timeline...",
+      "contactNameLabel": "Contact name",
+      "contactNamePlaceholder": "Company or full name",
+      "locationLabel": "Location",
+      "radiusLabel": "Radius",
+      "submit": "Publish listing",
+      "success": "Listing published successfully. Redirecting to the job board...",
+      "errorTitle": "Listing title is required.",
+      "errorDescription": "Listing description is required.",
+      "errorServices": "Select at least one service.",
+      "errorGeneric": "Failed to publish listing. Please try again."
+    }
+  },
+  "auth": {
+    "login": {
+      "metaTitle": "Log in",
+      "metaDescription": "Log in to post listings on the drone job board.",
+      "heading": "Log in",
+      "subheading": "Log in to post listings and respond to drone jobs.",
+      "google": "Sign in with Google",
+      "or": "or",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "submit": "Log in",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Sign up"
+    },
+    "register": {
+      "metaTitle": "Sign up",
+      "metaDescription": "Create an account to post listings on the drone job board.",
+      "heading": "Create an account",
+      "subheading": "Sign up to post listings on the drone job board.",
+      "google": "Sign up with Google",
+      "or": "or",
+      "nameLabel": "Full name",
+      "namePlaceholder": "John Smith",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "At least 6 characters",
+      "passwordHint": "Password must be at least 6 characters long.",
+      "submit": "Create account",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Log in"
+    },
+    "errors": {
+      "fieldsRequired": "Please fill in all required fields.",
+      "invalidCredentials": "Invalid email or password.",
+      "tooManyRequests": "Too many login attempts. Please try again shortly.",
+      "loginFailed": "Login failed. Please try again.",
+      "googleFailed": "Google sign-in failed. Please try again.",
+      "emailInUse": "This email address is already registered.",
+      "passwordTooShort": "Password must be at least 6 characters long.",
+      "invalidEmail": "Please enter a valid email address.",
+      "registerFailed": "Registration failed. Please try again."
     }
   },
   "footer": {

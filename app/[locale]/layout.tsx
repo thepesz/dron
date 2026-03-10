@@ -7,6 +7,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { locales, type Locale } from "@/lib/i18n/config";
 import { generateLocalizedMetadata } from "@/lib/seo/metadata";
 import { generateStructuredData } from "@/lib/seo/structuredData";
+import { AuthProvider } from "@/lib/firebase/auth-context";
 import "@/app/globals.css";
 
 const inter = Inter({
@@ -77,7 +78,9 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen bg-zinc-950 font-sans text-zinc-100 antialiased">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <AuthProvider>
+            {children}
+          </AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>

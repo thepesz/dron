@@ -3,11 +3,12 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations, useLocale } from "next-intl";
-import { SlidersHorizontal } from "lucide-react";
+import { SlidersHorizontal, Plus } from "lucide-react";
 import { Header } from "@/components/ui/Header";
 import { JobCard } from "@/components/jobs/JobCard";
 import { JobFilters } from "@/components/jobs/JobFilters";
-import { mockJobs } from "@/lib/jobs/mockData";
+import { useAuth } from "@/lib/firebase/auth-context";
+import type { JobListing } from "@/lib/jobs/mockData";
 
 /**
  * Leaflet requires browser APIs (window, document) so we must
@@ -28,6 +29,10 @@ const JobMap = dynamic(
   }
 );
 
+interface JobsPageContentProps {
+  initialJobs: JobListing[];
+}
+
 /**
  * Client-side content for the jobs listing page.
  * Extracted from page.tsx so the page can export generateMetadata as a Server Component.
@@ -37,9 +42,10 @@ const JobMap = dynamic(
  * - Center: job cards list (scrollable)
  * - Right: map (40% width, hidden on mobile)
  */
-export function JobsPageContent() {
+export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
   const t = useTranslations("jobs");
   const locale = useLocale();
+  const { user } = useAuth();
   const [activeJobId, setActiveJobId] = useState<string | null>(null);
   const [showFilters, setShowFilters] = useState(false);
 
@@ -57,18 +63,31 @@ export function JobsPageContent() {
                 {t("pageTitle")}
               </h1>
               <p className="mt-0.5 text-xs text-slate-400 sm:text-sm">
-                {t("results", { count: mockJobs.length })}
+                {t("results", { count: initialJobs.length })}
               </p>
             </div>
 
-            {/* Mobile filter toggle */}
-            <button
-              onClick={() => setShowFilters(true)}
-              className="flex min-h-[44px] items-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-300 transition-colors hover:bg-slate-700 lg:hidden"
-            >
-              <SlidersHorizontal className="h-4 w-4" />
-              {t("filters")}
-            </button>
+            <div className="flex items-center gap-2">
+              {/* Add listing button — visible when logged in */}
+              {user && (
+                <a
+                  href={`/${locale}/jobs/new`}
+                  className="hidden min-h-[44px] items-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400 sm:inline-flex"
+                >
+                  <Plus className="h-4 w-4" />
+                  {t("postAd")}
+                </a>
+              )}
+
+              {/* Mobile filter toggle */}
+              <button
+                onClick={() => setShowFilters(true)}
+                className="flex min-h-[44px] items-center gap-2 rounded-lg border border-slate-700 bg-slate-800 px-3 py-2 text-sm text-slate-300 transition-colors hover:bg-slate-700 lg:hidden"
+              >
+                <SlidersHorizontal className="h-4 w-4" />
+                {t("filters")}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -95,22 +114,28 @@ export function JobsPageContent() {
 
           {/* CENTER: Job cards */}
           <div className="flex-1 overflow-y-auto bg-slate-950 p-3 sm:p-4">
-            <div className="space-y-3">
-              {mockJobs.map((job) => (
-                <JobCard
-                  key={job.id}
-                  job={job}
-                  isActive={activeJobId === job.id}
-                  onHover={setActiveJobId}
-                />
-              ))}
-            </div>
+            {initialJobs.length === 0 ? (
+              <div className="flex h-full items-center justify-center">
+                <p className="text-sm text-slate-500">{t("noResults")}</p>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {initialJobs.map((job) => (
+                  <JobCard
+                    key={job.id}
+                    job={job}
+                    isActive={activeJobId === job.id}
+                    onHover={setActiveJobId}
+                  />
+                ))}
+              </div>
+            )}
           </div>
 
           {/* RIGHT: Map — hidden on mobile */}
           <div className="hidden w-[40%] shrink-0 border-l border-slate-800 md:block">
             <JobMap
-              jobs={mockJobs}
+              jobs={initialJobs}
               activeJobId={activeJobId}
               onMarkerClick={(id) => setActiveJobId(id)}
             />
