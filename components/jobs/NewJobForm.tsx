@@ -142,7 +142,7 @@ export function NewJobForm() {
     try {
       // Get Firebase ID token — use user from context (already resolved via
       // onAuthStateChanged) then force-refresh to ensure a valid token.
-      const idToken = await user.getIdToken(/* forceRefresh */ true);
+      const idToken = await user!.getIdToken(/* forceRefresh */ true);
       if (!idToken) {
         setError(tAuth("errors.loginFailed"));
         return;
