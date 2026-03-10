@@ -19,15 +19,18 @@ const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
  * Verify the Firebase ID token from the Authorization: Bearer <token> header.
  * Returns the decoded token or null if invalid/missing.
  */
-async function verifyAuthToken(request: NextRequest) {
+async function verifyAuthToken(request: NextRequest): Promise<{ uid: string } | { error: string } | null> {
   const authHeader = request.headers.get("Authorization");
-  if (!authHeader?.startsWith("Bearer ")) return null;
+  if (!authHeader?.startsWith("Bearer ")) return { error: "no_bearer_header" };
 
   const idToken = authHeader.slice(7);
+  if (!idToken || idToken === "undefined" || idToken === "null") return { error: "empty_token" };
+
   try {
     return await adminAuth.verifyIdToken(idToken);
-  } catch {
-    return null;
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    return { error: msg };
   }
 }
 
@@ -75,8 +78,9 @@ export async function POST(request: NextRequest) {
   try {
     // Verify authentication
     const decodedToken = await verifyAuthToken(request);
-    if (!decodedToken) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    if (!decodedToken || "error" in decodedToken) {
+      const reason = decodedToken && "error" in decodedToken ? decodedToken.error : "no_token";
+      return NextResponse.json({ error: "Unauthorized", reason }, { status: 401 });
     }
 
     const body = await request.json();
@@ -117,9 +121,9 @@ export async function POST(request: NextRequest) {
       rate: body.rate ?? null,
       rateType: body.rateType ?? "negotiable",
       rateNegotiable: body.rateNegotiable ?? true,
-      postedBy: decodedToken.uid,
-      postedByName: decodedToken.name ?? decodedToken.email ?? "Anonymous",
-      contactName: body.contactName ?? decodedToken.name ?? "Anonymous",
+      postedBy: (decodedToken as { uid: string }).uid,
+      postedByName: (decodedToken as { name?: string; email?: string }).name ?? (decodedToken as { email?: string }).email ?? "Anonymous",
+      contactName: body.contactName ?? (decodedToken as { name?: string }).name ?? "Anonymous",
       postedAt: now,
       expiresAt,
       active: true,
