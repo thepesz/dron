@@ -31,17 +31,17 @@ const advantages: Advantage[] = [
 ];
 
 const bgPhotos = [
-  "/images/dron1.jpg",
-  "/images/agro1.jpg",
-  "/images/budynek3d1.jpg",
-  "/images/pv1.jpg",
-  "/images/gsm1.jpg",
-  "/images/las1.jpg",
-  "/images/dron2.jpg",
-  "/images/agro2.jpg",
-  "/images/dron3.jpg",
-  "/images/budynek3d2.jpg",
-  "/images/agro3.jpg",
+  { src: "/images/dron1.jpg",      alt: "Dron DJI w locie nad Szczecinem — Aero Metric" },
+  { src: "/images/agro1.jpg",      alt: "Inspekcja dronem pól uprawnych — fotogrametria rolnicza" },
+  { src: "/images/budynek3d1.jpg", alt: "Model 3D budynku z drona — fotogrametria Szczecin" },
+  { src: "/images/pv1.jpg",        alt: "Termowizja dronem paneli fotowoltaicznych" },
+  { src: "/images/gsm1.jpg",       alt: "Inspekcja dronem masztu telekomunikacyjnego" },
+  { src: "/images/las1.jpg",       alt: "Lotniczy przegląd obszarów leśnych dronem" },
+  { src: "/images/dron2.jpg",      alt: "Operator drona podczas misji inspekcyjnej" },
+  { src: "/images/agro2.jpg",      alt: "Szacowanie szkód łowieckich dronem — widok z lotu ptaka" },
+  { src: "/images/dron3.jpg",      alt: "Profesjonalny dron inspekcyjny DJI Matrice" },
+  { src: "/images/budynek3d2.jpg", alt: "Ortofotomapa terenu inwestycyjnego — Szczecin" },
+  { src: "/images/agro3.jpg",      alt: "Zdjęcie lotnicze pól rolniczych — Aero Metric" },
 ];
 
 /**
@@ -64,6 +64,7 @@ export function WhyChooseUsSection() {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % bgPhotos.length);
     }, 4000);
+
     return () => clearInterval(timer);
   }, []);
 
@@ -76,8 +77,8 @@ export function WhyChooseUsSection() {
       {/* Two-slot crossfade background (only 2 DOM nodes, not N) */}
       <div className="absolute inset-0">
         <Image
-          src={bgPhotos[current]}
-          alt=""
+          src={bgPhotos[current].src}
+          alt={bgPhotos[current].alt}
           fill
           sizes="100vw"
           className="object-cover transition-opacity duration-1000"

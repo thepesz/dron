@@ -76,7 +76,7 @@ export function AccountPageContent() {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={user.photoURL}
-                      alt=""
+                      alt={user.displayName ?? "Zdjęcie profilowe"}
                       className="h-full w-full rounded-full object-cover"
                     />
                   ) : (
