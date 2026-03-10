@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Phone } from "lucide-react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileMenu } from "./MobileMenu";
+import { AccountButton } from "@/components/jobs/AccountButton";
 
 interface NavLink {
   key: string;
@@ -68,6 +69,8 @@ export function Header() {
           <div className="hidden sm:block">
             <LanguageSwitcher />
           </div>
+
+          <AccountButton />
 
           <a
             href={`/${locale}/jobs`}

@@ -14,7 +14,9 @@
     "cta": "Kostenloses Angebot",
     "phone": "+48 123 456 789",
     "floatingCta": "Anrufen",
-    "jobs": "Jobs"
+    "jobs": "Jobs",
+    "account": "Mein Konto",
+    "login": "Anmelden"
   },
   "hero": {
     "heading": "Professionelle Drohneninspektionen in Stettin",
@@ -746,6 +748,9 @@
     "posted": "Aufgegeben",
     "contactCta": "Kontakt aufnehmen",
     "loginToRespond": "Melden Sie sich an, um auf diese Anzeige zu antworten",
+    "loginToSeeContact": "Anmelden, um Kontaktdaten zu sehen",
+    "loginLink": "Anmelden",
+    "blurredContactName": "Max Müller",
     "mapTitle": "Anzeigenkarte",
     "filters": "Filter",
     "showFilters": "Filter anzeigen",
@@ -837,6 +842,22 @@
       "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
       "registerFailed": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut."
     }
+  },
+  "account": {
+    "metaTitle": "Mein Konto — Aero Metric",
+    "metaDescription": "Verwalten Sie Ihr Konto und Ihre Drohnenauftrags-Anzeigen.",
+    "heading": "Mein Konto",
+    "myListings": "Meine Anzeigen",
+    "noListings": "Sie haben noch keine Anzeigen.",
+    "signOut": "Abmelden",
+    "profile": "Profil",
+    "nameLabel": "Vollständiger Name",
+    "emailLabel": "E-Mail-Adresse",
+    "loginPrompt": "Anmelden, um Kontaktdaten zu sehen",
+    "loginLink": "Anmelden",
+    "blurredName": "Max Müller",
+    "addListing": "Anzeige aufgeben",
+    "addFirstListing": "Erste Anzeige aufgeben"
   },
   "footer": {
     "company": "Aero Metric",

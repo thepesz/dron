@@ -14,7 +14,9 @@
     "cta": "Bezpłatna wycena",
     "phone": "+48 123 456 789",
     "floatingCta": "Zadzwoń do nas",
-    "jobs": "Praca"
+    "jobs": "Praca",
+    "account": "Moje konto",
+    "login": "Zaloguj"
   },
   "hero": {
     "heading": "Profesjonalne inspekcje dronem w Szczecinie",
@@ -746,6 +748,9 @@
     "posted": "Dodano",
     "contactCta": "Skontaktuj się",
     "loginToRespond": "Zaloguj się, aby odpowiedzieć na ogłoszenie",
+    "loginToSeeContact": "Zaloguj się aby zobaczyć dane kontaktowe",
+    "loginLink": "Zaloguj się",
+    "blurredContactName": "Jan Kowalski",
     "mapTitle": "Mapa ogłoszeń",
     "filters": "Filtry",
     "showFilters": "Pokaż filtry",
@@ -837,6 +842,22 @@
       "invalidEmail": "Podaj prawidłowy adres e-mail.",
       "registerFailed": "Rejestracja nie powiodła się. Spróbuj ponownie."
     }
+  },
+  "account": {
+    "metaTitle": "Moje konto — Aero Metric",
+    "metaDescription": "Zarządzaj swoim kontem i ogłoszeniami na tablicy zleceń dronowych.",
+    "heading": "Moje konto",
+    "myListings": "Moje ogłoszenia",
+    "noListings": "Nie masz jeszcze żadnych ogłoszeń.",
+    "signOut": "Wyloguj się",
+    "profile": "Profil",
+    "nameLabel": "Imię i nazwisko",
+    "emailLabel": "Adres e-mail",
+    "loginPrompt": "Zaloguj się aby zobaczyć dane kontaktowe",
+    "loginLink": "Zaloguj się",
+    "blurredName": "Jan Kowalski",
+    "addListing": "Dodaj ogłoszenie",
+    "addFirstListing": "Dodaj pierwsze ogłoszenie"
   },
   "footer": {
     "company": "Aero Metric",

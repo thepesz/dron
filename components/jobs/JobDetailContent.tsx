@@ -11,6 +11,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import { Header } from "@/components/ui/Header";
+import { useAuth } from "@/lib/firebase/auth-context";
 import type { JobListing } from "@/lib/jobs/mockData";
 
 /**
@@ -42,6 +43,7 @@ interface JobDetailContentProps {
 export function JobDetailContent({ job }: JobDetailContentProps) {
   const t = useTranslations("jobs");
   const locale = useLocale();
+  const { user } = useAuth();
 
   const typeLabel =
     job.type === "seeking_operator" ? t("seekingOperator") : t("seekingJob");
@@ -232,20 +234,39 @@ export function JobDetailContent({ job }: JobDetailContentProps) {
               {/* RIGHT: Contact panel */}
               <div className="lg:sticky lg:top-[120px] lg:self-start">
                 <div className="rounded-lg border border-slate-800 bg-slate-900 p-6">
-                  {/* Contact CTA */}
-                  <a
-                    href={`/${locale}#contact`}
-                    className="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400"
-                  >
-                    {t("contactCta")}
-                  </a>
-
-                  {/* Login prompt */}
-                  <div className="mt-4 flex items-start gap-3 rounded-lg border border-slate-800 bg-slate-800/50 p-4">
-                    <Lock className="mt-0.5 h-5 w-5 shrink-0 text-slate-500" />
-                    <p className="text-xs leading-relaxed text-slate-400">
-                      {t("loginToRespond")}
+                  {/* Contact info -- blurred for guests */}
+                  <div>
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                      {t("postedBy")}
                     </p>
+                    {user ? (
+                      <div className="rounded-lg border border-slate-800 bg-slate-800/50 p-4">
+                        <p className="flex items-center gap-2 text-sm font-medium text-white">
+                          <User className="h-4 w-4 text-brand-500" />
+                          {job.contactName}
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="relative overflow-hidden rounded-lg border border-slate-800 bg-slate-800/50 p-4">
+                        {/* Blurred name */}
+                        <p className="select-none text-sm font-medium text-white blur-sm">
+                          {t("blurredContactName")}
+                        </p>
+                        {/* Overlay */}
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-lg bg-slate-900/70 backdrop-blur-[2px]">
+                          <Lock className="h-5 w-5 text-slate-400" />
+                          <p className="text-center text-xs text-slate-400">
+                            {t("loginToSeeContact")}
+                          </p>
+                          <a
+                            href={`/${locale}/auth/login`}
+                            className="mt-1 rounded-lg bg-brand-600 px-4 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-brand-500"
+                          >
+                            {t("loginLink")}
+                          </a>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* Quick info summary */}

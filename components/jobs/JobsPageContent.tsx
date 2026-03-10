@@ -3,7 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations, useLocale } from "next-intl";
-import { SlidersHorizontal, Plus } from "lucide-react";
+import { SlidersHorizontal, Plus, ListChecks, Map } from "lucide-react";
 import { Header } from "@/components/ui/Header";
 import { JobCard } from "@/components/jobs/JobCard";
 import { JobFilters } from "@/components/jobs/JobFilters";
@@ -48,6 +48,7 @@ export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
   const { user } = useAuth();
   const [activeJobId, setActiveJobId] = useState<string | null>(null);
   const [showFilters, setShowFilters] = useState(false);
+  const [showMap, setShowMap] = useState(false);
 
   return (
     <>
@@ -57,7 +58,7 @@ export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
       <div className="pt-[88px] lg:pt-[96px]">
         {/* Page header bar */}
         <div className="border-b border-slate-800 bg-slate-900/80 backdrop-blur-sm">
-          <div className="flex items-center justify-between px-4 py-3 sm:px-6">
+          <div className="flex items-center justify-between px-4 py-2 sm:px-6">
             <div>
               <h1 className="text-lg font-bold text-white sm:text-xl">
                 {t("pageTitle")}
@@ -72,7 +73,7 @@ export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
               {user && (
                 <a
                   href={`/${locale}/jobs/new`}
-                  className="hidden min-h-[44px] items-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400 sm:inline-flex"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400"
                 >
                   <Plus className="h-4 w-4" />
                   {t("postAd")}
@@ -92,9 +93,9 @@ export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
         </div>
 
         {/* Main three-column layout */}
-        <div className="flex h-[calc(100dvh-88px-53px)] lg:h-[calc(100dvh-96px-53px)]">
+        <div className="flex h-[calc(100dvh-88px-49px-50px)] md:h-[calc(100dvh-88px-49px)] lg:h-[calc(100dvh-96px-49px)]">
           {/* LEFT: Filter sidebar — desktop always visible */}
-          <aside className="hidden w-[280px] shrink-0 border-r border-slate-800 bg-slate-900 lg:block overflow-hidden">
+          <aside className="hidden w-[280px] shrink-0 overflow-hidden border-r border-slate-700/50 bg-slate-900 lg:block">
             <JobFilters />
           </aside>
 
@@ -113,7 +114,11 @@ export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
           )}
 
           {/* CENTER: Job cards */}
-          <div className="flex-1 overflow-y-auto bg-slate-950 p-3 sm:p-4">
+          <div
+            className={`${
+              showMap ? "hidden md:block" : "block"
+            } flex-1 overflow-y-auto bg-slate-950 p-3 pb-[50px] sm:p-4 md:pb-0`}
+          >
             {initialJobs.length === 0 ? (
               <div className="flex h-full items-center justify-center">
                 <p className="text-sm text-slate-500">{t("noResults")}</p>
@@ -132,14 +137,44 @@ export function JobsPageContent({ initialJobs }: JobsPageContentProps) {
             )}
           </div>
 
-          {/* RIGHT: Map — hidden on mobile */}
-          <div className="hidden w-[40%] shrink-0 border-l border-slate-800 md:block">
+          {/* RIGHT: Map — toggle on mobile, always visible on md+ */}
+          <div
+            className={`${
+              showMap ? "block" : "hidden"
+            } w-full shrink-0 border-l border-slate-700/50 md:block md:w-[40%]`}
+          >
             <JobMap
               jobs={initialJobs}
               activeJobId={activeJobId}
               onMarkerClick={(id) => setActiveJobId(id)}
             />
           </div>
+        </div>
+
+        {/* Mobile tab bar — fixed at bottom */}
+        <div className="fixed bottom-0 left-0 right-0 z-30 flex border-t border-slate-700/50 bg-slate-900 md:hidden">
+          <button
+            onClick={() => setShowMap(false)}
+            className={`flex flex-1 items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${
+              !showMap
+                ? "border-t-2 border-brand-500 text-brand-400"
+                : "text-slate-400 hover:text-white"
+            }`}
+          >
+            <ListChecks className="h-4 w-4" />
+            {t("pageTitle")}
+          </button>
+          <button
+            onClick={() => setShowMap(true)}
+            className={`flex flex-1 items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${
+              showMap
+                ? "border-t-2 border-brand-500 text-brand-400"
+                : "text-slate-400 hover:text-white"
+            }`}
+          >
+            <Map className="h-4 w-4" />
+            {t("mapTitle")}
+          </button>
         </div>
       </div>
     </>

@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User, LogOut } from "lucide-react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useAuth } from "@/lib/firebase/auth-context";
 
 interface NavLinkDef {
   key: string;
@@ -27,7 +28,9 @@ export function MobileMenu() {
   const menuRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const t = useTranslations("nav");
+  const tAccount = useTranslations("account");
   const locale = useLocale();
+  const { user, signOut } = useAuth();
 
   const close = useCallback(() => {
     setIsOpen(false);
@@ -118,6 +121,38 @@ export function MobileMenu() {
           >
             {t("jobs")}
           </a>
+
+          {/* Auth links */}
+          {user ? (
+            <>
+              <a
+                href={`/${locale}/account`}
+                onClick={close}
+                className="mt-2 flex items-center gap-2 rounded-lg px-4 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-gray-100"
+              >
+                <User className="h-4 w-4" />
+                {t("account")}
+              </a>
+              <button
+                onClick={async () => {
+                  await signOut();
+                  close();
+                }}
+                className="flex items-center gap-2 rounded-lg px-4 py-3 text-base font-medium text-red-600 transition-colors hover:bg-red-50"
+              >
+                <LogOut className="h-4 w-4" />
+                {tAccount("signOut")}
+              </button>
+            </>
+          ) : (
+            <a
+              href={`/${locale}/auth/login`}
+              onClick={close}
+              className="mt-2 rounded-lg border border-slate-300 px-4 py-3 text-center text-base font-medium text-slate-700 transition-colors hover:bg-gray-100"
+            >
+              {t("login")}
+            </a>
+          )}
         </nav>
       </div>
     </div>

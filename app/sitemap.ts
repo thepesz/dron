@@ -8,6 +8,9 @@ import { serviceSlugs } from "@/components/sections/ServicePageLayout";
  * Generates entries for:
  * - Homepage: 3 locale variants (pl, en, de)
  * - Service pages: 5 services x 3 locales = 15 entries
+ * - Jobs listing page: 3 locale variants
+ * - Auth pages: login + register x 3 locales = 6 entries
+ * - Account page: 3 locale variants
  *
  * Each entry includes:
  * - lastModified date
@@ -22,63 +25,45 @@ import { serviceSlugs } from "@/components/sections/ServicePageLayout";
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  // ── Homepage entries (one per locale) ──
-
-  // Build hreflang alternates for homepage
-  const homepageLanguages: Record<string, string> = {};
-  for (const locale of locales) {
-    homepageLanguages[locale] = `${baseUrl}/${locale}`;
-  }
-  homepageLanguages["x-default"] = `${baseUrl}/${defaultLocale}`;
-
-  const homepageEntries: MetadataRoute.Sitemap = locales.map((locale) => ({
-    url: `${baseUrl}/${locale}`,
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: locale === defaultLocale ? 1.0 : 0.9,
-    alternates: {
-      languages: homepageLanguages,
-    },
-  }));
-
-  // ── Service page entries (5 services x 3 locales) ──
-
-  const serviceEntries: MetadataRoute.Sitemap = serviceSlugs.flatMap((slug) => {
-    // Build hreflang alternates for this service page
-    const serviceLanguages: Record<string, string> = {};
+  /**
+   * Helper to build sitemap entries for a given path suffix.
+   */
+  function buildEntries(
+    pathSuffix: string,
+    options: { changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }
+  ): MetadataRoute.Sitemap {
+    const languages: Record<string, string> = {};
     for (const locale of locales) {
-      serviceLanguages[locale] = `${baseUrl}/${locale}/services/${slug}`;
+      languages[locale] = `${baseUrl}/${locale}${pathSuffix}`;
     }
-    serviceLanguages["x-default"] = `${baseUrl}/${defaultLocale}/services/${slug}`;
+    languages["x-default"] = `${baseUrl}/${defaultLocale}${pathSuffix}`;
 
     return locales.map((locale) => ({
-      url: `${baseUrl}/${locale}/services/${slug}`,
+      url: `${baseUrl}/${locale}${pathSuffix}`,
       lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-      alternates: {
-        languages: serviceLanguages,
-      },
+      changeFrequency: options.changeFrequency,
+      priority: locale === defaultLocale ? options.priority : options.priority * 0.9,
+      alternates: { languages },
     }));
-  });
-
-  // ── Jobs listing page entries (one per locale) ──
-
-  const jobsLanguages: Record<string, string> = {};
-  for (const locale of locales) {
-    jobsLanguages[locale] = `${baseUrl}/${locale}/jobs`;
   }
-  jobsLanguages["x-default"] = `${baseUrl}/${defaultLocale}/jobs`;
 
-  const jobsEntries: MetadataRoute.Sitemap = locales.map((locale) => ({
-    url: `${baseUrl}/${locale}/jobs`,
-    lastModified,
-    changeFrequency: "daily" as const,
-    priority: 0.8,
-    alternates: {
-      languages: jobsLanguages,
-    },
-  }));
+  return [
+    // Homepage
+    ...buildEntries("", { changeFrequency: "monthly", priority: 1.0 }),
 
-  return [...homepageEntries, ...serviceEntries, ...jobsEntries];
+    // Service pages
+    ...serviceSlugs.flatMap((slug) =>
+      buildEntries(`/services/${slug}`, { changeFrequency: "monthly", priority: 0.8 })
+    ),
+
+    // Jobs listing
+    ...buildEntries("/jobs", { changeFrequency: "daily", priority: 0.9 }),
+
+    // Auth pages
+    ...buildEntries("/auth/login", { changeFrequency: "monthly", priority: 0.3 }),
+    ...buildEntries("/auth/register", { changeFrequency: "monthly", priority: 0.3 }),
+
+    // Account page
+    ...buildEntries("/account", { changeFrequency: "monthly", priority: 0.4 }),
+  ];
 }

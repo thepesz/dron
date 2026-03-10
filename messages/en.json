@@ -14,7 +14,9 @@
     "cta": "Free quote",
     "phone": "+48 123 456 789",
     "floatingCta": "Call us",
-    "jobs": "Jobs"
+    "jobs": "Jobs",
+    "account": "My account",
+    "login": "Sign in"
   },
   "hero": {
     "heading": "Professional drone inspections in Szczecin",
@@ -746,6 +748,9 @@
     "posted": "Posted",
     "contactCta": "Get in touch",
     "loginToRespond": "Log in to respond to this listing",
+    "loginToSeeContact": "Sign in to see contact details",
+    "loginLink": "Sign in",
+    "blurredContactName": "John Smith",
     "mapTitle": "Listings map",
     "filters": "Filters",
     "showFilters": "Show filters",
@@ -837,6 +842,22 @@
       "invalidEmail": "Please enter a valid email address.",
       "registerFailed": "Registration failed. Please try again."
     }
+  },
+  "account": {
+    "metaTitle": "My account — Aero Metric",
+    "metaDescription": "Manage your account and drone job listings.",
+    "heading": "My account",
+    "myListings": "My listings",
+    "noListings": "You have no listings yet.",
+    "signOut": "Sign out",
+    "profile": "Profile",
+    "nameLabel": "Full name",
+    "emailLabel": "Email address",
+    "loginPrompt": "Sign in to see contact details",
+    "loginLink": "Sign in",
+    "blurredName": "John Smith",
+    "addListing": "Add listing",
+    "addFirstListing": "Add your first listing"
   },
   "footer": {
     "company": "Aero Metric",
