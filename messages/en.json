@@ -13,7 +13,8 @@
     "contact": "Contact",
     "cta": "Free quote",
     "phone": "+48 123 456 789",
-    "floatingCta": "Call us"
+    "floatingCta": "Call us",
+    "jobs": "Jobs"
   },
   "hero": {
     "heading": "Professional drone inspections in Szczecin",
@@ -701,6 +702,73 @@
         "text": "Get in touch and we will prepare a drone inspection quote tailored to the size of your wind farm and scope of survey."
       },
       "breadcrumb": "Wind turbines"
+    }
+  },
+  "jobs": {
+    "meta": {
+      "title": "Drone Operator Jobs Poland | Find Drone Work",
+      "description": "Find drone operator jobs or hire a licensed pilot. Filter by location, licence and drone type across Poland."
+    },
+    "pageTitle": "Drone job board",
+    "pageDescription": "Find a drone operator or a drone job in the Szczecin region and West Pomeranian Voivodeship.",
+    "searchPlaceholder": "Search by name, location...",
+    "filterType": "Listing type",
+    "typeAll": "All",
+    "seekingOperator": "Looking for operator",
+    "seekingJob": "Looking for work",
+    "filterLocation": "Location",
+    "locationPlaceholder": "City or region",
+    "filterRadius": "Radius",
+    "filterProvince": "Province",
+    "filterDroneType": "Drone type",
+    "filterService": "Service",
+    "filterRate": "Daily rate",
+    "filterLicense": "Licence",
+    "postAd": "Post a listing",
+    "perDay": "PLN/day",
+    "perProject": "PLN/project",
+    "negotiable": "negotiable",
+    "viewDetails": "View details",
+    "postedToday": "Today",
+    "postedDaysAgo": "{count} days ago",
+    "results": "{count} listings",
+    "noResults": "No listings match your criteria.",
+    "backToList": "Back to listings",
+    "detailTitle": "Listing details",
+    "location": "Location",
+    "radius": "Radius",
+    "services": "Services",
+    "droneType": "Drone type",
+    "license": "Licence",
+    "rate": "Rate",
+    "description": "Description",
+    "postedBy": "Posted by",
+    "posted": "Posted",
+    "contactCta": "Get in touch",
+    "loginToRespond": "Log in to respond to this listing",
+    "mapTitle": "Listings map",
+    "filters": "Filters",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "clearFilters": "Clear filters",
+    "serviceLabels": {
+      "photogrammetry": "Photogrammetry",
+      "thermal": "Thermal imaging",
+      "inspection": "Inspection",
+      "aerial": "Video/photo",
+      "wildlife_damage": "Wildlife damage",
+      "wind_turbines": "Wind turbines"
+    },
+    "droneLabels": {
+      "dji_mavic": "DJI Mavic",
+      "dji_phantom": "DJI Phantom",
+      "dji_matrice": "DJI Matrice",
+      "fixed_wing": "Fixed wing"
+    },
+    "licenseLabels": {
+      "a1a3": "A1/A3",
+      "a2": "A2",
+      "sts": "STS"
     }
   },
   "footer": {

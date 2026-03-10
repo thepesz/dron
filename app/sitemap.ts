@@ -62,5 +62,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   });
 
-  return [...homepageEntries, ...serviceEntries];
+  // ── Jobs listing page entries (one per locale) ──
+
+  const jobsLanguages: Record<string, string> = {};
+  for (const locale of locales) {
+    jobsLanguages[locale] = `${baseUrl}/${locale}/jobs`;
+  }
+  jobsLanguages["x-default"] = `${baseUrl}/${defaultLocale}/jobs`;
+
+  const jobsEntries: MetadataRoute.Sitemap = locales.map((locale) => ({
+    url: `${baseUrl}/${locale}/jobs`,
+    lastModified,
+    changeFrequency: "daily" as const,
+    priority: 0.8,
+    alternates: {
+      languages: jobsLanguages,
+    },
+  }));
+
+  return [...homepageEntries, ...serviceEntries, ...jobsEntries];
 }

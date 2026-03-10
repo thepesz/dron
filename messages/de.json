@@ -13,7 +13,8 @@
     "contact": "Kontakt",
     "cta": "Kostenloses Angebot",
     "phone": "+48 123 456 789",
-    "floatingCta": "Anrufen"
+    "floatingCta": "Anrufen",
+    "jobs": "Jobs"
   },
   "hero": {
     "heading": "Professionelle Drohneninspektionen in Stettin",
@@ -701,6 +702,73 @@
         "text": "Kontaktieren Sie uns und wir erstellen ein Angebot für eine Drohneninspektion, zugeschnitten auf die Größe Ihres Windparks und den Inspektionsumfang."
       },
       "breadcrumb": "Windkraftanlagen"
+    }
+  },
+  "jobs": {
+    "meta": {
+      "title": "Drohnenpilot Jobs Polen | Drohnenaufträge",
+      "description": "Drohnenpilot-Jobs oder Drohnenoperator beauftragen. Filter nach Standort, Lizenz und Drohnentyp in Polen."
+    },
+    "pageTitle": "Drohnen-Jobbörse",
+    "pageDescription": "Finden Sie einen Drohnenpiloten oder einen Drohnenauftrag in der Region Stettin und Westpommern.",
+    "searchPlaceholder": "Suche nach Name, Standort...",
+    "filterType": "Angebotstyp",
+    "typeAll": "Alle",
+    "seekingOperator": "Pilot gesucht",
+    "seekingJob": "Auftrag gesucht",
+    "filterLocation": "Standort",
+    "locationPlaceholder": "Stadt oder Region",
+    "filterRadius": "Radius",
+    "filterProvince": "Woiwodschaft",
+    "filterDroneType": "Drohnentyp",
+    "filterService": "Leistung",
+    "filterRate": "Tagessatz",
+    "filterLicense": "Lizenz",
+    "postAd": "Anzeige aufgeben",
+    "perDay": "PLN/Tag",
+    "perProject": "PLN/Projekt",
+    "negotiable": "verhandelbar",
+    "viewDetails": "Details ansehen",
+    "postedToday": "Heute",
+    "postedDaysAgo": "vor {count} Tagen",
+    "results": "{count} Anzeigen",
+    "noResults": "Keine Anzeigen entsprechen Ihren Kriterien.",
+    "backToList": "Zurück zur Liste",
+    "detailTitle": "Anzeigendetails",
+    "location": "Standort",
+    "radius": "Radius",
+    "services": "Leistungen",
+    "droneType": "Drohnentyp",
+    "license": "Lizenz",
+    "rate": "Tagessatz",
+    "description": "Beschreibung",
+    "postedBy": "Aufgegeben von",
+    "posted": "Aufgegeben",
+    "contactCta": "Kontakt aufnehmen",
+    "loginToRespond": "Melden Sie sich an, um auf diese Anzeige zu antworten",
+    "mapTitle": "Anzeigenkarte",
+    "filters": "Filter",
+    "showFilters": "Filter anzeigen",
+    "hideFilters": "Filter ausblenden",
+    "clearFilters": "Filter löschen",
+    "serviceLabels": {
+      "photogrammetry": "Fotogrammetrie",
+      "thermal": "Thermografie",
+      "inspection": "Inspektion",
+      "aerial": "Video/Foto",
+      "wildlife_damage": "Wildschäden",
+      "wind_turbines": "Windkraftanlagen"
+    },
+    "droneLabels": {
+      "dji_mavic": "DJI Mavic",
+      "dji_phantom": "DJI Phantom",
+      "dji_matrice": "DJI Matrice",
+      "fixed_wing": "Starrflügler"
+    },
+    "licenseLabels": {
+      "a1a3": "A1/A3",
+      "a2": "A2",
+      "sts": "STS"
     }
   },
   "footer": {

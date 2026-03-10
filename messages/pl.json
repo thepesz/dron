@@ -13,7 +13,8 @@
     "contact": "Kontakt",
     "cta": "Bezpłatna wycena",
     "phone": "+48 123 456 789",
-    "floatingCta": "Zadzwoń do nas"
+    "floatingCta": "Zadzwoń do nas",
+    "jobs": "Praca"
   },
   "hero": {
     "heading": "Profesjonalne inspekcje dronem w Szczecinie",
@@ -701,6 +702,73 @@
         "text": "Skontaktuj się z nami, a przygotujemy ofertę na inspekcję dronem dopasowaną do wielkości farmy i zakresu przeglądu."
       },
       "breadcrumb": "Turbiny wiatrowe"
+    }
+  },
+  "jobs": {
+    "meta": {
+      "title": "Praca dla operatora drona | Zlecenia dronowe",
+      "description": "Znajdź zlecenia dla operatora drona lub zatrudnij pilota. Filtry po lokalizacji, licencji i typie drona."
+    },
+    "pageTitle": "Tablica zleceń dronowych",
+    "pageDescription": "Znajdź operatora drona lub zlecenie w regionie Szczecina i województwa zachodniopomorskiego.",
+    "searchPlaceholder": "Szukaj po nazwie, lokalizacji...",
+    "filterType": "Typ ogłoszenia",
+    "typeAll": "Wszystkie",
+    "seekingOperator": "Szukam operatora",
+    "seekingJob": "Szukam zlecenia",
+    "filterLocation": "Lokalizacja",
+    "locationPlaceholder": "Miasto lub region",
+    "filterRadius": "Promień",
+    "filterProvince": "Województwo",
+    "filterDroneType": "Typ drona",
+    "filterService": "Usługa",
+    "filterRate": "Stawka dzienna",
+    "filterLicense": "Licencja",
+    "postAd": "Dodaj ogłoszenie",
+    "perDay": "PLN/dzień",
+    "perProject": "PLN/projekt",
+    "negotiable": "do negocjacji",
+    "viewDetails": "Zobacz szczegóły",
+    "postedToday": "Dzisiaj",
+    "postedDaysAgo": "{count} dni temu",
+    "results": "{count} ogłoszeń",
+    "noResults": "Brak ogłoszeń spełniających kryteria.",
+    "backToList": "Powrót do listy",
+    "detailTitle": "Szczegóły ogłoszenia",
+    "location": "Lokalizacja",
+    "radius": "Promień",
+    "services": "Usługi",
+    "droneType": "Typ drona",
+    "license": "Licencja",
+    "rate": "Stawka",
+    "description": "Opis",
+    "postedBy": "Dodane przez",
+    "posted": "Dodano",
+    "contactCta": "Skontaktuj się",
+    "loginToRespond": "Zaloguj się, aby odpowiedzieć na ogłoszenie",
+    "mapTitle": "Mapa ogłoszeń",
+    "filters": "Filtry",
+    "showFilters": "Pokaż filtry",
+    "hideFilters": "Ukryj filtry",
+    "clearFilters": "Wyczyść filtry",
+    "serviceLabels": {
+      "photogrammetry": "Fotogrametria",
+      "thermal": "Termowizja",
+      "inspection": "Inspekcja",
+      "aerial": "Wideo/foto",
+      "wildlife_damage": "Szkody łowieckie",
+      "wind_turbines": "Turbiny wiatrowe"
+    },
+    "droneLabels": {
+      "dji_mavic": "DJI Mavic",
+      "dji_phantom": "DJI Phantom",
+      "dji_matrice": "DJI Matrice",
+      "fixed_wing": "Stałopłat"
+    },
+    "licenseLabels": {
+      "a1a3": "A1/A3",
+      "a2": "A2",
+      "sts": "STS"
     }
   },
   "footer": {
