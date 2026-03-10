@@ -15,7 +15,6 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { useAuth } from "@/lib/firebase/auth-context";
-import { auth } from "@/lib/firebase/client";
 import { Header } from "@/components/ui/Header";
 
 /**
@@ -141,8 +140,9 @@ export function NewJobForm() {
     setSubmitting(true);
 
     try {
-      // Get Firebase ID token for API authentication
-      const idToken = await auth.currentUser?.getIdToken();
+      // Get Firebase ID token — use user from context (already resolved via
+      // onAuthStateChanged) then force-refresh to ensure a valid token.
+      const idToken = await user.getIdToken(/* forceRefresh */ true);
       if (!idToken) {
         setError(tAuth("errors.loginFailed"));
         return;
