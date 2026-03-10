@@ -19,18 +19,15 @@ const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
  * Verify the Firebase ID token from the Authorization: Bearer <token> header.
  * Returns the decoded token or null if invalid/missing.
  */
-async function verifyAuthToken(request: NextRequest): Promise<{ uid: string } | { error: string } | null> {
+async function verifyAuthToken(request: NextRequest) {
   const authHeader = request.headers.get("Authorization");
-  if (!authHeader?.startsWith("Bearer ")) return { error: "no_bearer_header" };
-
+  if (!authHeader?.startsWith("Bearer ")) return null;
   const idToken = authHeader.slice(7);
-  if (!idToken || idToken === "undefined" || idToken === "null") return { error: "empty_token" };
-
+  if (!idToken || idToken === "undefined" || idToken === "null") return null;
   try {
     return await adminAuth.verifyIdToken(idToken);
-  } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : String(err);
-    return { error: msg };
+  } catch {
+    return null;
   }
 }
 
