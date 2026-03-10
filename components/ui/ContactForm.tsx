@@ -15,7 +15,7 @@ function createContactSchema(t: (key: string) => string) {
       .string()
       .optional()
       .refine((val) => !val || /^[+]?[\d\s()-]{7,20}$/.test(val), {
-        message: "",
+        message: t("phoneInvalid"),
       }),
     message: z.string().min(1, t("messageRequired")).min(10, t("messageMin")),
   });

@@ -12,6 +12,20 @@ function getResend() {
   return new Resend(key);
 }
 
+/**
+ * Escape HTML special characters to prevent XSS in email templates.
+ * User-supplied values (name, email, phone, message) MUST be passed
+ * through this before interpolation into any HTML string.
+ */
+function escapeHtml(unsafe: string): string {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
@@ -24,31 +38,37 @@ export async function POST(request: NextRequest) {
 
     const resend = getResend();
 
+    // Sanitise all user input before embedding in HTML
+    const safeName = escapeHtml(String(name));
+    const safeEmail = escapeHtml(String(email));
+    const safePhone = phone ? escapeHtml(String(phone)) : "";
+    const safeMessage = escapeHtml(String(message));
+
     await resend.emails.send({
       from: "Formularz kontaktowy <kontakt@loty-dronem.pl>",
       to: "info@loty-dronem.pl",
       replyTo: email,
-      subject: `Nowe zapytanie od ${name}`,
+      subject: `Nowe zapytanie od ${safeName}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #1e293b;">Nowe zapytanie ze strony loty-dronem.pl</h2>
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 8px; font-weight: bold; color: #475569; width: 120px;">Imię i nazwisko:</td>
-              <td style="padding: 8px; color: #1e293b;">${name}</td>
+              <td style="padding: 8px; color: #1e293b;">${safeName}</td>
             </tr>
             <tr style="background: #f8fafc;">
               <td style="padding: 8px; font-weight: bold; color: #475569;">E-mail:</td>
-              <td style="padding: 8px; color: #1e293b;"><a href="mailto:${email}">${email}</a></td>
+              <td style="padding: 8px; color: #1e293b;"><a href="mailto:${safeEmail}">${safeEmail}</a></td>
             </tr>
-            ${phone ? `
+            ${safePhone ? `
             <tr>
               <td style="padding: 8px; font-weight: bold; color: #475569;">Telefon:</td>
-              <td style="padding: 8px; color: #1e293b;"><a href="tel:${phone}">${phone}</a></td>
+              <td style="padding: 8px; color: #1e293b;"><a href="tel:${safePhone}">${safePhone}</a></td>
             </tr>` : ""}
             <tr style="background: #f8fafc;">
               <td style="padding: 8px; font-weight: bold; color: #475569; vertical-align: top;">Wiadomość:</td>
-              <td style="padding: 8px; color: #1e293b; white-space: pre-wrap;">${message}</td>
+              <td style="padding: 8px; color: #1e293b; white-space: pre-wrap;">${safeMessage}</td>
             </tr>
           </table>
           <hr style="margin: 24px 0; border: none; border-top: 1px solid #e2e8f0;" />
