@@ -62,6 +62,12 @@
         "title": "Aerial photography & video",
         "description": "Professional aerial photography and videography for marketing, documentation, and archival purposes in up to 4K resolution.",
         "photoAlt": "Aerial photograph of a development site taken by drone in Szczecin"
+      },
+      "cropMonitoring": {
+        "title": "Crop Monitoring",
+        "description": "NDVI maps and crop health assessment for cereals, rapeseed and other crops. Early detection of diseases, water stress and mineral deficiencies.",
+        "photoAlt": "Drone crop health monitoring — NDVI map of agricultural field",
+        "linkLabel": "Crop monitoring — details"
       }
     },
     "learnMore": "Learn more"
@@ -238,8 +244,8 @@
     "areaHeading": "Area of operation",
     "photogrammetry": {
       "meta": {
-        "title": "Drone photogrammetry Szczecin | 3D models & orthophotomaps",
-        "description": "Drone photogrammetry in Szczecin. Orthophotomaps, point clouds and 3D models with 1-3 cm accuracy."
+        "title": "Drone Photogrammetry Poland | Orthophotos, Point Clouds & 3D Models",
+        "description": "Professional drone photogrammetry across Poland. Orthophotos, point clouds and 3D models with 1–3 cm accuracy. Covering the whole country."
       },
       "hero": {
         "heading": "Drone photogrammetry in Szczecin and across Poland",
@@ -519,8 +525,8 @@
     },
     "wildlife-damage": {
       "meta": {
-        "title": "Wildlife damage assessment by drone | Expert reports & PDF",
-        "description": "Wildlife damage estimation by drone in Poland. Crop damage assessment, expert PDF reports and compliant documentation."
+        "title": "Wildlife Damage Assessment by Drone | Poland",
+        "description": "Drone-based wildlife damage estimation across Poland. PDF reports, area measurement and documentation compliant with Polish regulations."
       },
       "hero": {
         "heading": "Wildlife damage estimation by drone — expert reports & PDF",
@@ -704,6 +710,106 @@
         "text": "Get in touch and we will prepare a drone inspection quote tailored to the size of your wind farm and scope of survey."
       },
       "breadcrumb": "Wind turbines"
+    },
+    "crop-monitoring": {
+      "meta": {
+        "title": "Drone Crop Health Monitoring | NDVI Maps — Poland",
+        "description": "Drone-based crop health monitoring across Poland. NDVI maps, early disease detection and precision agriculture data for farmers nationwide."
+      },
+      "hero": {
+        "heading": "Crop Health Monitoring by Drone",
+        "subheading": "NDVI mapping, crop condition assessment and early problem detection across Poland"
+      },
+      "intro": [
+        "We use drones equipped with multispectral cameras to precisely assess crop health on agricultural fields. We generate NDVI (Normalized Difference Vegetation Index) maps that allow farmers to see the health status of every part of their field. We operate across Poland.",
+        "Flight data enables precision fertilisation and crop protection only where needed, reducing input use and production costs. Crop monitoring reports can serve as documentation for agricultural insurance and government support programs.",
+        "A drone can scan tens of hectares in a single flight. A full report with analysis and maps is delivered within 24–48 hours of the flight."
+      ],
+      "benefits": [
+        {
+          "title": "High-resolution NDVI maps",
+          "description": "We generate detailed NDVI maps showing crop health with a resolution of 3–5 cm/pixel. Identify problems before they become visible to the naked eye."
+        },
+        {
+          "title": "Early detection of diseases and deficiencies",
+          "description": "Multispectral drones detect water stress, nitrogen deficiencies, fungal diseases and pests at an early stage — before yield losses occur."
+        },
+        {
+          "title": "Precision agriculture and cost optimisation",
+          "description": "Flight data enables precision fertilisation and crop protection only where needed, reducing input use and production costs."
+        },
+        {
+          "title": "Fast analysis of large areas",
+          "description": "A drone can scan tens of hectares in a single flight. A full report with analysis and maps is delivered within 24–48 hours of the flight."
+        },
+        {
+          "title": "Documentation for insurance and subsidies",
+          "description": "Crop monitoring reports can serve as documentation for agricultural insurance and government support programs."
+        },
+        {
+          "title": "Operating across Poland",
+          "description": "We serve farmers and agricultural businesses across Poland — from Mazovia and Podlachia to Greater Poland and Lower Silesia."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Winter crop health monitoring",
+          "description": "Assessment of wheat, rapeseed and barley condition after winter — identifying frost damage zones, fungal diseases and mineral deficiencies at an early vegetation stage."
+        },
+        {
+          "title": "Fertilisation and spraying optimisation",
+          "description": "Based on NDVI maps we create variable-rate application maps for fertilisers and crop protection products — precision agriculture that reduces costs and environmental impact."
+        },
+        {
+          "title": "Crop condition documentation for insurers",
+          "description": "Orthophotos and NDVI maps provide objective crop condition documentation for insurance claims and compensation applications."
+        },
+        {
+          "title": "Large-area monitoring for farms over 100 ha",
+          "description": "Regular flights over large areas detect problems faster than walking inspections — saving agronomist time and resources."
+        }
+      ],
+      "process": [
+        {
+          "step": "01",
+          "title": "Field analysis",
+          "description": "We discuss the field area, crop type, flight timing and analysis scope."
+        },
+        {
+          "step": "02",
+          "title": "Drone flight",
+          "description": "We fly a multispectral drone camera and map the entire field in one mission."
+        },
+        {
+          "step": "03",
+          "title": "Data processing",
+          "description": "We generate NDVI and other vegetation index maps with full analytical processing."
+        },
+        {
+          "step": "04",
+          "title": "Report and recommendations",
+          "description": "We deliver a PDF report with maps, analysis and agronomic recommendations."
+        }
+      ],
+      "deliverables": {
+        "heading": "What the client receives",
+        "items": [
+          "NDVI map in GeoTIFF and PDF format",
+          "High-resolution field orthophoto",
+          "Problem zone analysis",
+          "Report with agronomic recommendations",
+          "Data for precision farming systems"
+        ]
+      },
+      "area": {
+        "heading": "Area of operation",
+        "text": "All of Poland — Warsaw, Wrocław, Poznań, Gdańsk, Kraków, Łódź, Szczecin, Katowice, Lublin, Białystok"
+      },
+      "cta": {
+        "heading": "Want to monitor the health of your crops?",
+        "text": "Contact us and we will prepare a drone crop monitoring offer tailored to the area and type of your agricultural production."
+      },
+      "breadcrumb": "Crop monitoring"
     }
   },
   "jobs": {
@@ -762,7 +868,8 @@
       "inspection": "Inspection",
       "aerial": "Video/photo",
       "wildlife_damage": "Wildlife damage",
-      "wind_turbines": "Wind turbines"
+      "wind_turbines": "Wind turbines",
+      "crop_monitoring": "Crop monitoring"
     },
     "droneLabels": {
       "dji_mavic": "DJI Mavic",
@@ -875,7 +982,8 @@
       "thermal-imaging": "Thermal imaging",
       "3d-models": "3D models",
       "wildlife-damage": "Wildlife damage",
-      "wind-turbines": "Wind turbines"
+      "wind-turbines": "Wind turbines",
+      "crop-monitoring": "Crop monitoring"
     }
   }
 }

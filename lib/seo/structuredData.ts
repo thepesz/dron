@@ -4,9 +4,9 @@ import { type Locale, locales, baseUrl } from "@/lib/i18n/config";
  * Localised business descriptions for JSON-LD structured data.
  */
 const descriptions: Record<Locale, string> = {
-  pl: "Profesjonalne usługi dronowe w Szczecinie. Inspekcje dronem, fotogrametria, termowizja, modele 3D i szacowanie szkód łowieckich.",
-  en: "Professional drone services in Szczecin, Poland. Drone inspections, photogrammetry, thermal imaging, 3D models and wildlife damage estimation.",
-  de: "Professionelle Drohnendienstleistungen in Stettin (Szczecin), Polen. Drohneninspektionen, Fotogrammetrie, Thermografie, 3D-Modelle und Wildschadenbewertung.",
+  pl: "Profesjonalne usługi dronowe w Polsce. Inspekcje dronem, fotogrametria, termowizja, modele 3D, szacowanie szkód łowieckich i monitorowanie stanu zdrowotnego zbóż.",
+  en: "Professional drone services across Poland and Germany. Drone inspections, photogrammetry, thermal imaging, 3D models, wildlife damage estimation and crop health monitoring.",
+  de: "Professionelle Drohnendienstleistungen in Polen und Deutschland. Inspektionen, Fotogrammetrie, Thermografie, 3D-Modelle, Wildschadenbewertung und Pflanzengesundheitsüberwachung.",
 };
 
 /**
@@ -82,10 +82,47 @@ export function generateStructuredData(locale: Locale): string {
       {
         "@type": "Country",
         name: "Poland",
+        sameAs: "https://www.wikidata.org/wiki/Q36",
       },
       {
         "@type": "Country",
         name: "Germany",
+        sameAs: "https://www.wikidata.org/wiki/Q183",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Zachodniopomorskie",
+        containedInPlace: { "@type": "Country", name: "Poland" },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Wielkopolskie",
+        containedInPlace: { "@type": "Country", name: "Poland" },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Dolnośląskie",
+        containedInPlace: { "@type": "Country", name: "Poland" },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Mazowieckie",
+        containedInPlace: { "@type": "Country", name: "Poland" },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Lubuskie",
+        containedInPlace: { "@type": "Country", name: "Poland" },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Brandenburg",
+        containedInPlace: { "@type": "Country", name: "Germany" },
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Mecklenburg-Vorpommern",
+        containedInPlace: { "@type": "Country", name: "Germany" },
       },
     ],
     serviceType: [
@@ -96,6 +133,9 @@ export function generateStructuredData(locale: Locale): string {
       "Wind Turbine Inspection",
       "Wildlife Damage Estimation",
       "Aerial Photography",
+      "Crop Health Monitoring",
+      "NDVI Mapping",
+      "Precision Agriculture",
     ],
     availableLanguage: [
       { "@type": "Language", name: "Polish", alternateName: "pl" },

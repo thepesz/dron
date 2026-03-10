@@ -11,6 +11,7 @@ export const serviceSlugs = [
   "3d-models",
   "wildlife-damage",
   "wind-turbines",
+  "crop-monitoring",
 ] as const;
 
 export type ServiceSlug = (typeof serviceSlugs)[number];

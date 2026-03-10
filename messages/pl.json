@@ -62,6 +62,12 @@
         "title": "Zdjęcia i filmy z powietrza",
         "description": "Profesjonalne zdjęcia i filmy lotnicze do celów marketingowych, dokumentacyjnych i archiwizacyjnych w rozdzielczości do 4K.",
         "photoAlt": "Zdjęcie lotnicze terenu inwestycyjnego wykonane dronem w Szczecinie"
+      },
+      "cropMonitoring": {
+        "title": "Monitorowanie upraw",
+        "description": "Mapy NDVI i ocena stanu zdrowotnego zbóż, rzepaku i innych upraw. Wczesne wykrywanie chorób, stresów wodnych i niedoborów mineralnych.",
+        "photoAlt": "Monitorowanie stanu zdrowotnego upraw dronem — mapa NDVI pola",
+        "linkLabel": "Monitorowanie upraw — szczegóły"
       }
     },
     "learnMore": "Dowiedz się więcej"
@@ -238,8 +244,8 @@
     "areaHeading": "Obszar działania",
     "photogrammetry": {
       "meta": {
-        "title": "Fotogrametria dronem Szczecin | Ortofotomapy i chmury punktów",
-        "description": "Fotogrametria dronem w Szczecinie. Ortofotomapy, chmury punktów i modele 3D z dokładnością 1–3 cm."
+        "title": "Fotogrametria dronem | Ortofotomapy i chmury punktów — cała Polska",
+        "description": "Fotogrametria dronem w Polsce. Ortofotomapy, chmury punktów, modele 3D z dokładnością 1–3 cm. Działamy w całej Polsce — Szczecin, Warszawa, Wrocław, Poznań."
       },
       "hero": {
         "heading": "Fotogrametria dronem w Szczecinie i Polsce",
@@ -519,8 +525,8 @@
     },
     "wildlife-damage": {
       "meta": {
-        "title": "Szacowanie szkód łowieckich dronem | Operat PDF",
-        "description": "Szacowanie szkód łowieckich dronem. Operaty szacunkowe PDF, pomiar powierzchni i dokumentacja zgodna z rozporządzeniem."
+        "title": "Szacowanie szkód łowieckich dronem | Operat PDF — cała Polska",
+        "description": "Szacowanie szkód łowieckich dronem w Polsce. Operaty szacunkowe PDF, dokumentacja fotograficzna, pomiar powierzchni. Rolnicy z całej Polski."
       },
       "hero": {
         "heading": "Szacowanie szkód łowieckich dronem — operat szacunkowy i PDF",
@@ -704,6 +710,106 @@
         "text": "Skontaktuj się z nami, a przygotujemy ofertę na inspekcję dronem dopasowaną do wielkości farmy i zakresu przeglądu."
       },
       "breadcrumb": "Turbiny wiatrowe"
+    },
+    "crop-monitoring": {
+      "meta": {
+        "title": "Monitorowanie stanu zdrowotnego zbóż dronem | NDVI — cała Polska",
+        "description": "Monitorowanie upraw dronem w Polsce. Mapy NDVI, ocena stanu zdrowotności zbóż i roślin, wczesne wykrywanie chorób i stresów wodnych. Rolnicy z całej Polski."
+      },
+      "hero": {
+        "heading": "Monitorowanie stanu zdrowotnego zbóż dronem",
+        "subheading": "Mapy NDVI, ocena kondycji upraw i wczesne wykrywanie problemów agrotechnicznych w całej Polsce"
+      },
+      "intro": [
+        "Wykorzystujemy drony wyposażone w kamery multispektralne do precyzyjnej oceny kondycji roślin na polach uprawnych. Generujemy mapy NDVI (Normalized Difference Vegetation Index), które pozwalają rolnikom zobaczyć stan zdrowotny każdego fragmentu pola — niezależnie od jego powierzchni. Działamy na terenie całej Polski.",
+        "Dane z lotów pozwalają na precyzyjne nawożenie i ochronę roślin tylko tam, gdzie jest to potrzebne — ograniczając zużycie środków i koszty produkcji. Raporty z monitorowania upraw mogą służyć jako dokumentacja do ubezpieczeń rolnych, programów ARiMR i innych programów wsparcia rolniczego.",
+        "Dron przeskanuje kilkadziesiąt hektarów w ciągu jednego lotu. Pełen raport z analizą i mapami dostarczamy w ciągu 24–48 godzin od lotu."
+      ],
+      "benefits": [
+        {
+          "title": "Mapy NDVI z wysoką rozdzielczością",
+          "description": "Generujemy szczegółowe mapy NDVI, które pokazują kondycję roślinności z rozdzielczością nawet 3–5 cm/piksel. Identyfikujesz problem, zanim stanie się widoczny gołym okiem."
+        },
+        {
+          "title": "Wczesne wykrywanie chorób i niedoborów",
+          "description": "Drony multispektralne wykrywają stresy wodne, niedobory azotu, choroby grzybiczne i szkodniki na wczesnym etapie — zanim dojdzie do strat w plonach."
+        },
+        {
+          "title": "Precyzyjne rolnictwo i optymalizacja kosztów",
+          "description": "Dane z lotów pozwalają na precyzyjne nawożenie i ochronę roślin tylko tam, gdzie jest to potrzebne — ograniczając zużycie środków i koszty produkcji."
+        },
+        {
+          "title": "Szybka analiza dużych powierzchni",
+          "description": "Dron przeskanuje kilkadziesiąt hektarów w ciągu jednego lotu. Pełen raport z analizą i mapami dostarczamy w ciągu 24–48 godzin od lotu."
+        },
+        {
+          "title": "Dokumentacja dla ubezpieczeń i dotacji",
+          "description": "Raporty z monitorowania upraw mogą służyć jako dokumentacja do ubezpieczeń rolnych, programów ARiMR i innych programów wsparcia rolniczego."
+        },
+        {
+          "title": "Działamy w całej Polsce",
+          "description": "Obsługujemy rolników i przedsiębiorstwa rolne w całej Polsce — od Podlasia i Mazowsza, przez Wielkopolskę i Kujawy, po Dolny Śląsk i Zachodniopomorskie."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Monitoring zdrowotności zbóż ozimych",
+          "description": "Ocena kondycji pszenicy, rzepaku i jęczmienia po zimie — identyfikacja stref wymarzania, chorób grzybicznych i niedoborów mineralnych na wczesnym etapie wegetacji."
+        },
+        {
+          "title": "Optymalizacja nawożenia i oprysku",
+          "description": "Na podstawie map NDVI tworzymy mapy zmiennego dawkowania nawozów i środków ochrony roślin — precyzyjne rolnictwo ograniczające koszty i wpływ na środowisko."
+        },
+        {
+          "title": "Dokumentacja stanu upraw dla ubezpieczycieli",
+          "description": "Ortofotomapy i mapy NDVI stanowią obiektywną dokumentację stanu upraw na potrzeby likwidacji szkód lub wnioskowania o odszkodowanie."
+        },
+        {
+          "title": "Monitoring wielkoobszarowy dla gospodarstw powyżej 100 ha",
+          "description": "Regularne loty nad dużymi areałami pozwalają wykryć problemy szybciej niż inspekcja piesza — oszczędzając czas i zasoby agronoma."
+        }
+      ],
+      "process": [
+        {
+          "step": "01",
+          "title": "Analiza pola",
+          "description": "Omawiamy powierzchnię, rodzaj uprawy, termin lotu i zakres analizy."
+        },
+        {
+          "step": "02",
+          "title": "Lot dronem",
+          "description": "Wykonujemy lot dronem z kamerą multispektralną — mapujemy całe pole w jednej misji."
+        },
+        {
+          "step": "03",
+          "title": "Przetwarzanie danych",
+          "description": "Generujemy mapy NDVI i inne indeksy wegetacji z analitycznym opracowaniem."
+        },
+        {
+          "step": "04",
+          "title": "Raport i rekomendacje",
+          "description": "Dostarczamy raport PDF z mapami, analizą i rekomendacjami agrotechnicznymi."
+        }
+      ],
+      "deliverables": {
+        "heading": "Co otrzymuje klient",
+        "items": [
+          "Mapa NDVI w formacie GeoTIFF i PDF",
+          "Ortofotomapa pola w wysokiej rozdzielczości",
+          "Analiza stref problemowych",
+          "Raport z rekomendacjami agrotechnicznymi",
+          "Dane do systemów precyzyjnego rolnictwa"
+        ]
+      },
+      "area": {
+        "heading": "Obszar działania",
+        "text": "Cała Polska — Szczecin, Warszawa, Wrocław, Poznań, Gdańsk, Kraków, Łódź, Katowice, Lublin, Białystok"
+      },
+      "cta": {
+        "heading": "Chcesz monitorować stan swoich upraw?",
+        "text": "Skontaktuj się z nami, a przygotujemy ofertę na monitorowanie upraw dronem dopasowaną do powierzchni i rodzaju Twojej produkcji rolnej."
+      },
+      "breadcrumb": "Monitorowanie upraw"
     }
   },
   "jobs": {
@@ -762,7 +868,8 @@
       "inspection": "Inspekcja",
       "aerial": "Wideo/foto",
       "wildlife_damage": "Szkody łowieckie",
-      "wind_turbines": "Turbiny wiatrowe"
+      "wind_turbines": "Turbiny wiatrowe",
+      "crop_monitoring": "Monitorowanie upraw"
     },
     "droneLabels": {
       "dji_mavic": "DJI Mavic",
@@ -875,7 +982,8 @@
       "thermal-imaging": "Termowizja",
       "3d-models": "Modele 3D",
       "wildlife-damage": "Szkody łowieckie",
-      "wind-turbines": "Turbiny wiatrowe"
+      "wind-turbines": "Turbiny wiatrowe",
+      "crop-monitoring": "Monitorowanie upraw"
     }
   }
 }

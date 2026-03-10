@@ -8,6 +8,7 @@ import {
   Wind,
   TreePine,
   Camera,
+  Leaf,
 } from "lucide-react";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { useInView } from "@/lib/hooks/useInView";
@@ -37,6 +38,7 @@ const serviceItems: ServiceItem[] = [
   { key: "windTurbines", icon: <Wind className="h-6 w-6" />, photo: "/images/gsm1.jpg", slug: "wind-turbines" },
   { key: "wildlifeDamage", icon: <TreePine className="h-6 w-6" />, photo: "/images/agro1.jpg", slug: "wildlife-damage" },
   { key: "aerial", icon: <Camera className="h-6 w-6" />, photo: "/images/las1.jpg" },
+  { key: "cropMonitoring", icon: <Leaf className="h-6 w-6" />, photo: "/images/agro2.jpg", slug: "crop-monitoring" },
 ];
 
 export function ServicesSection() {
