@@ -984,6 +984,16 @@
       "wildlife-damage": "Wildschäden",
       "wind-turbines": "Windkraftanlagen",
       "crop-monitoring": "Pflanzenüberwachung"
+    },
+    "locationsHeading": "Standorte",
+    "cityLinks": {
+      "warszawa": "Warschau",
+      "wroclaw": "Breslau",
+      "poznan": "Posen",
+      "gdansk": "Danzig",
+      "slupsk": "Stolp",
+      "krakow": "Krakau",
+      "bydgoszcz": "Bromberg"
     }
   }
 }

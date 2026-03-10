@@ -984,6 +984,16 @@
       "wildlife-damage": "Wildlife damage",
       "wind-turbines": "Wind turbines",
       "crop-monitoring": "Crop monitoring"
+    },
+    "locationsHeading": "Locations",
+    "cityLinks": {
+      "warszawa": "Warsaw",
+      "wroclaw": "Wrocław",
+      "poznan": "Poznań",
+      "gdansk": "Gdańsk",
+      "slupsk": "Słupsk",
+      "krakow": "Kraków",
+      "bydgoszcz": "Bydgoszcz"
     }
   }
 }

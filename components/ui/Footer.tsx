@@ -26,6 +26,17 @@ const serviceSlugs = [
   "wind-turbines",
 ] as const;
 
+/** City slugs for the footer locations column. */
+const footerCitySlugs = [
+  "warszawa",
+  "wroclaw",
+  "poznan",
+  "gdansk",
+  "slupsk",
+  "krakow",
+  "bydgoszcz",
+] as const;
+
 export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
@@ -35,7 +46,7 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950" role="contentinfo">
       <div className="container-wide section-padding">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-6">
           {/* Company description */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-3">
@@ -89,6 +100,27 @@ export function Footer() {
                       className="inline-block py-1.5 text-sm text-zinc-400 transition-colors hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
                     >
                       {t(`serviceLinks.${slug}`)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+
+          {/* City landing page links */}
+          <div>
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-zinc-300">
+              {t("locationsHeading")}
+            </h3>
+            <nav aria-label="City pages">
+              <ul className="space-y-1">
+                {footerCitySlugs.map((slug) => (
+                  <li key={slug}>
+                    <Link
+                      href={`/${locale}/lokalizacje/${slug}`}
+                      className="inline-block py-1.5 text-sm text-zinc-400 transition-colors hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500"
+                    >
+                      {t(`cityLinks.${slug}`)}
                     </Link>
                   </li>
                 ))}

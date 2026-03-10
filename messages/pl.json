@@ -984,6 +984,16 @@
       "wildlife-damage": "Szkody łowieckie",
       "wind-turbines": "Turbiny wiatrowe",
       "crop-monitoring": "Monitorowanie upraw"
+    },
+    "locationsHeading": "Lokalizacje",
+    "cityLinks": {
+      "warszawa": "Warszawa",
+      "wroclaw": "Wrocław",
+      "poznan": "Poznań",
+      "gdansk": "Gdańsk",
+      "slupsk": "Słupsk",
+      "krakow": "Kraków",
+      "bydgoszcz": "Bydgoszcz"
     }
   }
 }

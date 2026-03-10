@@ -1,13 +1,15 @@
 import type { MetadataRoute } from "next";
 import { locales, defaultLocale, baseUrl } from "@/lib/i18n/config";
 import { serviceSlugs } from "@/components/sections/ServicePageLayout";
+import { citySlugs } from "@/lib/cities/cityData";
 
 /**
  * Dynamic XML sitemap for all locale variants.
  *
  * Generates entries for:
  * - Homepage: 3 locale variants (pl, en, de)
- * - Service pages: 5 services x 3 locales = 15 entries
+ * - Service pages: 6 services x 3 locales = 18 entries
+ * - City landing pages: 7 cities x 3 locales = 21 entries
  * - Jobs listing page: 3 locale variants
  * - Auth pages: login + register x 3 locales = 6 entries
  * - Account page: 3 locale variants
@@ -54,6 +56,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Service pages
     ...serviceSlugs.flatMap((slug) =>
       buildEntries(`/services/${slug}`, { changeFrequency: "monthly", priority: 0.8 })
+    ),
+
+    // City landing pages
+    ...citySlugs.flatMap((slug) =>
+      buildEntries(`/lokalizacje/${slug}`, {
+        changeFrequency: "monthly",
+        priority: 0.75,
+      })
     ),
 
     // Jobs listing
