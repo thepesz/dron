@@ -224,7 +224,7 @@ export function CityPageContent({ city, locale }: CityPageContentProps) {
       addressLocality: "Szczecin",
       addressCountry: "PL",
     },
-    telephone: "+48 123 456 789",
+    telephone: "+48 785 917 573",
     email: "info@loty-dronem.pl",
     geo: {
       "@type": "GeoCoordinates",
@@ -288,7 +288,7 @@ export function CityPageContent({ city, locale }: CityPageContentProps) {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <a
-                href="tel:+48123456789"
+                href="tel:+48785917573"
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-slate-600 px-6 py-3 text-sm font-semibold text-slate-300 transition-colors hover:border-slate-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-slate-900"
               >
                 <Phone className="h-4 w-4" />
@@ -392,11 +392,11 @@ export function CityPageContent({ city, locale }: CityPageContentProps) {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <a
-                href="tel:+48123456789"
+                href="tel:+48785917573"
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-brand-400 px-8 py-3 text-sm font-semibold text-white transition-colors hover:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-700"
               >
                 <Phone className="h-4 w-4" />
-                +48 123 456 789
+                +48 785 917 573
               </a>
             </div>
           </div>

@@ -59,7 +59,7 @@ export function Header() {
         {/* Right side: phone + language switcher + CTA + mobile menu */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:+48123456789"
+            href="tel:+48785917573"
             className="hidden min-h-[44px] items-center gap-1.5 rounded-lg px-2 text-sm text-slate-600 transition-colors hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500 lg:flex"
           >
             <Phone className="h-4 w-4" />

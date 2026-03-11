@@ -12,7 +12,7 @@
     "process": "Proces",
     "contact": "Kontakt",
     "cta": "Bezpłatna wycena",
-    "phone": "+48 123 456 789",
+    "phone": "+48 785 917 573",
     "floatingCta": "Zadzwoń do nas",
     "jobs": "Praca",
     "account": "Moje konto",
@@ -177,7 +177,7 @@
     "placeholders": {
       "name": "Jan Kowalski",
       "email": "jan@firma.pl",
-      "phone": "+48 123 456 789",
+      "phone": "+48 785 917 573",
       "message": "Opisz, czego potrzebujesz..."
     },
     "submit": "Wyślij wiadomość",
@@ -970,7 +970,7 @@
     "company": "Aero Metric",
     "location": "Szczecin, Polska",
     "email": "info@loty-dronem.pl",
-    "phone": "+48 123 456 789",
+    "phone": "+48 785 917 573",
     "social": "Media społecznościowe",
     "copyright": "Wszelkie prawa zastrzeżone.",
     "description": "Inspekcje dronem, fotogrametria i termowizja — precyzyjnie i terminowo.",

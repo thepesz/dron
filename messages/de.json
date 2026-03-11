@@ -12,7 +12,7 @@
     "process": "Ablauf",
     "contact": "Kontakt",
     "cta": "Kostenloses Angebot",
-    "phone": "+48 123 456 789",
+    "phone": "+48 785 917 573",
     "floatingCta": "Anrufen",
     "jobs": "Jobs",
     "account": "Mein Konto",
@@ -177,7 +177,7 @@
     "placeholders": {
       "name": "Max Mustermann",
       "email": "max@firma.de",
-      "phone": "+49 123 456 789",
+      "phone": "+48 785 917 573",
       "message": "Beschreiben Sie, was Sie benötigen..."
     },
     "submit": "Nachricht senden",
@@ -970,7 +970,7 @@
     "company": "Aero Metric",
     "location": "Stettin, Polen",
     "email": "info@loty-dronem.pl",
-    "phone": "+48 123 456 789",
+    "phone": "+48 785 917 573",
     "social": "Soziale Medien",
     "copyright": "Alle Rechte vorbehalten.",
     "description": "Drohneninspektion, Fotogrammetrie & Thermografie — schnell, sicher, präzise.",

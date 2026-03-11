@@ -12,7 +12,7 @@
     "process": "Process",
     "contact": "Contact",
     "cta": "Free quote",
-    "phone": "+48 123 456 789",
+    "phone": "+48 785 917 573",
     "floatingCta": "Call us",
     "jobs": "Jobs",
     "account": "My account",
@@ -177,7 +177,7 @@
     "placeholders": {
       "name": "John Smith",
       "email": "john@company.com",
-      "phone": "+48 123 456 789",
+      "phone": "+48 785 917 573",
       "message": "Describe what you need..."
     },
     "submit": "Send message",
@@ -970,7 +970,7 @@
     "company": "Aero Metric",
     "location": "Szczecin, Poland",
     "email": "info@loty-dronem.pl",
-    "phone": "+48 123 456 789",
+    "phone": "+48 785 917 573",
     "social": "Social media",
     "copyright": "All rights reserved.",
     "description": "Drone inspections, photogrammetry & thermal imaging — precise, fast, reliable.",

@@ -13,7 +13,7 @@ export function FloatingPhoneButton() {
 
   return (
     <a
-      href="tel:+48123456789"
+      href="tel:+48785917573"
       aria-label={t("floatingCta")}
       className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-brand-600 text-white shadow-lg shadow-brand-600/30 transition-all hover:bg-brand-500 hover:shadow-brand-500/40 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-slate-950 lg:hidden"
     >

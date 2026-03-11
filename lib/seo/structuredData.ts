@@ -22,7 +22,7 @@ const languageTags: Record<Locale, string> = {
 // Website: https://loty-dronem.pl
 // Business name: Aero Metric
 // Category: Drone Inspection Service / Aerial Photography Service
-// Phone: +48 123 456 789
+// Phone: +48 785 917 573
 // Email: info@loty-dronem.pl
 // Location: Szczecin, Poland
 // Service area: Poland, Germany
@@ -62,7 +62,7 @@ export function generateStructuredData(locale: Locale): string {
       contentUrl: `${baseUrl}/images/glownefoto.jpg`,
     },
     email: "info@loty-dronem.pl",
-    telephone: "+48 123 456 789",
+    telephone: "+48 785 917 573",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Szczecin",
