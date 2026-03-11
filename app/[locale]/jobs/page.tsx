@@ -5,6 +5,7 @@ import { generateLocalizedMetadata } from "@/lib/seo/metadata";
 import { mockJobs } from "@/lib/jobs/mockData";
 import { getFirestoreJobs } from "@/lib/firebase/jobs-server";
 import { JobsPageContent } from "@/components/jobs/JobsPageContent";
+import { ComingSoon } from "@/components/jobs/ComingSoon";
 
 /**
  * Force dynamic rendering so we always read fresh data from Firestore.
@@ -113,6 +114,8 @@ function generateJobPostingsJsonLd(
  * The interactive content is rendered by the JobsPageContent client component.
  */
 export default async function JobsPage() {
+  if (process.env.NEXT_PUBLIC_JOBS_ENABLED === "false") return <ComingSoon />;
+
   // Fetch real jobs from Firestore, fall back to mock data
   const firestoreJobs = await getFirestoreJobs();
   const jobs = firestoreJobs.length > 0 ? firestoreJobs : mockJobs;

@@ -3,6 +3,7 @@ import { locales, type Locale, baseUrl } from "@/lib/i18n/config";
 import { generateLocalizedMetadata } from "@/lib/seo/metadata";
 import { getJobById, mockJobs, type JobListing } from "@/lib/jobs/mockData";
 import { JobDetailContent } from "@/components/jobs/JobDetailContent";
+import { ComingSoon } from "@/components/jobs/ComingSoon";
 import { adminDb } from "@/lib/firebase/admin";
 
 /**
@@ -154,6 +155,8 @@ function generateJobDetailJsonLd(job: JobListing): string | null {
 export default async function JobDetailPage({
   params: { id },
 }: JobDetailPageProps) {
+  if (process.env.NEXT_PUBLIC_JOBS_ENABLED === "false") return <ComingSoon />;
+
   // Try Firestore first, then mock data, then first mock as ultimate fallback
   const job =
     (await getFirestoreJobById(id)) ?? getJobById(id) ?? mockJobs[0];

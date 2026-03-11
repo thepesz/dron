@@ -114,13 +114,15 @@ export function MobileMenu() {
             </a>
           ))}
 
-          <a
-            href={`/${locale}/jobs`}
-            onClick={close}
-            className="mt-4 rounded-lg bg-brand-600 px-4 py-3 text-center font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400"
-          >
-            {t("jobs")}
-          </a>
+          {process.env.NEXT_PUBLIC_JOBS_ENABLED !== "false" && (
+            <a
+              href={`/${locale}/jobs`}
+              onClick={close}
+              className="mt-4 rounded-lg bg-brand-600 px-4 py-3 text-center font-semibold text-white transition-colors hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-400"
+            >
+              {t("jobs")}
+            </a>
+          )}
 
           {/* Auth links */}
           {user ? (
