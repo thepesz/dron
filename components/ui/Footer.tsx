@@ -35,6 +35,16 @@ const footerCitySlugs = [
   "slupsk",
   "krakow",
   "bydgoszcz",
+  "lodz",
+  "katowice",
+  "lublin",
+  "szczecin",
+  "torun",
+  "berlin",
+  "hamburg",
+  "rostock",
+  "drezno",
+  "frankfurt-oder",
 ] as const;
 
 export function Footer() {

@@ -993,7 +993,17 @@
       "gdansk": "Danzig",
       "slupsk": "Stolp",
       "krakow": "Krakau",
-      "bydgoszcz": "Bromberg"
+      "bydgoszcz": "Bromberg",
+      "lodz": "Lodsch",
+      "katowice": "Kattowitz",
+      "lublin": "Lublin",
+      "szczecin": "Stettin",
+      "torun": "Thorn",
+      "berlin": "Berlin",
+      "hamburg": "Hamburg",
+      "rostock": "Rostock",
+      "drezno": "Dresden",
+      "frankfurt-oder": "Frankfurt (Oder)"
     }
   }
 }

@@ -993,7 +993,17 @@
       "gdansk": "Gdańsk",
       "slupsk": "Słupsk",
       "krakow": "Kraków",
-      "bydgoszcz": "Bydgoszcz"
+      "bydgoszcz": "Bydgoszcz",
+      "lodz": "Łódź",
+      "katowice": "Katowice",
+      "lublin": "Lublin",
+      "szczecin": "Szczecin",
+      "torun": "Toruń",
+      "berlin": "Berlin",
+      "hamburg": "Hamburg",
+      "rostock": "Rostock",
+      "drezno": "Dresden",
+      "frankfurt-oder": "Frankfurt (Oder)"
     }
   }
 }
