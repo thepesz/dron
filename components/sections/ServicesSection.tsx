@@ -7,38 +7,54 @@ import {
   Thermometer,
   Wind,
   TreePine,
-  Camera,
   Leaf,
 } from "lucide-react";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { useInView } from "@/lib/hooks/useInView";
 
-/**
- * Services grid showing six drone service offerings.
- * Each card has a photo background, icon, title, and description
- * sourced from translations. Cards with a dedicated service page
- * include a "Learn more" link via the `slug` prop.
- *
- * Uses CSS-based entrance animations via useInView hook
- * instead of Framer Motion to reduce DOM node count and JS bundle.
- */
-
 interface ServiceItem {
   key: string;
   icon: React.ReactNode;
-  photo: string;
-  /** Slug for the dedicated service landing page. Undefined = no dedicated page. */
+  photos: string[];
   slug?: string;
 }
 
 const serviceItems: ServiceItem[] = [
-  { key: "inspection", icon: <ScanSearch className="h-6 w-6" />, photo: "/images/dron1.jpg" },
-  { key: "photogrammetry", icon: <Box className="h-6 w-6" />, photo: "/images/budynek3d1.jpg", slug: "photogrammetry" },
-  { key: "thermal", icon: <Thermometer className="h-6 w-6" />, photo: "/images/pv1.jpg", slug: "thermal-imaging" },
-  { key: "windTurbines", icon: <Wind className="h-6 w-6" />, photo: "/images/gsm1.jpg", slug: "wind-turbines" },
-  { key: "wildlifeDamage", icon: <TreePine className="h-6 w-6" />, photo: "/images/agro1.jpg", slug: "wildlife-damage" },
-  { key: "aerial", icon: <Camera className="h-6 w-6" />, photo: "/images/las1.jpg" },
-  { key: "cropMonitoring", icon: <Leaf className="h-6 w-6" />, photo: "/images/agro2.jpg", slug: "crop-monitoring" },
+  {
+    key: "inspection",
+    icon: <ScanSearch className="h-6 w-6" />,
+    photos: ["/images/dron1.jpg", "/images/surface.png", "/images/oblot.png"],
+  },
+  {
+    key: "photogrammetry",
+    icon: <Box className="h-6 w-6" />,
+    photos: ["/images/budynek3d1.jpg", "/images/model1.png", "/images/model2.png"],
+    slug: "photogrammetry",
+  },
+  {
+    key: "thermal",
+    icon: <Thermometer className="h-6 w-6" />,
+    photos: ["/images/pv1.jpg"],
+    slug: "thermal-imaging",
+  },
+  {
+    key: "windTurbines",
+    icon: <Wind className="h-6 w-6" />,
+    photos: ["/images/gsm1.jpg"],
+    slug: "wind-turbines",
+  },
+  {
+    key: "wildlifeDamage",
+    icon: <TreePine className="h-6 w-6" />,
+    photos: ["/images/agro1.jpg"],
+    slug: "wildlife-damage",
+  },
+  {
+    key: "cropMonitoring",
+    icon: <Leaf className="h-6 w-6" />,
+    photos: ["/images/agro2.jpg", "/images/rosliny1.png", "/images/rosliny2.png"],
+    slug: "crop-monitoring",
+  },
 ];
 
 export function ServicesSection() {
@@ -53,7 +69,6 @@ export function ServicesSection() {
       aria-labelledby="services-heading"
     >
       <div className="container-wide">
-        {/* Section header */}
         <div
           ref={headerRef}
           className={`animate-on-scroll mb-14 text-center ${headerInView ? "in-view" : ""}`}
@@ -64,7 +79,6 @@ export function ServicesSection() {
           <p className="text-body mx-auto mt-4 max-w-2xl">{t("subtitle")}</p>
         </div>
 
-        {/* Service cards grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {serviceItems.map((item, index) => (
             <ServiceCard
@@ -73,7 +87,7 @@ export function ServicesSection() {
               title={t(`items.${item.key}.title`)}
               description={t(`items.${item.key}.description`)}
               index={index}
-              photo={item.photo}
+              photos={item.photos}
               photoAlt={t(`items.${item.key}.photoAlt`)}
               href={item.slug ? `/${locale}/services/${item.slug}` : undefined}
               learnMoreLabel={item.slug ? t(`items.${item.key}.linkLabel`) : undefined}
