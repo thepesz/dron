@@ -110,12 +110,24 @@
     "heading": "Our work",
     "subtitle": "Selected projects and completed assignments from our portfolio.",
     "items": {
-      "item1": { "alt": "Drone inspection of an industrial facility in Szczecin" },
-      "item2": { "alt": "Orthophotomap of agricultural land created by drone" },
-      "item3": { "alt": "3D model of a building from photogrammetric data" },
-      "item4": { "alt": "Thermal inspection of a roof captured by drone" },
-      "item5": { "alt": "Visual inspection of a wind turbine from a drone" },
-      "item6": { "alt": "Aerial photograph of a development site" }
+      "item1": {
+        "alt": "Drone inspection of an industrial facility in Szczecin"
+      },
+      "item2": {
+        "alt": "Orthophotomap of agricultural land created by drone"
+      },
+      "item3": {
+        "alt": "3D model of a building from photogrammetric data"
+      },
+      "item4": {
+        "alt": "Thermal inspection of a roof captured by drone"
+      },
+      "item5": {
+        "alt": "Visual inspection of a wind turbine from a drone"
+      },
+      "item6": {
+        "alt": "Aerial photograph of a development site"
+      }
     },
     "placeholder": "Project photo"
   },
@@ -208,10 +220,22 @@
   "stats": {
     "heading": "Our experience in numbers",
     "items": {
-      "years": { "value": "7+", "label": "years of experience" },
-      "projects": { "value": "100+", "label": "completed projects" },
-      "specializations": { "value": "6", "label": "specialisations" },
-      "area": { "value": "Szczecin", "label": "& the surrounding region" }
+      "years": {
+        "value": "7+",
+        "label": "years of experience"
+      },
+      "projects": {
+        "value": "100+",
+        "label": "completed projects"
+      },
+      "specializations": {
+        "value": "6",
+        "label": "specialisations"
+      },
+      "area": {
+        "value": "Szczecin",
+        "label": "& the surrounding region"
+      }
     }
   },
   "testimonials": {
@@ -611,7 +635,7 @@
       },
       "area": {
         "heading": "Area of operation",
-        "text": "We carry out wildlife damage assessments across the West Pomeranian Voivodeship, and by prior arrangement in other regions of Poland and in Germany (Mecklenburg-Vorpommern, Brandenburg). In urgent cases we can reach the field on the same day."
+        "text": "We carry out wildlife damage drone estimates throughout the West Pomeranian voivodeship, and on prior arrangement also in other Polish regions and in Germany (Mecklenburg-Vorpommern, Brandenburg). In urgent cases we can reach a field the same day. We cover, among others: Szczecin, Stargard, Koszalin, Police, Goleniów, Gryfino, Świnoujście, Kamień Pomorski, Pyrzyce (West Pomerania), as well as Słupsk, Gdańsk, Poznań, Bydgoszcz, Toruń, Lublin, Łódź, Warsaw and other cities across Poland."
       },
       "cta": {
         "heading": "Wildlife damage? We respond fast.",

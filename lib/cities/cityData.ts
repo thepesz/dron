@@ -28,6 +28,8 @@ export interface CityData {
   intro: { pl: string; en: string; de: string };
   industries: { pl: string[]; en: string[]; de: string[] };
   localContext: { pl: string; en: string; de: string };
+  /** Optional: city-specific wildlife damage content for dedicated SEO section */
+  wildlifeDamage?: { pl: string; en: string; de: string };
 }
 
 export const cities: CityData[] = [
@@ -194,6 +196,11 @@ export const cities: CityData[] = [
       en: "Greater Poland is a land of large arable fields where precision crop monitoring by drone is increasingly popular. We serve Poznań, Konin, Kalisz, Gniezno, Piła and the entire Greater Poland voivodeship. We especially recommend our cereal and rapeseed monitoring service with NDVI maps.",
       de: "Großpolen ist ein Land großer Ackerflächen, wo Präzisions-Erntemonitoring mit Drohnen immer beliebter wird. Wir betreuen Posen, Konin, Kalisch, Gnesen, Schneidemühl und die gesamte Woiwodschaft.",
     },
+    wildlifeDamage: {
+      pl: "Wielkopolska, a szczególnie okolice Poznania, to region intensywnej produkcji zbóż i rzepaku — upraw najczęściej niszczonych przez dziki. Realizujemy szacowanie szkód łowieckich dronem w Poznaniu i Wielkopolsce z pełną dokumentacją: ortofotomapa, obliczenia powierzchni, procent zniszczeń, operat PDF. Obsługujemy Poznań, Gniezno, Szamotuły, Oborniki i całe województwo wielkopolskie.",
+      en: "Greater Poland, especially around Poznań, is a region of intensive cereal and rapeseed production — crops most frequently damaged by wild boar. We carry out wildlife damage drone estimation in Poznań and Greater Poland with full documentation: orthophoto, area calculations, damage percentage and PDF report.",
+      de: "Großpolen, insbesondere die Umgebung von Posen, ist eine Region intensiver Getreide- und Rapsproduktion. Wir führen Wildschadenbewertungen per Drohne in Posen und Großpolen mit vollständiger PDF-Dokumentation durch.",
+    },
   },
   {
     slug: "gdansk",
@@ -297,6 +304,11 @@ export const cities: CityData[] = [
       pl: "W regionie Słupska i Pomorza Środkowego (Bytów, Lębork, Miastko, Człuchów) znajdują się liczne farmy wiatrowe i rozległe tereny rolnicze. Specjalizujemy się tu w inspekcjach turbin wiatrowych, szacowaniu szkód łowieckich i monitorowaniu zbóż z powietrza.",
       en: "The Słupsk and central Pomerania region (Bytów, Lębork, Miastko, Człuchów) has numerous wind farms and extensive agricultural areas. We specialise here in wind turbine inspections, wildlife damage estimation and aerial crop monitoring.",
       de: "Die Region Stolp und Mittelpommern (Bütow, Lauenburg, Rummelsburg, Schlochau) hat zahlreiche Windparks und weitläufige Agrarflächen. Wir sind hier auf Windkraftinspektionen, Wildschadenbewertung und Lufterntemonitoring spezialisiert.",
+    },
+    wildlifeDamage: {
+      pl: "Powiat słupski i Środkowe Pomorze to region intensywnego rolnictwa otoczonego przez lasy — idealne warunki dla dużej populacji dzików i jeleni. Szkody łowieckie w kukurydzy i zbożach należą tu do najczęstszych zleceń dla kół łowieckich. Realizujemy szacowania szkód łowieckich dronem w Słupsku, Bytowie, Lęborku, Miastku i okolicach — ortofotomapa, precyzyjny pomiar powierzchni szkody i operat PDF w 2–3 dni robocze.",
+      en: "Słupsk county and central Pomerania is a region of intensive agriculture surrounded by forests — ideal conditions for large wild boar and deer populations. We carry out wildlife damage drone estimates in Słupsk, Bytów, Lębork, Miastko and the surrounding area — orthophoto, precise area measurement and PDF report in 2–3 working days.",
+      de: "Der Landkreis Stolp und Mittelpommern ist eine Region intensiver Landwirtschaft, umgeben von Wäldern. Wir führen Wildschadenbewertungen per Drohne in Stolp, Bütow, Lauenburg und Umgebung durch — Orthofoto, Flächenmessung und PDF-Gutachten.",
     },
   },
   {
@@ -410,6 +422,11 @@ export const cities: CityData[] = [
       en: "Kujawy is one of Poland's most agricultural regions — drone monitoring of cereals, rapeseed and sugar beet is particularly cost-effective here. We serve Bydgoszcz, Toruń, Włocławek, Inowrocław, Grudziądz and the entire Kuyavian-Pomeranian region.",
       de: "Kujawien ist eine der landwirtschaftlichsten Regionen Polens — Drohnenmonitoring von Getreide, Raps und Zuckerrüben ist hier besonders rentabel. Wir betreuen Bromberg, Thorn, Leslau, Hohensalza, Graudenz und die gesamte Region Kujawien-Pommern.",
     },
+    wildlifeDamage: {
+      pl: "Kujawy i okolice Bydgoszczy to jeden z najbardziej rolniczych regionów Polski — żyzne pola kukurydzy i zbóż graniczą z kompleksami leśnymi Borów Tucholskich, naturalnym siedliskiem dzików. Szkody łowieckie w uprawach są tu powszechnym problemem. Wykonujemy szacowania szkód łowieckich dronem w Bydgoszczy, Nakle, Szubinie, Inowrocławiu i całym powiecie bydgoskim — ortofotomapa, pomiar powierzchni szkody i operat PDF.",
+      en: "Kujawy and the Bydgoszcz area is one of Poland's most agricultural regions — fertile maize and cereal fields border the Tuchola Forest, natural habitat for wild boar. We carry out wildlife damage drone estimates in Bydgoszcz, Nakło, Szubin, Inowrocław and the entire Bydgoszcz county.",
+      de: "Kujawien und die Umgebung von Bromberg ist eine der landwirtschaftlichsten Regionen Polens. Wir führen Wildschadenbewertungen per Drohne in Bromberg und dem gesamten Landkreis durch.",
+    },
   },
 
   // ─── POLISH CITIES ─────────────────────────────────────────────────────────
@@ -446,6 +463,11 @@ export const cities: CityData[] = [
       pl: "Łódź leży w centrum Polski — to idealne miejsce wypadowe do obsługi zleceń dronowych z całego kraju. W regionie łódzkim inspekcje dachów hal magazynowych i dokumentacja obiektów logistycznych to najczęstsze zlecenia. Obsługujemy Łódź, Piotrków Trybunalski, Skierniewice, Sieradz i całe województwo łódzkie.",
       en: "Łódź is located in the centre of Poland — an ideal base for drone assignments across the country. In the Łódź region, roof inspections of warehouse halls and documentation of logistics facilities are the most common jobs. We serve Łódź, Piotrków Trybunalski, Skierniewice, Sieradz and the entire Łódź voivodeship.",
       de: "Lodsch liegt im Zentrum Polens — ein idealer Ausgangspunkt für Drohneneinsätze im ganzen Land. Wir bedienen Lodsch, Petrikau, Skierniewice, Sieradz und die gesamte Woiwodschaft.",
+    },
+    wildlifeDamage: {
+      pl: "Województwo łódzkie, choć kojarzone głównie z przemysłem i logistyką, ma rozległe tereny rolnicze wokół Skierniewic, Sieradza i Piotrkowa Trybunalskiego. Pola kukurydzy i zbóż sąsiadujące z kompleksami leśnymi są regularnie niszczone przez dziki. Realizujemy szacowania szkód łowieckich dronem w Łodzi i całym regionie łódzkim.",
+      en: "The Łódź voivodeship, though mainly associated with industry and logistics, has extensive agricultural land around Skierniewice, Sieradz and Piotrków Trybunalski. Maize and cereal fields adjoining forest complexes are regularly damaged by wild boar. We carry out wildlife damage drone estimates in Łódź and the entire Łódź region.",
+      de: "Die Woiwodschaft Lodsch hat ausgedehnte Agrarflächen in der Umgebung von Skierniewice, Sieradz und Piotrków. Wir führen Wildschadenbewertungen per Drohne in Lodsch und der gesamten Region durch.",
     },
   },
   {
@@ -515,6 +537,11 @@ export const cities: CityData[] = [
       en: "The Lublin region is especially important for wildlife damage estimation — it has one of Poland's highest rates of crop damage reports from wild boar, roe deer and red deer. Estimation reports with drone photographic documentation are standard here. We serve Lublin, Zamość, Chełm, Biała Podlaska, Puławy and the entire Lublin voivodeship.",
       de: "Die Region Lublin ist besonders wichtig für die Wildschadenbewertung — sie hat eine der höchsten Raten von Ernteschadenmeldungen durch Wildschweine, Rehe und Hirsche in Polen. Wir bedienen Lublin, Zamość, Chelm, Biała Podlaska und die gesamte Woiwodschaft.",
     },
+    wildlifeDamage: {
+      pl: "Lubelszczyzna to jeden z najważniejszych regionów dla szacowania szkód łowieckich dronem w Polsce — rozległe pola pszenicy, kukurydzy i rzepaku w pobliżu lasów są regularnie niszczone przez dziki, jelenie i sarny. Wykonujemy szacowania dronem w Lublinie i całym województwie lubelskim: ortofotomapa, precyzyjne obliczenie powierzchni szkody i operat PDF zgodny z rozporządzeniem. Realizacja: 2–3 dni robocze od nalotu.",
+      en: "The Lublin region is one of Poland's most important areas for wildlife damage estimation by drone — extensive wheat, maize and rapeseed fields near forests are regularly damaged by wild boar, deer and roe deer. We carry out drone estimates in Lublin and the entire Lublin voivodeship with PDF report in 2–3 working days.",
+      de: "Die Region Lublin ist eine der wichtigsten für Wildschadenbewertungen per Drohne in Polen. Wir führen Drohneneinsätze in Lublin und der gesamten Woiwodschaft Lublin durch — Orthofoto, Flächenmessung und PDF-Gutachten in 2–3 Werktagen.",
+    },
   },
   {
     slug: "szczecin",
@@ -549,6 +576,11 @@ export const cities: CityData[] = [
       en: "As a company from Szczecin, we know the local market and regional specifics excellently. We carry out industrial facility inspections at the Port of Szczecin-Świnoujście, document construction investments, monitor wind farms in West Pomerania and estimate wildlife damage on fields throughout the voivodeship. Szczecin, Police, Goleniów, Stargard, Świnoujście — we are on-site.",
       de: "Als Unternehmen aus Stettin kennen wir den lokalen Markt und die regionalen Besonderheiten ausgezeichnet. Wir führen Industrieinspektionen im Hafen Stettin-Swinemünde durch, dokumentieren Bauinvestitionen, überwachen Windparks in Westpommern und bewerten Wildschäden auf Feldern in der gesamten Woiwodschaft.",
     },
+    wildlifeDamage: {
+      pl: "Pola uprawne w powiecie szczecińskim, goleniowskim i polickim należą do najbardziej poszkodowanych przez dziki i jelenie obszarów w Zachodniopomorskiem. Kukurydza, pszenica i rzepak na obrzeżach Szczecina regularnie padają ofiarą żerowania grubej zwierzyny. Jako firma z Szczecina wykonujemy szacowanie szkód łowieckich dronem tego samego dnia co zgłoszenie — ortofotomapa, operat szacunkowy PDF zgodny z rozporządzeniem Ministra Środowiska, pomiar powierzchni w m² i procent zniszczeń. Obsługujemy Szczecin, Police, Goleniów, Gryfino, Stargard i cały powiat szczeciński.",
+      en: "Agricultural fields in Szczecin, Goleniów and Police counties are among the most heavily affected by wild boar and deer in West Pomerania. As a Szczecin-based company we carry out wildlife damage estimation by drone on the same day as the report — orthophoto, PDF survey report compliant with the Minister of Environment regulation, area measurement in m² and damage percentage. We cover Szczecin, Police, Goleniów, Gryfino, Stargard and the entire Szczecin county.",
+      de: "Die Ackerfelder in den Landkreisen Stettin, Goleniów und Police gehören zu den am stärksten durch Wildschweine und Hirsche geschädigten Gebieten Westpommerns. Als Stettiner Unternehmen führen wir die Wildschadenbewertung per Drohne noch am Tag der Schadensmeldung durch — Orthofoto, PDF-Gutachten und Flächenmessung in m². Einsatzgebiet: Stettin, Police, Goleniów, Gryfino, Stargard und der gesamte Landkreis Stettin.",
+    },
   },
   {
     slug: "torun",
@@ -582,6 +614,90 @@ export const cities: CityData[] = [
       pl: "Toruń leży między Bydgoszczą a Włocławkiem — w centrum regionu kujawsko-pomorskiego, jednego z najbardziej rolniczych w Polsce. Razem z sąsiednią Bydgoszczą tworzymy kompletne pokrycie całego regionu. Obsługujemy Toruń, Włocławek, Inowrocław, Grudziądz, Brodnicę i całe Kujawy.",
       en: "Toruń lies between Bydgoszcz and Włocławek — at the centre of the Kuyavian-Pomeranian region, one of Poland's most agricultural areas. Together with neighbouring Bydgoszcz we provide complete coverage of the entire region. We serve Toruń, Włocławek, Inowrocław, Grudziądz, Brodnica and all of Kujawy.",
       de: "Thorn liegt zwischen Bromberg und Weichselburg — im Zentrum der Region Kujawien-Pommern. Zusammen mit dem benachbarten Bromberg decken wir die gesamte Region ab. Wir bedienen Thorn, Weichselburg, Inowrazlaw, Graudenz und ganz Kujawien.",
+    },
+    wildlifeDamage: {
+      pl: "Region toruńsko-kujawski to jedno z najbardziej rolniczych miejsc w Polsce — pszenica, kukurydza i buraki cukrowe na żyznych ziemiach Kujaw są regularnie niszczone przez dziki. Realizujemy szacowania szkód łowieckich dronem w Toruniu, Chełmnie, Wąbrzeźnie i okolicach — dokumentacja fotograficzna, ortofotomapa i operat PDF w 2–3 dni robocze.",
+      en: "The Toruń–Kujawy region is one of Poland's most agricultural areas — wheat, maize and sugar beet on fertile Kujawy soils are regularly damaged by wild boar. We carry out wildlife damage drone estimates in Toruń, Chełmno, Wąbrzeźno and the surrounding area.",
+      de: "Die Region Thorn–Kujawien ist eine der landwirtschaftlichsten Polens — Weizen, Mais und Zuckerrüben werden regelmäßig durch Wildschweine beschädigt. Wir führen Wildschadenbewertungen per Drohne in Thorn und Umgebung durch.",
+    },
+  },
+
+  {
+    slug: "koszalin",
+    names: { pl: "Koszalin", en: "Koszalin", de: "Köslin" },
+    region: { pl: "Zachodniopomorskie", en: "West Pomerania", de: "Westpommern" },
+    lat: 54.1944,
+    lng: 16.1714,
+    seo: {
+      titles: {
+        pl: "Szacowanie szkód łowieckich dronem Koszalin | Usługi dronowe Zachodniopomorskie",
+        en: "Wildlife Damage Drone Estimation Koszalin | Drone Services West Pomerania",
+        de: "Wildschadenbewertung Drohne Köslin | Drohnendienstleistungen Westpommern",
+      },
+      descriptions: {
+        pl: "Szacowanie szkód łowieckich dronem Koszalin — ortofotomapa, operat PDF, pomiar powierzchni. Inspekcje dronem, fotogrametria, monitoring upraw. Zachodniopomorskie. Aero Metric.",
+        en: "Wildlife damage estimation by drone in Koszalin — orthophoto, PDF report, area measurement. Drone inspections, photogrammetry and crop monitoring in West Pomerania. Aero Metric.",
+        de: "Wildschadenbewertung per Drohne in Köslin — Orthofoto, PDF-Gutachten, Flächenmessung. Drohneninspektionen und Fotogrammetrie in Westpommern. Aero Metric.",
+      },
+    },
+    intro: {
+      pl: "Koszalin to drugie co do wielkości miasto województwa zachodniopomorskiego — centrum rolniczego i przemysłowego regionu Środkowego Pomorza. Rozległe pola uprawne w powiecie koszalińskim otoczone przez lasy Pojezierza Koszalińskiego to naturalny teren bytowania dzików i jeleni, które regularnie wyrządzają szkody w uprawach. Aero Metric obsługuje klientów z Koszalina i całego Zachodniopomorskiego.",
+      en: "Koszalin is the second largest city in the West Pomeranian voivodeship and the centre of the Środkowe Pomorze agricultural region. Extensive farmland surrounding the Koszalin Lake District forests is natural habitat for wild boar and deer that regularly damage crops. Aero Metric serves clients from Koszalin and all of West Pomerania.",
+      de: "Köslin ist die zweitgrößte Stadt der Woiwodschaft Westpommern und das Zentrum der Agrarregion Mittelpommern. Weitläufige Ackerflächen rund um die Wälder des Kösliner Seenlandes sind natürlicher Lebensraum für Wildschweine und Hirsche. Aero Metric betreut Kunden aus Köslin und ganz Westpommern.",
+    },
+    industries: {
+      pl: ["Rolnictwo — zboża, rzepak, kukurydza", "Szacowanie szkód łowieckich", "Energetyka wiatrowa", "Przetwórstwo rybne i spożywcze", "Infrastruktura i budownictwo"],
+      en: ["Agriculture — cereals, rapeseed, maize", "Wildlife damage estimation", "Wind energy", "Fish processing and food industry", "Infrastructure and construction"],
+      de: ["Landwirtschaft — Getreide, Raps, Mais", "Wildschadenbewertung", "Windenergie", "Fischverarbeitung und Lebensmittelindustrie", "Infrastruktur und Bauwesen"],
+    },
+    localContext: {
+      pl: "Koszalin i okolice (Sianów, Mielno, Manowo, Bobolice, Szczecinek) to jeden z kluczowych obszarów zachodniopomorskiego dla szacowania szkód łowieckich dronem. Obsługujemy Koszalin, Sławno, Darłowo, Białogard, Szczecinek i cały powiat koszaliński.",
+      en: "Koszalin and surroundings (Sianów, Mielno, Manowo, Bobolice, Szczecinek) is a key West Pomeranian area for wildlife damage estimation by drone. We serve Koszalin, Sławno, Darłowo, Białogard, Szczecinek and the entire Koszalin county.",
+      de: "Köslin und Umgebung ist ein Schlüsselgebiet Westpommerns für Wildschadenbewertungen per Drohne. Wir bedienen Köslin, Schlawe, Rügenwalde, Belgard, Neustettin und den gesamten Landkreis.",
+    },
+    wildlifeDamage: {
+      pl: "Okolice Koszalina to intensywny region rolniczy otoczony rozległymi lasami Pojezierza Koszalińskiego i dorzecza Parsęty — naturalnym korytarzem migracyjnym dla dzików, jeleni i saren. Szkody w uprawach zbóż, kukurydzy i rzepaku są tu zgłaszane przez koła łowieckie niemal codziennie. Wykonujemy szacowania szkód łowieckich dronem w Koszalinie, Sławnie, Białogardzie i całym powiecie koszalińskim — ortofotomapa, precyzyjny pomiar powierzchni i operat PDF w 2–3 dni robocze.",
+      en: "The Koszalin area is an intensive agricultural region surrounded by the extensive forests of the Koszalin Lake District — a natural migration corridor for wild boar, deer and roe deer. Wildlife damage in cereals, maize and rapeseed is reported by hunting clubs almost daily. We carry out drone estimates in Koszalin, Sławno, Białogard and the entire Koszalin county — orthophoto, precise area measurement and PDF report in 2–3 working days.",
+      de: "Die Umgebung von Köslin ist eine intensive Agrarregion, umgeben von ausgedehnten Wäldern des Kösliner Seenlandes. Wir führen Wildschadenbewertungen per Drohne in Köslin, Schlawe, Belgard und dem gesamten Landkreis durch — Orthofoto, Flächenmessung und PDF-Gutachten.",
+    },
+  },
+  {
+    slug: "stargard",
+    names: { pl: "Stargard", en: "Stargard", de: "Stargard" },
+    region: { pl: "Zachodniopomorskie", en: "West Pomerania", de: "Westpommern" },
+    lat: 53.3364,
+    lng: 15.0519,
+    seo: {
+      titles: {
+        pl: "Szacowanie szkód łowieckich dronem Stargard | Usługi dronowe powiat stargardzki",
+        en: "Wildlife Damage Drone Estimation Stargard | Drone Services West Pomerania",
+        de: "Wildschadenbewertung Drohne Stargard | Drohnendienstleistungen Westpommern",
+      },
+      descriptions: {
+        pl: "Szacowanie szkód łowieckich dronem w Stargardzie i powiecie stargardzkim — ortofotomapa, operat PDF, pomiar powierzchni. Inspekcje dronem dla rolników zachodniopomorskiego. Aero Metric.",
+        en: "Wildlife damage estimation by drone in Stargard and Stargard county — orthophoto, PDF report, area measurement. Drone services for West Pomeranian farmers. Aero Metric.",
+        de: "Wildschadenbewertung per Drohne in Stargard und Umgebung — Orthofoto, PDF-Gutachten, Flächenmessung für westpommersche Landwirte. Aero Metric.",
+      },
+    },
+    intro: {
+      pl: "Stargard to miasto w centrum województwa zachodniopomorskiego, otoczone typowym rolniczo-leśnym krajobrazem Równiny Pyrzyckiej i kompleksami leśnymi Puszczy Goleniowskiej. Rozległe pola uprawne — pszenica, kukurydza, rzepak — graniczą bezpośrednio z lasami, co sprzyja dużej aktywności dzików i saren wyrządzających szkody w uprawach. Aero Metric jako firma ze Szczecina (30 km) obsługuje powiat stargardzki w ciągu godziny od zgłoszenia.",
+      en: "Stargard is a town in the heart of the West Pomeranian voivodeship, surrounded by the agricultural-forest landscape of the Pyrzyce Plain and the Goleniów Forest. Extensive cropland borders directly on forest areas, favouring high wild boar and roe deer activity. As a Szczecin-based company (30 km), Aero Metric covers Stargard county within an hour of notification.",
+      de: "Stargard ist eine Stadt im Herzen der Woiwodschaft Westpommern, umgeben von der land- und forstwirtschaftlichen Landschaft der Pyritzer Ebene. Als Stettiner Unternehmen (30 km) ist Aero Metric innerhalb einer Stunde nach Schadensmeldung im Landkreis Stargard.",
+    },
+    industries: {
+      pl: ["Rolnictwo — pszenica, rzepak, kukurydza", "Szacowanie szkód łowieckich", "Przetwórstwo rolno-spożywcze", "Budownictwo i infrastruktura", "Logistyka"],
+      en: ["Agriculture — wheat, rapeseed, maize", "Wildlife damage estimation", "Agri-food processing", "Construction and infrastructure", "Logistics"],
+      de: ["Landwirtschaft — Weizen, Raps, Mais", "Wildschadenbewertung", "Agrar- und Lebensmittelverarbeitung", "Bauwesen und Infrastruktur", "Logistik"],
+    },
+    localContext: {
+      pl: "Powiat stargardzki to typowy teren zachodniopomorski, gdzie farmy rolnicze sąsiadują z kompleksami leśnymi Puszczy Goleniowskiej. Realizujemy szacowania dronem w Stargardzie, Choszcznie, Pyrzycach, Dobrzanach i całym powiecie. Jako firma ze Szczecina jesteśmy na miejscu w ciągu godziny.",
+      en: "Stargard county is a typical West Pomeranian area where farmland borders forest complexes of the Goleniów Forest. We carry out drone estimates in Stargard, Choszczno, Pyrzyce, Dobrzany and the entire county. As a Szczecin-based company we can reach the field on the same day.",
+      de: "Der Landkreis Stargard ist ein typisches westpommerisches Gebiet, wo Agrarflächen direkt an den Goleniówer Forst grenzen. Als Stettiner Unternehmen sind wir noch am Meldetag vor Ort.",
+    },
+    wildlifeDamage: {
+      pl: "Powiat stargardzki to rejon, gdzie pola zbóż, kukurydzy i rzepaku graniczą bezpośrednio z kompleksami leśnymi Puszczy Goleniowskiej i lasami Pyrzyckimi — naturalnym siedliskiem dzików i saren. Jesteśmy w stanie dotrzeć do Stargardu i okolic w ciągu godziny od zgłoszenia — szacowanie szkód łowieckich dronem z dostawą ortofotomapy i operatu PDF w 2–3 dni robocze. Obsługujemy Stargard, Choszczno, Pyrzyce, Recz i całe zachodniopomorskie.",
+      en: "Stargard county is an area where cereal, maize and rapeseed fields border directly on the Goleniów Forest and Pyrzyce forests — natural habitat for wild boar and roe deer. We can reach Stargard and surroundings within an hour of notification, with orthophoto and PDF report delivered in 2–3 working days.",
+      de: "Im Landkreis Stargard grenzen Getreide-, Mais- und Rapsfelder direkt an den Goleniówer Forst an. Als Stettiner Unternehmen sind wir innerhalb einer Stunde nach Schadensmeldung vor Ort — Orthofoto und PDF-Gutachten in 2–3 Werktagen.",
     },
   },
 

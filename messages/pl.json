@@ -110,12 +110,24 @@
     "heading": "Nasze realizacje",
     "subtitle": "Wybrane projekty i realizacje z dotychczasowych zleceń.",
     "items": {
-      "item1": { "alt": "Inspekcja dronem obiektu przemysłowego w Szczecinie" },
-      "item2": { "alt": "Ortofotomapa terenu rolniczego wykonana dronem" },
-      "item3": { "alt": "Model 3D budynku z danych fotogrametrycznych" },
-      "item4": { "alt": "Inspekcja termowizyjna dachu z drona" },
-      "item5": { "alt": "Inspekcja wizualna turbiny wiatrowej z drona" },
-      "item6": { "alt": "Zdjęcie lotnicze terenu inwestycyjnego" }
+      "item1": {
+        "alt": "Inspekcja dronem obiektu przemysłowego w Szczecinie"
+      },
+      "item2": {
+        "alt": "Ortofotomapa terenu rolniczego wykonana dronem"
+      },
+      "item3": {
+        "alt": "Model 3D budynku z danych fotogrametrycznych"
+      },
+      "item4": {
+        "alt": "Inspekcja termowizyjna dachu z drona"
+      },
+      "item5": {
+        "alt": "Inspekcja wizualna turbiny wiatrowej z drona"
+      },
+      "item6": {
+        "alt": "Zdjęcie lotnicze terenu inwestycyjnego"
+      }
     },
     "placeholder": "Zdjęcie z realizacji"
   },
@@ -208,10 +220,22 @@
   "stats": {
     "heading": "Nasze doświadczenie w liczbach",
     "items": {
-      "years": { "value": "7+", "label": "lat doświadczenia" },
-      "projects": { "value": "100+", "label": "zrealizowanych projektów" },
-      "specializations": { "value": "6", "label": "specjalizacji" },
-      "area": { "value": "Szczecin", "label": "i region zachodniopomorski" }
+      "years": {
+        "value": "7+",
+        "label": "lat doświadczenia"
+      },
+      "projects": {
+        "value": "100+",
+        "label": "zrealizowanych projektów"
+      },
+      "specializations": {
+        "value": "6",
+        "label": "specjalizacji"
+      },
+      "area": {
+        "value": "Szczecin",
+        "label": "i region zachodniopomorski"
+      }
     }
   },
   "testimonials": {
@@ -611,7 +635,7 @@
       },
       "area": {
         "heading": "Obszar działania",
-        "text": "Szacowania szkód łowieckich realizujemy na terenie całego województwa zachodniopomorskiego, a po wcześniejszym uzgodnieniu — również w innych regionach Polski i w Niemczech (Meklemburgia-Pomorze Przednie, Brandenburgia). W pilnych przypadkach jesteśmy w stanie dotrzeć na pole tego samego dnia."
+        "text": "Szacowania szkód łowieckich realizujemy na terenie całego województwa zachodniopomorskiego, a po wcześniejszym uzgodnieniu — również w innych regionach Polski i w Niemczech (Meklemburgia-Pomorze Przednie, Brandenburgia). W pilnych przypadkach jesteśmy w stanie dotrzeć na pole tego samego dnia. Obsługujemy m.in.: Szczecin, Stargard, Koszalin, Police, Goleniów, Gryfino, Świnoujście, Kamień Pomorski, Pyrzyce, Myślibórz (zachodniopomorskie), a także Słupsk, Gdańsk, Poznań, Bydgoszcz, Toruń, Lublin, Łódź, Warszawa i inne miasta całej Polski."
       },
       "cta": {
         "heading": "Szkoda łowiecka? Działamy szybko.",

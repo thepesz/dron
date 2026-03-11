@@ -110,12 +110,24 @@
     "heading": "Unsere Referenzen",
     "subtitle": "Ausgewählte Projekte und abgeschlossene Aufträge aus unserem Portfolio.",
     "items": {
-      "item1": { "alt": "Drohneninspektion einer Industrieanlage in Stettin" },
-      "item2": { "alt": "Orthofotokarte einer landwirtschaftlichen Fläche per Drohne" },
-      "item3": { "alt": "3D-Modell eines Gebäudes aus fotogrammetrischen Daten" },
-      "item4": { "alt": "Thermische Inspektion eines Dachs per Drohne" },
-      "item5": { "alt": "Visuelle Inspektion einer Windkraftanlage per Drohne" },
-      "item6": { "alt": "Luftaufnahme eines Baugeländes" }
+      "item1": {
+        "alt": "Drohneninspektion einer Industrieanlage in Stettin"
+      },
+      "item2": {
+        "alt": "Orthofotokarte einer landwirtschaftlichen Fläche per Drohne"
+      },
+      "item3": {
+        "alt": "3D-Modell eines Gebäudes aus fotogrammetrischen Daten"
+      },
+      "item4": {
+        "alt": "Thermische Inspektion eines Dachs per Drohne"
+      },
+      "item5": {
+        "alt": "Visuelle Inspektion einer Windkraftanlage per Drohne"
+      },
+      "item6": {
+        "alt": "Luftaufnahme eines Baugeländes"
+      }
     },
     "placeholder": "Projektfoto"
   },
@@ -208,10 +220,22 @@
   "stats": {
     "heading": "Unsere Erfahrung in Zahlen",
     "items": {
-      "years": { "value": "7+", "label": "Jahre Erfahrung" },
-      "projects": { "value": "100+", "label": "abgeschlossene Projekte" },
-      "specializations": { "value": "6", "label": "Spezialisierungen" },
-      "area": { "value": "Stettin", "label": "und Region" }
+      "years": {
+        "value": "7+",
+        "label": "Jahre Erfahrung"
+      },
+      "projects": {
+        "value": "100+",
+        "label": "abgeschlossene Projekte"
+      },
+      "specializations": {
+        "value": "6",
+        "label": "Spezialisierungen"
+      },
+      "area": {
+        "value": "Stettin",
+        "label": "und Region"
+      }
     }
   },
   "testimonials": {
@@ -611,7 +635,7 @@
       },
       "area": {
         "heading": "Einsatzgebiet",
-        "text": "Wildschadensbewertungen führen wir in der gesamten Woiwodschaft Westpommern und nach vorheriger Absprache auch in anderen Regionen Polens und in Deutschland (Mecklenburg-Vorpommern, Brandenburg) durch. In dringenden Fällen können wir das Feld noch am selben Tag erreichen."
+        "text": "Wir führen Wildschadenbewertungen per Drohne in der gesamten Woiwodschaft Westpommern durch, nach Absprache auch in anderen polnischen Regionen und in Deutschland (Mecklenburg-Vorpommern, Brandenburg). In dringenden Fällen können wir das Feld noch am selben Tag erreichen. Wir bedienen u.a.: Stettin, Stargard, Köslin, Police, Goleniów, Gryfino, Swinemünde, Cammin, Pyritz (Westpommern) sowie Stolp, Danzig, Posen, Bromberg, Thorn, Lublin, Lodsch, Warschau und andere Städte in ganz Polen."
       },
       "cta": {
         "heading": "Wildschaden? Wir reagieren schnell.",
