@@ -339,6 +339,42 @@ export function CityPageContent({ city, locale }: CityPageContentProps) {
           </div>
         </section>
 
+        {/* Photogrammetry dedicated section — only for cities with unique content */}
+        {city.photogrammetry && (
+          <section className="border-t border-slate-800 py-16 sm:py-20">
+            <div className="container-wide px-4 sm:px-6 lg:px-8">
+              <div className="grid gap-6 lg:grid-cols-[auto_1fr]">
+                <div className="hidden h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-brand-600/15 text-brand-400 lg:flex">
+                  <Building2 className="h-7 w-7" />
+                </div>
+                <div>
+                  <h2 className="mb-4 text-2xl font-bold text-white sm:text-3xl">
+                    {lang === "pl"
+                      ? `Fotogrametria dronem — ${name}`
+                      : lang === "en"
+                        ? `Drone photogrammetry — ${name}`
+                        : `Drohnenfotogrammetrie — ${name}`}
+                  </h2>
+                  <p className="mb-6 max-w-3xl text-base leading-relaxed text-slate-300">
+                    {city.photogrammetry[lang]}
+                  </p>
+                  <Link
+                    href={`/${locale}/services/photogrammetry`}
+                    className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-brand-600 px-5 py-2.5 text-sm font-semibold text-brand-400 transition-colors hover:bg-brand-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  >
+                    {lang === "pl"
+                      ? "Szczegóły usługi fotogrametrii"
+                      : lang === "en"
+                        ? "Photogrammetry service details"
+                        : "Details zur Fotogrammetrie"}
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Wildlife damage dedicated section — only for cities with unique content */}
         {city.wildlifeDamage && (
           <section className="border-t border-slate-800 py-16 sm:py-20">

@@ -28,6 +28,8 @@ export interface CityData {
   intro: { pl: string; en: string; de: string };
   industries: { pl: string[]; en: string[]; de: string[] };
   localContext: { pl: string; en: string; de: string };
+  /** Optional: city-specific photogrammetry content for dedicated SEO section */
+  photogrammetry?: { pl: string; en: string; de: string };
   /** Optional: city-specific wildlife damage content for dedicated SEO section */
   wildlifeDamage?: { pl: string; en: string; de: string };
 }
@@ -575,6 +577,11 @@ export const cities: CityData[] = [
       pl: "Jako firma z Szczecina doskonale znamy lokalny rynek i specyfikę regionu. Realizujemy inspekcje obiektów przemysłowych w Porcie Szczecin-Świnoujście, dokumentujemy inwestycje budowlane, monitorujemy farmy wiatrowe na Pomorzu Zachodnim i szacujemy szkody łowieckie na polach całego województwa. Szczecin, Police, Goleniów, Stargard, Świnoujście — jesteśmy na miejscu.",
       en: "As a company from Szczecin, we know the local market and regional specifics excellently. We carry out industrial facility inspections at the Port of Szczecin-Świnoujście, document construction investments, monitor wind farms in West Pomerania and estimate wildlife damage on fields throughout the voivodeship. Szczecin, Police, Goleniów, Stargard, Świnoujście — we are on-site.",
       de: "Als Unternehmen aus Stettin kennen wir den lokalen Markt und die regionalen Besonderheiten ausgezeichnet. Wir führen Industrieinspektionen im Hafen Stettin-Swinemünde durch, dokumentieren Bauinvestitionen, überwachen Windparks in Westpommern und bewerten Wildschäden auf Feldern in der gesamten Woiwodschaft.",
+    },
+    photogrammetry: {
+      pl: "Szczecin i województwo zachodniopomorskie to region z dużym zapotrzebowaniem na fotogrametrię dronem — od inwentaryzacji budynków przemysłowych i portowych, przez pomiary objętości hałd i wykopów na budowach, po ortofotomapy pól dla rolnictwa precyzyjnego. Jako firma z Szczecina realizujemy zlecenia fotogrametryczne z bazą operacyjną w centrum regionu — dojazd do 50 km od Szczecina wliczony w cenę. Obsługujemy Szczecin, Police, Goleniów, Stargard, Gryfino, Świnoujście i całe Zachodniopomorskie.",
+      en: "Szczecin and West Pomerania is a region with strong demand for drone photogrammetry — from industrial and port building surveys to volume measurements of embankments and excavations, through to field orthophotos for precision agriculture. As a Szczecin-based company we carry out photogrammetric assignments with our operations base in the centre of the region, with travel up to 50 km included in the price.",
+      de: "Stettin und Westpommern ist eine Region mit starker Nachfrage nach Drohnenfotogrammetrie — von Industrie- und Hafengebäudeaufnahmen bis hin zu Volumenberechnungen und Feldorthophotos für die Präzisionslandwirtschaft. Als Stettiner Unternehmen führen wir fotogrammetrische Aufträge mit unserer Operationsbasis im Zentrum der Region durch.",
     },
     wildlifeDamage: {
       pl: "Pola uprawne w powiecie szczecińskim, goleniowskim i polickim należą do najbardziej poszkodowanych przez dziki i jelenie obszarów w Zachodniopomorskiem. Kukurydza, pszenica i rzepak na obrzeżach Szczecina regularnie padają ofiarą żerowania grubej zwierzyny. Jako firma z Szczecina wykonujemy szacowanie szkód łowieckich dronem tego samego dnia co zgłoszenie — ortofotomapa, operat szacunkowy PDF zgodny z rozporządzeniem Ministra Środowiska, pomiar powierzchni w m² i procent zniszczeń. Obsługujemy Szczecin, Police, Goleniów, Gryfino, Stargard i cały powiat szczeciński.",
