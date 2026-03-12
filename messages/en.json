@@ -645,11 +645,11 @@
     },
     "wind-turbines": {
       "meta": {
-        "title": "Wind turbine inspection by drone | Blades & nacelle surveys",
+        "title": "Wind turbine inspection by drone | All Poland — Szczecin, Słupsk, Gdańsk",
         "description": "Drone inspection of wind turbines in Szczecin. Blade, nacelle and tower surveys without halting turbine operation."
       },
       "hero": {
-        "heading": "Drone inspection of wind turbines — blades, nacelles & masts",
+        "heading": "Wind turbine inspection by drone — blades, nacelles & masts",
         "subheading": "We carry out visual inspections of wind turbine blades, nacelles and towers using drones. Rapid identification of cracks, erosion and lightning damage -- without rope-access technicians and without halting energy production."
       },
       "intro": [
@@ -727,7 +727,7 @@
       },
       "area": {
         "heading": "Area of operation",
-        "text": "We carry out wind turbine inspections across the West Pomeranian, Pomeranian and Greater Poland Voivodeships -- regions with the highest concentration of wind farms in Poland. By arrangement we accept commissions nationwide."
+        "text": "We carry out wind turbine inspections across West Pomeranian, Pomeranian and Greater Poland voivodeships — regions with the highest concentration of wind farms in Poland. We cover Szczecin, Słupsk, Koszalin, Gdańsk, Poznań, Bydgoszcz and Toruń. By arrangement we accept commissions nationwide."
       },
       "cta": {
         "heading": "Planning a wind turbine inspection?",
