@@ -737,11 +737,11 @@
     },
     "crop-monitoring": {
       "meta": {
-        "title": "Monitorowanie stanu zdrowotnego zbóż dronem | NDVI — cała Polska",
+        "title": "Monitoring upraw dronem | NDVI, monitorowanie zbóż — cała Polska",
         "description": "Monitorowanie upraw dronem w Polsce. Mapy NDVI, ocena stanu zdrowotności zbóż i roślin, wczesne wykrywanie chorób i stresów wodnych. Rolnicy z całej Polski."
       },
       "hero": {
-        "heading": "Monitorowanie stanu zdrowotnego zbóż dronem",
+        "heading": "Monitoring upraw dronem — NDVI i stan zdrowotności zbóż",
         "subheading": "Mapy NDVI, ocena kondycji upraw i wczesne wykrywanie problemów agrotechnicznych w całej Polsce"
       },
       "intro": [

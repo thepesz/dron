@@ -737,11 +737,11 @@
     },
     "crop-monitoring": {
       "meta": {
-        "title": "Drohnen-Pflanzengesundheitsüberwachung | NDVI-Karten — Polen & Deutschland",
+        "title": "Drohnen-Erntemonitoring | NDVI-Karten, Pflanzengesundheit — Polen & Deutschland",
         "description": "Drohnenbasiertes Monitoring des Pflanzengesundheitszustands in Polen und Deutschland. NDVI-Karten, Früherkennung von Krankheiten und Präzisionslandwirtschaft."
       },
       "hero": {
-        "heading": "Überwachung des Pflanzengesundheitszustands mit Drohnen",
+        "heading": "Erntemonitoring per Drohne — NDVI-Karten und Pflanzengesundheit",
         "subheading": "NDVI-Kartierung, Zustandsbewertung von Kulturen und Früherkennung von Problemen in Polen und Deutschland"
       },
       "intro": [

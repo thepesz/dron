@@ -737,11 +737,11 @@
     },
     "crop-monitoring": {
       "meta": {
-        "title": "Drone Crop Health Monitoring | NDVI Maps — Poland",
+        "title": "Drone Crop Monitoring | NDVI Maps, crop health — all Poland",
         "description": "Drone-based crop health monitoring across Poland. NDVI maps, early disease detection and precision agriculture data for farmers nationwide."
       },
       "hero": {
-        "heading": "Crop Health Monitoring by Drone",
+        "heading": "Drone crop monitoring — NDVI maps and crop health assessment",
         "subheading": "NDVI mapping, crop condition assessment and early problem detection across Poland"
       },
       "intro": [
