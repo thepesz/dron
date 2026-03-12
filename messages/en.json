@@ -461,7 +461,7 @@
         "description": "3D models from drone data in Szczecin. Digital terrain models, building inventory and mesh models for construction."
       },
       "hero": {
-        "heading": "3D models and digital terrain maps from drone data",
+        "heading": "3D models from drone — digital terrain maps and building surveys",
         "subheading": "We create digital terrain models, realistic 3D mesh models and building inventories from photogrammetric drone data. Accuracy down to 2 cm -- ready for import into CAD and BIM software."
       },
       "intro": [
@@ -539,7 +539,7 @@
       },
       "area": {
         "heading": "Area of operation",
-        "text": "We carry out 3D inventories from our base in Szczecin across the West Pomeranian Voivodeship. Commissions in other regions of Poland are accepted by prior arrangement. Travel up to 50 km from Szczecin is included in the price."
+        "text": "We carry out 3D drone modelling from our base in Szczecin across West Pomerania. We also serve Gdańsk, Poznań, Warsaw, Wrocław and other Polish regions — nationwide commissions accepted by prior arrangement. Travel up to 50 km from Szczecin included."
       },
       "cta": {
         "heading": "Need a 3D model or digital terrain model?",
