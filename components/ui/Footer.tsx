@@ -47,11 +47,19 @@ const footerCitySlugs = [
   "frankfurt-oder",
 ] as const;
 
-export function Footer() {
+interface FooterProps {
+  /** Use the Szczecin-specific credit line (Polish Szczecin pages only). */
+  szczecinCredit?: boolean;
+}
+
+export function Footer({ szczecinCredit = false }: FooterProps) {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
+  const useSzczecinCredit = szczecinCredit && locale === "pl";
+  const creditKey = useSzczecinCredit ? "creditSzczecin" : "credit";
+  const creditUrl = t(useSzczecinCredit ? "creditSzczecinUrl" : "creditUrl");
 
   return (
     <footer className="border-t border-slate-800 bg-slate-950" role="contentinfo">
@@ -203,6 +211,18 @@ export function Footer() {
         <div className="mt-12 border-t border-slate-800 pt-6 text-center">
           <p className="text-xs text-zinc-500">
             &copy; {currentYear} {t("company")}. {t("copyright")}
+          </p>
+          <p className="mt-2 text-xs text-zinc-500">
+            {t.rich(creditKey, {
+              link: (chunks) => (
+                <a
+                  href={creditUrl}
+                  className="text-zinc-400 transition-colors hover:text-brand-400"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </p>
         </div>
       </div>

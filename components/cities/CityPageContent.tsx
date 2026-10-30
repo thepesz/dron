@@ -475,7 +475,7 @@ export function CityPageContent({ city, locale }: CityPageContentProps) {
         </section>
       </main>
 
-      <Footer />
+      <Footer szczecinCredit={city.slug === "szczecin"} />
     </>
   );
 }
